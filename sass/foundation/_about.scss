@@ -1,0 +1,24 @@
+.history{
+  position: relative;
+  z-index: 1;
+}
+
+div.fixed{
+  position: -webkit-sticky;
+  /*Safari*/
+  position: sticky;
+  top:70px;
+  /*Header高さ分で止まるようにする*/
+  padding: 600px 0;
+  /*デモ画面の高さを持たすための上下余白*/
+  &:nth-child(odd){
+    background: #666;
+  }
+  &:nth-child(even){
+    background: #333;
+  }
+}
+
+.president{
+  height: 100vh;
+}

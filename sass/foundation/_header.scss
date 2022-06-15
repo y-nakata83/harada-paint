@@ -1,0 +1,11 @@
+.header{
+  position: fixed;
+  /*Header固定*/
+  top:0;
+  height: 70px;
+  /*高さ指定*/
+  z-index: 2;
+  width:100%;
+  background:#fff;
+  /*背景色*/
+}
