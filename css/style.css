@@ -179,7 +179,7 @@ select {
   position: fixed;
   /*Header固定*/
   top: 0;
-  height: 70px;
+  height: 7vh;
   /*高さ指定*/
   z-index: 2;
   width: 100%;
@@ -196,9 +196,9 @@ div.fixed {
   position: -webkit-sticky;
   /*Safari*/
   position: sticky;
-  top: 70px;
+  top: 7vh;
+  height: 100vh;
   /*Header高さ分で止まるようにする*/
-  padding: 600px 0;
   /*デモ画面の高さを持たすための上下余白*/
 }
 div.fixed:nth-child(odd) {
@@ -206,6 +206,11 @@ div.fixed:nth-child(odd) {
 }
 div.fixed:nth-child(even) {
   background: #333;
+}
+div.fixed:nth-child(2) {
+  background: url(../../img/history1.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .president {
