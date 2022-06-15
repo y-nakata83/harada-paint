@@ -7,15 +7,20 @@ div.fixed{
   position: -webkit-sticky;
   /*Safari*/
   position: sticky;
-  top:70px;
+  top:7vh;
+  height: 100vh;
   /*Header高さ分で止まるようにする*/
-  padding: 600px 0;
   /*デモ画面の高さを持たすための上下余白*/
   &:nth-child(odd){
     background: #666;
   }
   &:nth-child(even){
     background: #333;
+  }
+  &:nth-child(2){
+    background: url(../../img/history1.png);
+    background-position: center;
+    background-size: cover;
   }
 }
 
