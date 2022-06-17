@@ -1,3 +1,21 @@
+.about{
+  &_top{
+    margin-top: 7vh;
+    margin-bottom: 10%;
+    &Ttl{
+      text-align: center;
+      font-size: 3rem;
+      &En{
+        text-decoration: underline solid blue;
+      }
+      &Ja{
+        font-size: .5em;
+      }
+    }
+  }
+}
+
+
 .history{
   position: relative;
   z-index: 1;
