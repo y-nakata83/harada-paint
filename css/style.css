@@ -196,10 +196,16 @@ select {
 .header_left {
   width: 20%;
 }
+.header_left a {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+}
 .header_right {
   width: 55%;
   height: 100%;
   display: flex;
+  justify-content: unset;
   align-items: center;
 }
 .header_nav {
@@ -214,8 +220,8 @@ select {
   width: 35%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #084066;
 }
 .header_tel img {
