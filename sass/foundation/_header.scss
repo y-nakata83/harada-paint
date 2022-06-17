@@ -8,4 +8,26 @@
   width:100%;
   background:#fff;
   /*背景色*/
+  &_inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_left {
+    width: 20%;
+  }
+  &_right{
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+  &_nav{
+    width: 100%;
+    &Box{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
 }
