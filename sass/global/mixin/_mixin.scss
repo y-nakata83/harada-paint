@@ -1,0 +1,31 @@
+@use "../setting" as *;
+
+@mixin flex($no-center:center) {
+  display: flex;
+  justify-content: $no-center;
+  align-items: center;
+}
+
+@mixin ttl{
+  &Ttl {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5% 0;
+
+    &En {
+      color: blue;
+      text-decoration: underline solid black;
+      text-underline-offset: .2em;
+    }
+
+    &Ja {
+      font-size: .5em;
+      line-height: 3;
+    }
+  }
+}
+
+@mixin bg {
+  background-position: center;
+  background-size: cover;
+}
