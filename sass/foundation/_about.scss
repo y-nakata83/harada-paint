@@ -1,15 +1,25 @@
 .about{
   &_top{
     margin-top: 7vh;
-    margin-bottom: 10%;
+    // margin-bottom: 10%;
+    &Bg{
+      background: url(../../img/about-top.png);
+      background-position: center;
+      background-size: cover;
+      height: 65vh;
+    }
     &Ttl{
       text-align: center;
       font-size: 3rem;
+      margin: 5% 0;
       &En{
-        text-decoration: underline solid blue;
+        color: blue;
+        text-decoration: underline solid black;
+        text-underline-offset: .2em;
       }
       &Ja{
         font-size: .5em;
+        line-height: 3;
       }
     }
   }
@@ -33,9 +43,6 @@ div.fixed{
     background: #666;
   }
   &:nth-child(even){
-    background: #333;
-  }
-  &:nth-child(2){
     background: url(../../img/history1.png);
     background-position: center;
     background-size: cover;

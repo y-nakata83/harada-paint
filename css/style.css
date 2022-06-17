@@ -211,17 +211,26 @@ select {
 
 .about_top {
   margin-top: 7vh;
-  margin-bottom: 10%;
+}
+.about_topBg {
+  background: url(../../img/about-top.png);
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
 }
 .about_topTtl {
   text-align: center;
   font-size: 3rem;
+  margin: 5% 0;
 }
 .about_topTtlEn {
-  text-decoration: underline solid blue;
+  color: blue;
+  text-decoration: underline solid black;
+  text-underline-offset: 0.2em;
 }
 .about_topTtlJa {
   font-size: 0.5em;
+  line-height: 3;
 }
 
 .history {
@@ -242,9 +251,6 @@ div.fixed:nth-child(odd) {
   background: #666;
 }
 div.fixed:nth-child(even) {
-  background: #333;
-}
-div.fixed:nth-child(2) {
   background: url(../../img/history1.png);
   background-position: center;
   background-size: cover;
