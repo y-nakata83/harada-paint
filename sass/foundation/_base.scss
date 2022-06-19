@@ -1,4 +1,46 @@
+@use "../global/"as *;
+
 * {
   box-sizing: border-box;
 }
 
+.top{
+  width: 100%;
+  height: 100vh;
+  &_inner{
+    width: 100%;
+    height: 100%;
+  }
+  &_bg{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url(../../img/top-fv.png);
+    @include bg;
+    background-size: unset;
+  }
+  &_copy{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    text-align: center;
+    h2{
+      font-size: 2.5rem;
+      @include copy-font;
+      letter-spacing: .1em;
+      font-weight: 400;
+    }
+    p{
+      font-size: 1.2rem;
+      margin: 5% 0 1%;
+    }
+    h3{
+      font-size: 2.5rem;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: .1em;
+      @include en;
+    }
+  }
+}
