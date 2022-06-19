@@ -44,3 +44,40 @@
     }
   }
 }
+
+.about{
+  &_bg{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: #666;
+    @include bg;
+    margin-bottom: 30%;
+  }
+  &_ttl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    h2{
+      font-size: 2.5rem;
+      text-decoration: underline black;
+      text-underline-offset: .2em;
+    }
+    p{
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+  }
+  &_box{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%,20%);
+    background-color: white;
+    width: 60%;
+    padding: 5%;
+  }
+}
