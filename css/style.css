@@ -171,6 +171,10 @@ select {
   vertical-align: middle;
 }
 
+html {
+  font-size: 16px;
+}
+
 .header {
   position: fixed;
   /*Header固定*/
@@ -328,4 +332,39 @@ div.fixed:nth-child(even) {
   height: 100vh;
 }
 
-/*# sourceMappingURL=style.css.map */
+.cinfo {
+  margin-top: 10%;
+}
+.cinfo_iner {
+  width: 80%;
+  margin: 0 auto;
+}
+.cinfo_title {
+  text-align: center;
+}
+.cinfo_title h3 {
+  font-size: 2rem;
+}
+.cinfo_wrap {
+  margin-top: 10%;
+}
+.cinfo_wrap table {
+  width: 100%;
+}
+.cinfo_wrap table tr {
+  border: solid 1px #fff;
+}
+.cinfo_wrap table tr td:nth-of-type(1) {
+  width: 20%;
+  text-align: center;
+  background-color: rgb(131, 192, 232);
+  line-height: 4;
+  font-weight: bold;
+}
+.cinfo_wrap table tr td:nth-of-type(2) {
+  padding-left: 10%;
+}
+
+.space {
+  vertical-align: middle;
+}
