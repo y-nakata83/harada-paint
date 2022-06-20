@@ -30,3 +30,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@mixin top-shadow {
+  box-shadow: #666 0px 5px 10px,
+  blue -25px 25px,
+  #666 -30px 30px 10px;
+}
