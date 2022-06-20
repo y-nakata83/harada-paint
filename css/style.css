@@ -171,6 +171,10 @@ select {
   vertical-align: middle;
 }
 
+html {
+  font-size: 16px;
+}
+
 .header {
   position: fixed;
   /*Header固定*/
@@ -275,6 +279,43 @@ select {
   font-family: "Roboto", sans-serif;
 }
 
+.about_bg {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: #666;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30%;
+}
+.about_ttl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.about_ttl h2 {
+  font-size: 2.5rem;
+  text-decoration: underline black;
+  text-underline-offset: 0.2em;
+}
+.about_ttl p {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.about_box {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  background-color: white;
+  width: 60%;
+  padding: 5%;
+}
+
 .about_top {
   margin-top: 7vh;
 }
@@ -326,6 +367,43 @@ div.fixed:nth-child(even) {
 
 .president {
   height: 100vh;
+}
+
+.cinfo {
+  margin-top: 10%;
+}
+.cinfo_iner {
+  width: 80%;
+  margin: 0 auto;
+}
+.cinfo_title {
+  text-align: center;
+}
+.cinfo_title h3 {
+  font-size: 2rem;
+}
+.cinfo_wrap {
+  margin-top: 10%;
+}
+.cinfo_wrap table {
+  width: 100%;
+}
+.cinfo_wrap table tr {
+  border: solid 1px #fff;
+}
+.cinfo_wrap table tr td:nth-of-type(1) {
+  width: 20%;
+  text-align: center;
+  background-color: #83c0e8;
+  line-height: 4;
+  font-weight: bold;
+}
+.cinfo_wrap table tr td:nth-of-type(2) {
+  padding-left: 10%;
+}
+
+.space {
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */
