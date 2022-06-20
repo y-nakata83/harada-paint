@@ -533,7 +533,47 @@ div.fixed:nth-child(even) {
 }
 
 .president {
-  height: 100vh;
+  margin-top: 10%;
+}
+.president_iner {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(225, 225, 225);
+  padding: 5%;
+}
+.president_title {
+  text-align: center;
+}
+.president_title h3 {
+  font-size: 2rem;
+}
+.president_box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.president_itemT {
+  width: 60%;
+}
+.president_lead {
+  text-align: center;
+}
+.president_lead strong {
+  font-size: 1.2rem;
+}
+.president_text {
+  margin-top: 5%;
+}
+.president_text p {
+  line-height: 1.5;
+}
+.president_nameC {
+  text-align: end;
+  margin-top: 5%;
+}
+.president_nameA {
+  text-align: end;
+  margin-top: 2%;
 }
 
 .cinfo {
@@ -561,7 +601,7 @@ div.fixed:nth-child(even) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #83c0e8;
+  background-color: rgb(131, 192, 232);
   line-height: 4;
   font-weight: bold;
 }
@@ -572,5 +612,3 @@ div.fixed:nth-child(even) {
 .space {
   vertical-align: middle;
 }
-
-/*# sourceMappingURL=style.css.map */

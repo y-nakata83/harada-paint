@@ -38,7 +38,58 @@ div.fixed{
 /////////president////////////
 
 .president{
-  height: 100vh;
+  margin-top: 10%;
+
+  &_iner {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(225, 225, 225);
+    padding: 5%;
+  } 
+
+  &_title {
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  &_itemT {
+    width: 60%;
+  }
+
+  &_lead {
+    text-align: center;
+    
+    strong {
+      font-size: 1.2rem;
+    }
+  }
+
+  &_text {
+    margin-top: 5%;
+
+    p {
+      line-height: 1.5;
+    }
+  }
+  
+  &_nameC {
+    text-align: end;
+    margin-top: 5%;
+  }
+
+  &_nameA {
+    text-align: end;
+    margin-top: 2%;
+  }
 }
 
 
