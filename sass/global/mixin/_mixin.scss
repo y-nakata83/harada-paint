@@ -13,8 +13,8 @@
     margin: 5% 0;
 
     &En {
-      color: blue;
-      text-decoration: underline solid black;
+      color: $main;
+      text-decoration: underline solid $m-black;
       text-underline-offset: .2em;
     }
 
@@ -33,7 +33,7 @@
 
 @mixin top-shadow {
   box-shadow: #666 0px 5px 10px,
-  blue -25px 25px,
+  $main -25px 25px,
   #666 -30px 30px 10px;
 }
 
