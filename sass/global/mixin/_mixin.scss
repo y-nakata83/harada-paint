@@ -36,3 +36,11 @@
   blue -25px 25px,
   #666 -30px 30px 10px;
 }
+
+@mixin ex {
+  font-size: 1.2rem;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  margin-bottom: 5%;
+  line-height: 1.5;
+}

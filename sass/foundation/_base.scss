@@ -96,14 +96,120 @@ a{
     text-underline-offset: .2em;
     margin-bottom: 5%;
     &Ex{
-      font-size: 1.2rem;
-      text-align: justify;
-      letter-spacing: 1.5px;
-      margin-bottom: 5%;
-      line-height: 1.2;
+      @include ex;
     }
   }
   &_button{
+    left: 80%;
+    transform: translate(-80%, 0);
+  }
+}
+
+.service{
+  margin-bottom: 10%;
+  &_inner{
+    @include flex(end);
+    position: relative;
+  }
+  &_box{
+    position: absolute;
+    background-color: #fff;
+    left: 20%;
+    transform: translateX(-20%);
+    width: 40%;
+    padding: 6% 3% 10%;
+    @include top-shadow;
+  }
+  &_ttl{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10%;
+    &En{
+      display: inline-block;
+      font-size: 2rem;
+      color: blue;
+      line-height: 1.3;
+      border-bottom: solid 1px blue;
+    }
+    &Ja{
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+  }
+  &_ex{
+    @include ex;
+    margin-bottom: 10%;
+  }
+  &_img{
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &_button {
+    left: 80%;
+    transform: translate(-80%, 0);
+  }
+}
+
+.shop{
+  margin-bottom: 10%;
+
+  &_inner {
+    @include flex(start);
+    position: relative;
+  }
+
+  &_box {
+    position: absolute;
+    background-color: #fff;
+    left: 80%;
+    transform: translateX(-80%);
+    width: 30%;
+    padding: 5% 3%;
+    text-align: center;
+    box-shadow: #666 0px 5px 10px,
+    blue 25px 25px,
+    #666 30px 30px 10px;
+  }
+
+  &_ttl {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10%;
+
+    &En {
+      display: inline-block;
+      font-size: 2rem;
+      color: blue;
+      line-height: 1.3;
+      border-bottom: solid 1px blue;
+    }
+
+    &Ja {
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+  }
+
+  &_ex {
+    display: inline-block;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 5;
+    padding: 0 5%;
+    color: #fff;
+    background-color: #666;
+  }
+
+  &_img {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &_button {
     left: 80%;
     transform: translate(-80%, 0);
   }
