@@ -394,7 +394,7 @@ div.fixed:nth-child(even) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: rgb(131, 192, 232);
+  background-color: #83c0e8;
   line-height: 4;
   font-weight: bold;
 }
@@ -405,3 +405,5 @@ div.fixed:nth-child(even) {
 .space {
   vertical-align: middle;
 }
+
+/*# sourceMappingURL=style.css.map */
