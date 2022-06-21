@@ -1,3 +1,10 @@
-html {
-  font-size: 16px;
+$breakpoint: (sp: "screen and (max-width: 480px)",
+  tab: "screen and (max-width: 768px)",
+  pc: "screen and (max-width: 1024px)",
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
 }
