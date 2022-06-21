@@ -16,9 +16,13 @@
     @include flex(space-between);
   }
   &_left {
-    width: 20%;
+    width: 25%;
+    margin-left: 10%;
     a{
-      @include flex(unset);
+    @include flex(unset);
+    img{
+      width: 30%;
+    }
     }
   }
   &_right{
