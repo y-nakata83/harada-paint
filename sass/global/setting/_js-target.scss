@@ -1,0 +1,153 @@
+//js-slideUp 上に出てくる
+
+.js-slideUp {
+  opacity: 0;
+}
+
+.scrollin {
+  -webkit-animation: fadeUpAnime .5s forwards;
+  animation: fadeUpAnime .5s forwards;
+  -webkit-animation-name: scrollin;
+  animation-name: scrollin;
+}
+
+@-webkit-keyframes scrollin {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollin {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+// top-about専用
+.js-slideUpTop {
+  opacity: 0;
+}
+
+.scrollintop {
+  -webkit-animation: fadeUpAnime .5s forwards;
+  animation: fadeUpAnime .5s forwards;
+  -webkit-animation-name: scrollin-top;
+  animation-name: scrollin-top;
+}
+@keyframes scrollin-top {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translate(-50%,200px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translate(-50%,20%);
+  }
+}
+
+/*js-slideLeft 左から出てくる */
+.js-slideLeft {
+  opacity: 0;
+}
+
+.fadeLeft {
+  -webkit-animation-name: fadeLeftAnime;
+  animation-name: fadeLeftAnime;
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/*js-slideRight 右から出てくる */
+.js-slideRight {
+  opacity: 0;
+}
+
+.fadeRight {
+  -webkit-animation-name: fadeRightAnime;
+  animation-name: fadeRightAnime;
+  -webkit-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
