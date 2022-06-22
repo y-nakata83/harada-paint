@@ -153,6 +153,10 @@ html {
     @include mq(tab){
       margin-bottom: 50%;
     }
+    @include mq(sp){
+      height: 300px;
+      margin-bottom: 80%;
+    }
   }
   &_ttl{
     position: absolute;
@@ -212,6 +216,9 @@ html {
 
 .service{
   margin-bottom: 10%;
+  @include mq(sp) {
+    margin-bottom: 15%
+  }
   &_inner{
     @include flex(end);
     position: relative;
@@ -267,6 +274,9 @@ html {
       @include mq(pc){
         width: 80%;
       }
+      @include mq(tab) {
+        width: 100%;
+      }
     }
   }
   &_button {
@@ -277,7 +287,9 @@ html {
 
 .shop{
   margin-bottom: 10%;
-
+  @include mq(sp) {
+    margin-bottom: 15%
+  }
   &_inner {
     @include flex(start);
     position: relative;
@@ -285,7 +297,6 @@ html {
       flex-direction: column;
     }
   }
-
   &_box {
     position: absolute;
     background-color: $m-white;
@@ -306,12 +317,10 @@ html {
       margin-top: 10%;
     }
   }
-
   &_ttl {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10%;
-
     &En {
       display: inline-block;
       font-size: 2rem;
@@ -319,13 +328,11 @@ html {
       line-height: 1.3;
       border-bottom: solid 1px $main;
     }
-
     &Ja {
       font-size: 1.2rem;
       line-height: 2;
     }
   }
-
   &_ex {
     display: inline-block;
     padding: 0 5%;
@@ -336,7 +343,6 @@ html {
       line-height: 5;
     }
   }
-
   &_img {
     img {
       width: 100%;
@@ -344,9 +350,11 @@ html {
       @include mq(pc){
         width: 75%;
       }
+      @include mq(tab) {
+        width: 100%;
+      }
     }
   }
-  
   &_button {
     left: 80%;
     transform: translate(-80%, 0);
@@ -366,6 +374,10 @@ html {
     }
     @include mq(tab){
       width: 80%;
+    }
+    @include mq(sp) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
   &_left{
@@ -427,6 +439,10 @@ html {
     }
     @include mq(tab) {
       width: 80%;
+    }
+    @include mq(sp) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
   &_left {
