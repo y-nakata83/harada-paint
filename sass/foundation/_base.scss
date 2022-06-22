@@ -143,7 +143,7 @@ html {
   &_inner{
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 500px;
     background: url(../../img/top-about.png);
     @include bg;
     margin-bottom: 30%;
@@ -151,8 +151,7 @@ html {
       margin-bottom: 45%;
     }
     @include mq(tab){
-      height: 45vh;
-      margin-bottom: 60%;
+      margin-bottom: 50%;
     }
   }
   &_ttl{
@@ -178,21 +177,20 @@ html {
   }
   &_box{
     position: absolute;
-    bottom: -20%;
+    bottom: -200px;
     left: 50%;
-    transform: translate(-50%,20%);
+    transform: translateX(-50%);
     background-color: $m-white;
     width: 50%;
     padding: 5%;
     @include top-shadow;
     @include mq(pc){
-      bottom: -50%;
-      transform: translate(-50%, 50%);
+      bottom: -210px;
+      width: 60%;
     }
     @include mq(tab){
+      bottom: -170px;
       width: 75%;
-      bottom: -65%;
-      transform: translate(-50%, 65%);
     }
   }
   &_copy{
@@ -230,6 +228,7 @@ html {
     padding: 6% 3% 10%;
     @include top-shadow;
     @include mq(pc){
+      width: 50%;
       padding: 5% 3%;
     }
     @include mq(tab) {
