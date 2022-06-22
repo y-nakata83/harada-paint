@@ -1360,7 +1360,7 @@ div.fixed:nth-child(even) {
 .president_iner {
   width: 90%;
   margin: 0 auto;
-  background-color: #e1e1e1;
+  background-color: rgb(225, 225, 225);
   padding: 5%;
 }
 .president_title {
@@ -1423,7 +1423,7 @@ div.fixed:nth-child(even) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
   line-height: 4;
   font-weight: bold;
 }
@@ -1435,4 +1435,54 @@ div.fixed:nth-child(even) {
   vertical-align: middle;
 }
 
-/*# sourceMappingURL=style.css.map */
+.a-recruit_mainInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.a-recruit_mainInner img {
+  width: 100%;
+  height: 100%;
+}
+.a-recruit_containInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.a-recruit_containTtl {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10%;
+}
+.a-recruit_containTtl h2 {
+  display: inline-block;
+  font-size: 2rem;
+  color: #0F77BB;
+  line-height: 1.3;
+  border-bottom: solid 1px #0F77BB;
+}
+.a-recruit_containTtl p {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.a-recruit_containBox {
+  position: relative;
+  width: 80%;
+  margin: 10% auto 0;
+}
+.a-recruit_containBox table {
+  width: 100%;
+}
+.a-recruit_containBox table tr {
+  border: solid 1px #fff;
+}
+.a-recruit_containBox table tr td:nth-of-type(1) {
+  width: 20%;
+  text-align: center;
+  background-color: rgba(15, 119, 187, 0.3019607843);
+  line-height: 4;
+  font-weight: bold;
+}
+.a-recruit_containBox table tr td:nth-of-type(2) {
+  padding-left: 3%;
+}
