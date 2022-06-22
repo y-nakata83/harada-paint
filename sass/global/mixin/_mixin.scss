@@ -25,9 +25,9 @@
   }
 }
 
-@mixin bg {
+@mixin bg ($size:cover){
   background-position: center;
-  background-size: cover;
+  background-size: $size;
   background-repeat: no-repeat;
 }
 
