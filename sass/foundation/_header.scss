@@ -18,6 +18,9 @@
     @include mq(pc){
       width: 55%;
     }
+    @include mq(tab){
+      width: 100%;
+    }
   }
   &_left {
     width: 25%;
@@ -32,11 +35,12 @@
       }
       h1{
         font-size: 1.3rem;
-        @include mq(pc){
-        }
       }
       img{
         width: 80px;
+        @include mq(sp){
+          width: 60px;
+        }
       }
     }
   }
@@ -130,11 +134,14 @@
       }
       &Item {
         width: 50%;
-        margin: 0 auto 5%;
         display: inline-block;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
+        margin: 0 auto 5%;
+        @include mq(tab){
+          font-size: 2rem;
+        }
         a {
           color: $main;
           display: block;
@@ -177,6 +184,9 @@
       background-color: unset;
       justify-content: unset;
       margin-left: 5%;
+    }
+    @include mq(tab){
+      display: none;
     }
     img{
       width: 35px;
