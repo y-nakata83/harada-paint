@@ -25,10 +25,7 @@ html {
     height: 100%;
     width: 100%;
     background: url(../../img/topimg1.png);
-    @include bg(80%);
-    @include mq(pc){
-      background-size: 60%;
-    }
+    @include bg(60%);
     @include mq(tab){
       background-size: contain;
     }
