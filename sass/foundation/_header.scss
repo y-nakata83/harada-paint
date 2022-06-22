@@ -166,7 +166,8 @@
         height: 100%;
         line-height: 3;
         &:hover{
-          opacity: .6;
+          color: $main;
+          font-weight: bold
         }
       }
     }
