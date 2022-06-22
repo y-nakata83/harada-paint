@@ -803,7 +803,7 @@ html {
 .about_inner {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 500px;
   background: url(../../img/top-about.png);
   background-position: center;
   background-size: cover;
@@ -817,8 +817,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   .about_inner {
-    height: 45vh;
-    margin-bottom: 60%;
+    margin-bottom: 50%;
   }
 }
 .about_ttl {
@@ -844,9 +843,9 @@ html {
 }
 .about_box {
   position: absolute;
-  bottom: -20%;
+  bottom: -200px;
   left: 50%;
-  transform: translate(-50%, 20%);
+  transform: translateX(-50%);
   background-color: #fff;
   width: 50%;
   padding: 5%;
@@ -854,15 +853,14 @@ html {
 }
 @media screen and (max-width: 1024px) {
   .about_box {
-    bottom: -50%;
-    transform: translate(-50%, 50%);
+    bottom: -210px;
+    width: 60%;
   }
 }
 @media screen and (max-width: 768px) {
   .about_box {
+    bottom: -170px;
     width: 75%;
-    bottom: -65%;
-    transform: translate(-50%, 65%);
   }
 }
 .about_copy {
@@ -910,6 +908,7 @@ html {
 }
 @media screen and (max-width: 1024px) {
   .service_box {
+    width: 50%;
     padding: 5% 3%;
   }
 }
@@ -1239,7 +1238,7 @@ div.fixed:nth-child(even) {
 .president_iner {
   width: 90%;
   margin: 0 auto;
-  background-color: rgb(225, 225, 225);
+  background-color: #e1e1e1;
   padding: 5%;
 }
 .president_title {
@@ -1302,7 +1301,7 @@ div.fixed:nth-child(even) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: rgba(15, 119, 187, 0.3019607843);
+  background-color: #0F77BB4D;
   line-height: 4;
   font-weight: bold;
 }
@@ -1313,3 +1312,5 @@ div.fixed:nth-child(even) {
 .space {
   vertical-align: middle;
 }
+
+/*# sourceMappingURL=style.css.map */
