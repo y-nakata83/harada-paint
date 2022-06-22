@@ -403,12 +403,27 @@ html {
       @include mq(pc){
         margin-left: 15%;
       }
+      @include mq(tab) {
+        margin-left: 18%;
+      }
+      @include mq(sp) {
+        margin-left: 8%;
+      }
     }
   }
   &_right{
     width: 75%;
+    height: 400px;
+    background: url(../../img/top-recurute.png);
+    @include bg;
     @include mq(pc){
       width: 65%;
+    }
+    @include mq(tab){
+      height: 300px;
+    }
+    @include mq(sp){
+      height: 200px;
     }
     img{
       width: 100%;
@@ -468,17 +483,27 @@ html {
       @include mq(pc){
         margin-left: 15%;
       }
+      @include mq(tab){
+        margin-left: 18%;
+      }
+      @include mq(sp) {
+        margin-left: 8%;
+      }
     }
   }
   &_right {
     width: 75%;
+    height: 400px;
+    background: url(../../img/top-contact.png);
+    @include bg;
     @include mq(pc){
       width: 65%;
     }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    @include mq(tab) {
+      height: 300px;
+    }
+    @include mq(sp) {
+      height: 200px;
     }
   }
   &_button {
