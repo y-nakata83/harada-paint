@@ -13,17 +13,29 @@
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-
 <body>
   <header class="header">
     <div class="header_inner">
       <div class="header_left">
-        <a href="#">
-          <img src="" alt="原田塗料のロゴ">
+        <a href="../index.html">
+          <img src="../img/logo_transparent.png" alt="原田塗料のロゴ">
           <h1>原田塗料株式会社</h1>
         </a>
       </div>
       <div class="header_right">
+        <div class="header_hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="header_navSp">
+          <ul class="header_navSpItems">
+            <li class="header_navSpItem"><a href="../html/about.html">原田塗料について</a></li>
+            <li class="header_navSpItem"><a href="../html/service.html">事業紹介</a></li>
+            <li class="header_navSpItem"><a href="../html/recruit.html">採用情報</a></li>
+            <li class="header_navSpItem"><a href="../html/contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
         <nav class="header_nav">
           <ul class="header_navBox">
             <li class="header_navItem"><a href="../html/about.html">原田塗料について</a></li>
@@ -43,21 +55,21 @@
     <section class="a-contact_main">
       <div class="a-contact_mainInner">
         <div class="a-contact_mainBox">
-          <img src="" alt="" class="a-contact_mainImg">
+          <img src="../img/contact-top1.png" alt="コンタクトトップ画像左" class="a-contact_mainImg">
         </div>
         <div class="a-contact_mainBox">
-          <img src="" alt="" class="a-contact_mainImg">
+          <img src="../img/contact-top2.png" alt="コンタクトトップ画像真ん中" class="a-contact_mainImg">
         </div>
         <div class="a-contact_mainBox">
-          <img src="" alt="" class="a-contact_mainImg">
+          <img src="../img/contact-top3.png" alt="コンタクトトップ画像右" class="a-contact_mainImg">
         </div>
       </div>
     </section>
     <section class="a-contact_contain">
       <div class="a-contact_containInner">
-        <div class="a-contact_containTtlBox">
+        <div class="a-contact_containTtl">
           <h2>CONTACT</h2>
-          <h3>お問い合わせ</h3>
+          <p>お問い合わせ</p>
         </div>
         <div class="a-contact_containMap">
           <div class="a-contact_containMapInner">
@@ -72,7 +84,7 @@
               <p class="a-contact_containCarTtl">車でお越しの方</p>
             </div>
             <p>原田ビル両脇の看板を目印にしてください。<br>駐車スペースに駐車の上店舗入り口までお越しください。</p>
-            <p><span>※</span><br>会社正面は納品等で混雑いたしますので駐車をご遠慮ください。</p>
+            <p><span>※お願い</span><br>会社正面は納品等で混雑いたしますので駐車をご遠慮ください。</p>
           </div>
         </div>
         <div class="a-contact_containTrain">
@@ -81,11 +93,11 @@
               <p>電車でお越しの方</p>
             </div>
             <div class="a-contact_containTrainL">
-              <img src="" alt="">
+              <img src="../img/station-aomono.png" alt="青物横丁駅画像">
               <p>東京急行線「青物横丁」駅から徒歩15〜20分</p>
             </div>
             <div class="a-contact_containTrainR">
-              <img src="" alt="">
+              <img src="../img/station-shinbanba.png" alt="新馬場駅画像">
               <p>京阪急行線「新馬場」駅から徒歩10〜15分</p>
             </div>
           </div>
@@ -99,12 +111,12 @@
           </div>
           <div class="a-contact_callBoxR">
             <div class="a-contact_call">
-              <img src="" alt="">
+              <img src="../img/tel-icon.png" alt="電話アイコン">
               <p class="a-contact_phoneNumber">03-5460-1931</p>
             </div>
             <p>【受付時間】平日平日8：30〜17：30</p>
             <div class="a-contact_call">
-              <img src="" alt="">
+              <img src="../img/fax-icon.png" alt="FAXアイコン">
               <p class="a-contact_phoneNumber">03-5460-1939</p>
             </div>
             <p>御社名・返信用連絡先をご明記の上送信ください</p>
@@ -112,12 +124,50 @@
         </div>
       </div>
     </section>
-    <section class="a-contact"></section>
   </main>
   <footer class="footer">
-
+    <div class="footer_inner">
+      <div class="footer_left">
+        <div class="footer_logo">
+          <a href="#">
+            <img src="../img/logo_transparent.png" alt="原田塗料のロゴ">
+            <h1>原田塗料株式会社</h1>
+          </a>
+        </div>
+        <div class="footer_info">
+          <div class="footer_infoItem">
+            <p class="footer_itemTtl">住所：</p>
+            <p class="footer_itemEx">〒140-0004　<br class="sp">東京都品川区南品川1-5-7</p>
+          </div>
+          <div class="footer_infoItem">
+            <p class="footer_itemTtl">TEL：</p>
+            <p class="footer_itemEx">03-5460-1931</p>
+          </div>
+          <div class="footer_infoItem">
+            <p class="footer_itemTtl">FAX：</p>
+            <p class="footer_itemEx">03-5460-1939</p>
+          </div>
+          <div class="footer_infoItem">
+            <p class="footer_itemTtl">E-Mail：</p>
+            <p class="footer_itemEx">harada-paint@gamma.ocn.ne.jp</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_right">
+        <nav class="footer_nav">
+          <ul class="footer_navBox">
+            <li class="footer_navItem"><a href="../html/about.html">原田塗料について</a></li>
+            <li class="footer_navItem"><a href="../html/service.html">事業紹介</a></li>
+            <li class="footer_navItem"><a href="../html/recruit.html">採用情報</a></li>
+            <li class="footer_navItem"><a href="../html/contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer_copy"><small>Copyrights&copy;2022 HARADATORYOU Co.,LTD. All Rights Reserved.</small></div>
   </footer>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
 </body>
 
 </html>
