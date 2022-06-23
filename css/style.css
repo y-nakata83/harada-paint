@@ -1616,12 +1616,163 @@ div.fixed:nth-child(even) {
 }
 .a-contact_containMapInner {
   position: relative;
+  width: 80%;
+  margin: 10% auto 0;
+}
+.a-contact_containMapInner h3 {
+  font-size: 1.3rem;
+}
+.a-contact_containMapInner p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 3%;
+}
+.a-contact_containCarInner {
+  position: relative;
+  width: 80%;
+  margin: 3% auto 0;
+}
+.a-contact_containCarInner p {
+  margin-top: 3%;
+  line-height: 2;
+  font-size: 1rem;
+}
+.a-contact_containCarInner p span {
+  color: #F00;
+}
+.a-contact_containCarBox {
+  width: 13.5%;
+  text-align: center;
+  background-color: #0F77BB;
+}
+.a-contact_containCarBox p {
+  color: #fff;
+}
+.a-contact_containTrainInner {
+  position: relative;
+  width: 80%;
+  margin: 3% auto 0;
+}
+.a-contact_containTrainBox {
+  width: 13.5%;
+  text-align: center;
+  line-height: 2;
+  background-color: #0F77BB;
+}
+.a-contact_containTrainBox p {
+  color: #fff;
+}
+.a-contact_containTrainImg {
   width: 100%;
-  margin-top: 10%;
+  display: flex;
+  margin-top: 3%;
+}
+.a-contact_containTrainL {
+  padding: 0 3%;
+}
+.a-contact_containTrainL img {
+  width: 100%;
+  height: 100%;
+}
+.a-contact_containTrainL p {
+  font-size: 1rem;
+  margin-top: 1%;
+}
+.a-contact_containTrainR {
+  padding: 0 3%;
+}
+.a-contact_containTrainR img {
+  width: 100%;
+  height: 100%;
+}
+.a-contact_containTrainR p {
+  font-size: 1rem;
+  margin-top: 1%;
+}
+.a-contact_call {
+  background: rgb(235, 235, 235);
+  width: 100%;
+  height: 100%;
 }
 .a-contact_callInner {
   position: relative;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  padding: 5% 0;
+  margin: 10% auto 0;
+}
+.a-contact_callBoxL {
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: 1%;
+  text-align: center;
+  background: #fff;
+}
+.a-contact_callBoxL span {
+  font-size: 2rem;
+  border-bottom: solid 1px #0F77BB;
+}
+.a-contact_callBoxL p {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.a-contact_callBoxR {
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: 1%;
+  padding: 3%;
+  text-align: center;
+  background: #fff;
+}
+.a-contact_callBoxR p {
+  font-size: 1.2rem;
+}
+.a-contact_calltxt {
+  position: absolute;
+  display: flex;
   width: 100%;
   height: 100%;
-  margin-top: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  justify-content: center;
+}
+.a-contact_tell {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.a-contact_tellImg {
+  width: 21%;
+  height: 100%;
+  padding: 5%;
+}
+.a-contact_tellImg img {
+  width: 100%;
+}
+.a-contact_tell p {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.a-contact_fax {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.a-contact_faxImg {
+  width: 21%;
+  height: 100%;
+  padding: 5%;
+}
+.a-contact_faxImg img {
+  width: 100%;
+}
+.a-contact_fax p {
+  font-size: 2.8rem;
+  font-weight: bold;
 }
