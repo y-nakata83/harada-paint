@@ -614,6 +614,7 @@ select {
 .footer {
   background-color: #0F77BB;
   padding: 5%;
+  margin-top: 100px;
 }
 .footer_inner {
   width: 100%;
