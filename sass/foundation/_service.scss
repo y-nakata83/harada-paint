@@ -1,0 +1,58 @@
+@use "../global" as *;
+
+.serviceA {
+  width: 100%;
+  height: 50vh;
+  margin-top: 3%;
+  &_iner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &_img {
+    background: url(../img/service-top1.png)no-repeat;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+        content: url(../img/service-top2.png);
+        position: absolute;
+        left: 40%;
+        width: 100%;
+        height: 100%;
+      }
+  }
+
+  &_box {
+    margin-top: 5%;
+  }
+    &_boxIner {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+  &_title {
+    margin: 0 auto;
+    width: 12%;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      color: $main;
+      border-bottom: solid 3px $main;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 2;
+      font-weight: bold;
+    }
+  }
+
+  &_boxWrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+}
