@@ -51,7 +51,59 @@
         font-weight: bold;
       }
       table tr td:nth-of-type(2) {
-        padding-left: 3%;
+        padding: 2% 3%;
+        line-height: 1.5;
+      }
+    }
+  }
+  &_work {
+    &Inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    &Ttl {
+      text-align: center;
+      margin-top: 10%;
+      p{
+        font-size: 1.7rem;
+      }
+    }
+  }
+  &_img {
+    p {
+      margin-top: 4%;
+      text-align: center;
+    }
+    &s {
+      position: relative;
+      display: grid;
+      width: 1000px;
+      height: 600px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      margin: 10% auto;
+      gap: 2%;
+      &Inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &Txt {
+      position: relative;
+      background-color: $sub;
+      &area {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        padding: 30% 0;
+        left: 50%;
+        transform: translateX(-50%);
+        p {
+          font-size: 1rem;
+          line-height: 2;
+        }
       }
     }
   }
