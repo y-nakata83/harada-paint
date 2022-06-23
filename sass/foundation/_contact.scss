@@ -43,17 +43,172 @@
     &Map {
       &Inner {
         position: relative;
+        width: 80%;
+        margin: 10% auto 0;
+        h3 {
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-top: 3%;
+        }
+      }
+    }
+    &Car {
+      &Inner {
+        position: relative;
+        width: 80%;
+        margin: 3% auto 0;
+        p {
+          margin-top: 3%;
+          line-height: 2;
+          font-size: 1rem;
+          span {
+            color: $red;
+          }
+        }
+      }
+      &Box {
+        width: 13.5%;
+        text-align: center;
+        background-color: $main;
+        p {
+          color: $m-white;
+        }
+      }
+    }
+    &Train {
+      &Inner {
+        position: relative;
+        width: 80%;
+        margin: 3% auto 0;
+      }
+      &Box {
+        width: 13.5%;
+        text-align: center;
+        line-height: 2;
+        background-color: $main;
+        p {
+          color: $m-white;
+        }
+      }
+      &Img {
         width: 100%;
-        margin-top: 10%;
+        display: flex;
+        margin-top: 3%;
+      }
+      &L {
+        padding: 0 3%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        p {
+          font-size: 1rem;
+          margin-top: 1%;
+        }
+      }
+      &R {
+        padding: 0 3%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        p {
+          font-size: 1rem;
+          margin-top: 1%;
+        }
       }
     }
   }
   &_call {
+    background: rgb(235, 235, 235);
+    width: 100%;
+    height: 100%;
     &Inner {
       position: relative;
+      display: flex;
+      width: 80%;
+      height: 100%;
+      padding: 5% 0;
+      margin: 10% auto 0;
+    }
+    &Box {
+      &L {
+        position: relative;
+        width: 50%;
+        height: auto;
+        margin: 1%;
+        text-align: center;
+        background: $m-white;
+        span {
+          font-size: 2rem;
+          border-bottom: solid 1px $main;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 2;
+        }
+      }
+      &R {
+        position: relative;
+        width: 50%;
+        height: auto;
+        margin: 1%;
+        padding: 3%;
+        text-align: center;
+        background: $m-white;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    &txt {
+      position: absolute;
+      display: flex;
       width: 100%;
       height: 100%;
-      margin-top: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &_tell {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &Img {
+      width: 21%;
+      height: 100%;
+      padding: 5%;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+  }
+  &_fax {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &Img {
+      width: 21%;
+      height: 100%;
+      padding: 5%;
+      img {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 2.8rem;
+      font-weight: bold;
     }
   }
 }
