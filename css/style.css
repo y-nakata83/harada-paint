@@ -1496,8 +1496,6 @@ div.fixed:nth-child(even) {
   content: url(../img/service-top2.png);
   position: absolute;
   left: 40%;
-  width: 100%;
-  height: 100%;
 }
 .serviceA_box {
   margin-top: 5%;
@@ -1531,7 +1529,7 @@ div.fixed:nth-child(even) {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 35vw;
+  height: 35em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: rgb(164, 164, 164) 5px 5px;
@@ -1607,7 +1605,7 @@ div.fixed:nth-child(even) {
   align-items: center;
   padding: 2%;
   width: 30%;
-  height: 25vw;
+  height: 20em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: rgb(164, 164, 164) 5px 5px;
@@ -1656,7 +1654,7 @@ div.fixed:nth-child(even) {
   align-items: center;
   padding: 2%;
   width: 30%;
-  height: 25vw;
+  height: 20em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: rgb(164, 164, 164) 5px 5px;
@@ -1705,7 +1703,7 @@ div.fixed:nth-child(even) {
   align-items: center;
   padding: 2%;
   width: 30%;
-  height: 25vw;
+  height: 20em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: rgb(164, 164, 164) 5px 5px;
