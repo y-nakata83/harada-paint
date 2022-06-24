@@ -1527,6 +1527,327 @@ div.fixed:nth-child(even) {
   flex-direction: column;
   margin-top: 10%;
 }
+.serviceA_box01 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 35vw;
+  border: solid 2px rgb(164, 164, 164);
+  border-radius: 10px;
+  box-shadow: rgb(164, 164, 164) 5px 5px;
+}
+.serviceA_box01_img {
+  width: 100%;
+  height: 100%;
+  background: url(../img/service-item1.png) no-repeat;
+  background-size: cover;
+}
+.serviceA_box01_item {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.serviceA_box01_icon {
+  width: 25%;
+  height: 90px;
+  background: url(../img/paint-icon.png) no-repeat;
+  background-size: contain;
+  text-align: end;
+}
+.serviceA_box01_icon::before {
+  content: url(../img/brush.png);
+  background-size: contain;
+  width: 100%;
+  height: 50px;
+}
+.serviceA_box01_title {
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 5%;
+  background-color: #0F77BB;
+  text-align: center;
+  position: relative;
+}
+.serviceA_box01_title::after {
+  content: "01";
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #0F77BB;
+  position: absolute;
+  top: 20%;
+  right: 120px;
+  transform: translateX(-165px);
+}
+.serviceA_box01_title p {
+  font-size: 1.5rem;
+  line-height: 3;
+  color: #fff;
+}
+.serviceA_box01_text {
+  margin-top: 8%;
+}
+.serviceA_box01_text p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.serviceA_box01_text strong {
+  border-bottom: solid 2px #0F77BB;
+}
+.serviceA_group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.serviceA_box02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  width: 30%;
+  height: 25vw;
+  border: solid 2px rgb(164, 164, 164);
+  border-radius: 10px;
+  box-shadow: rgb(164, 164, 164) 5px 5px;
+}
+.serviceA_box02_icon {
+  width: 25%;
+  height: 90px;
+  background: url(../img/shop-icon.png) no-repeat;
+  background-size: contain;
+  text-align: end;
+}
+.serviceA_box02_title {
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 5%;
+  background-color: #0F77BB;
+  text-align: center;
+  position: relative;
+  transform: translateX(20%);
+}
+.serviceA_box02_title::after {
+  content: "02";
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #0F77BB;
+  position: absolute;
+  top: 20%;
+  right: 120px;
+  transform: translateX(-110px);
+}
+.serviceA_box02_title p {
+  font-size: 1.5rem;
+  line-height: 3;
+  color: #fff;
+}
+.serviceA_box02_text {
+  margin-top: 8%;
+}
+.serviceA_box02_text p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.serviceA_box03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  width: 30%;
+  height: 25vw;
+  border: solid 2px rgb(164, 164, 164);
+  border-radius: 10px;
+  box-shadow: rgb(164, 164, 164) 5px 5px;
+}
+.serviceA_box03_icon {
+  width: 25%;
+  height: 90px;
+  background: url(../img/car-icon.png) no-repeat;
+  background-size: contain;
+  text-align: end;
+}
+.serviceA_box03_title {
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 5%;
+  background-color: #0F77BB;
+  text-align: center;
+  position: relative;
+  transform: translateX(20%);
+}
+.serviceA_box03_title::after {
+  content: "03";
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #0F77BB;
+  position: absolute;
+  top: 20%;
+  right: 120px;
+  transform: translateX(-110px);
+}
+.serviceA_box03_title p {
+  font-size: 1.5rem;
+  line-height: 3;
+  color: #fff;
+}
+.serviceA_box03_text {
+  margin-top: 8%;
+}
+.serviceA_box03_text p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.serviceA_box04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  width: 30%;
+  height: 25vw;
+  border: solid 2px rgb(164, 164, 164);
+  border-radius: 10px;
+  box-shadow: rgb(164, 164, 164) 5px 5px;
+}
+.serviceA_box04_icon {
+  width: 25%;
+  height: 90px;
+  background: url(../img/box-icon.png) no-repeat;
+  background-size: contain;
+  text-align: end;
+}
+.serviceA_box04_title {
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 5%;
+  background-color: #0F77BB;
+  text-align: center;
+  position: relative;
+  transform: translateX(20%);
+}
+.serviceA_box04_title::after {
+  content: "04";
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #0F77BB;
+  position: absolute;
+  top: 20%;
+  right: 120px;
+  transform: translateX(-110px);
+}
+.serviceA_box04_title p {
+  font-size: 1.5rem;
+  line-height: 3;
+  color: #fff;
+}
+.serviceA_box04_text {
+  margin-top: 8%;
+}
+.serviceA_box04_text p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.serviceA_listS {
+  margin-top: 10%;
+}
+.serviceA_listS_iner {
+  width: 90%;
+  margin: 0 auto;
+}
+.serviceA_listS_title {
+  text-align: center;
+}
+.serviceA_listS_title h3 {
+  font-size: 2rem;
+}
+.serviceA_listS_sub {
+  text-align: center;
+  margin-top: 3%;
+}
+.serviceA_listS_sub p {
+  font-size: 1.2rem;
+}
+.serviceA_listS_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+.serviceA_listS_content {
+  margin-top: 3%;
+  width: 100%;
+  border: solid 1px rgb(164, 164, 164);
+  box-shadow: rgb(164, 164, 164) 2px 5px;
+}
+.serviceA_listS_item {
+  background: #0F77BB;
+  padding-left: 5%;
+}
+.serviceA_listS_item p {
+  font-size: 1.5rem;
+  line-height: 2.5;
+  color: #fff;
+}
+.serviceA_listS_group {
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.serviceA_listS_group li {
+  width: 25%;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+.serviceA_listS_group li::before {
+  content: "・";
+  color: darkgrey;
+  font-size: 2rem;
+  font-weight: lighter;
+  top: 5%;
+  padding-top: 1%;
+  transform: translateY(10%);
+  position: relative;
+}
+.serviceA_listS_itemG {
+  background: rgb(164, 164, 164);
+  padding-left: 5%;
+}
+.serviceA_listS_itemG p {
+  font-size: 1.5rem;
+  line-height: 2.5;
+  color: #fff;
+}
+.serviceA_listS_point {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 2% 5%;
+}
+.serviceA_listS_groupS li {
+  line-height: 2;
+  font-size: 1.2rem;
+}
+.serviceA_listS_groupS li::before {
+  content: "・";
+  color: darkgrey;
+  font-size: 2rem;
+  font-weight: lighter;
+  top: 5%;
+  padding-top: 1%;
+  transform: translateY(10%);
+  position: relative;
+}
+.serviceA_listS_url {
+  line-height: 4.1;
+}
+.serviceA_listS_url li:hover a {
+  color: #0F77BB;
+}
 
 .a-recruit_mainInner {
   position: relative;
