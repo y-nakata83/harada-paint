@@ -55,4 +55,389 @@
     flex-direction: column;
     margin-top: 10%;
   }
+
+  &_box01 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 35vw;
+    border: solid 2px $shadow-grayrab;
+    border-radius: 10px;
+    box-shadow: $shadow-grayrab 5px 5px;
+
+    &_img {
+      width: 100%;
+      height: 100%;
+      background: url(../img/service-item1.png)no-repeat;
+      background-size: cover;
+    }
+
+    &_item {
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_icon {
+      width: 25%;
+      height: 90px;
+      background: url(../img/paint-icon.png)no-repeat;
+      background-size: contain;
+      text-align: end;
+      
+
+      &::before {
+        content: url(../img/brush.png);
+        background-size: contain;
+        width: 100%;
+        height: 50px;
+
+      }
+    }
+
+    &_title {
+      width: 40%;
+      border-radius: 10px;
+      margin-top: 5%;
+      background-color: $main;
+      text-align: center;
+      position: relative;
+
+      &::after {
+        content: "01";
+        font-size: 3rem;
+        font-weight: bolder;
+        color: $main;
+        position: absolute;
+        top: 20%;
+        right: 120px;
+        transform: translateX(-165px);
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 3;
+        color: $m-white;
+      }
+    }
+    
+    &_text {
+      margin-top: 8%;
+
+      p {
+        letter-spacing: 1px;
+        line-height: 1.5;
+      }
+      strong {
+        border-bottom: solid 2px $main;
+      }
+    }
+  }
+
+  &_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  &_box02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    width: 30%;
+    height: 25vw;
+    border: solid 2px $shadow-grayrab;
+    border-radius: 10px;
+    box-shadow: $shadow-grayrab 5px 5px;
+  
+      &_icon {
+        width: 25%;
+        height: 90px;
+        background: url(../img/shop-icon.png)no-repeat;
+        background-size: contain;
+        text-align: end;
+      }
+    
+      &_title {
+        width: 60%;
+        border-radius: 10px;
+        margin-top: 5%;
+        background-color: $main;
+        text-align: center;
+        position: relative;
+        transform: translateX(20%);
+    
+        &::after {
+          content: "02";
+          font-size: 3rem;
+          font-weight: bolder;
+          color: $main;
+          position: absolute;
+          top: 20%;
+          right: 120px;
+          transform: translateX(-110px);
+        }
+    
+        p {
+          font-size: 1.5rem;
+          line-height: 3;
+          color: $m-white;
+        }
+      }
+    
+      &_text {
+        margin-top: 8%;
+    
+        p {
+          letter-spacing: 1px;
+          line-height: 1.5;
+        }
+    
+      }
+  }
+
+    &_box03 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2%;
+      width: 30%;
+      height: 25vw;
+      border: solid 2px $shadow-grayrab;
+      border-radius: 10px;
+      box-shadow: $shadow-grayrab 5px 5px;
+
+      &_icon {
+        width: 25%;
+        height: 90px;
+        background: url(../img/car-icon.png)no-repeat;
+        background-size: contain;
+        text-align: end;
+      }
+
+      &_title {
+        width: 60%;
+        border-radius: 10px;
+        margin-top: 5%;
+        background-color: $main;
+        text-align: center;
+        position: relative;
+        transform: translateX(20%);
+
+        &::after {
+          content: "03";
+          font-size: 3rem;
+          font-weight: bolder;
+          color: $main;
+          position: absolute;
+          top: 20%;
+          right: 120px;
+          transform: translateX(-110px);
+        }
+
+        p {
+          font-size: 1.5rem;
+          line-height: 3;
+          color: $m-white;
+        }
+      }
+
+      &_text {
+        margin-top: 8%;
+
+        p {
+          letter-spacing: 1px;
+          line-height: 1.5;
+        }
+
+      }
+    }
+
+    &_box04 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2%;
+      width: 30%;
+      height: 25vw;
+      border: solid 2px $shadow-grayrab;
+      border-radius: 10px;
+      box-shadow: $shadow-grayrab 5px 5px;
+
+      &_icon {
+        width: 25%;
+        height: 90px;
+        background: url(../img/box-icon.png)no-repeat;
+        background-size: contain;
+        text-align: end;
+      }
+
+      &_title {
+        width: 60%;
+        border-radius: 10px;
+        margin-top: 5%;
+        background-color: $main;
+        text-align: center;
+        position: relative;
+        transform: translateX(20%);
+
+        &::after {
+          content: "04";
+          font-size: 3rem;
+          font-weight: bolder;
+          color: $main;
+          position: absolute;
+          top: 20%;
+          right: 120px;
+          transform: translateX(-110px);
+        }
+
+        p {
+          font-size: 1.5rem;
+          line-height: 3;
+          color: $m-white;
+        }
+      }
+
+      &_text {
+        margin-top: 8%;
+
+        p {
+          letter-spacing: 1px;
+          line-height: 1.5;
+        }
+
+      }
+    }
+
+    &_listS {
+      margin-top: 10%;
+
+      &_iner {
+          width: 90%;
+          margin: 0 auto;
+      }
+
+      &_title {
+        text-align: center;
+        
+        h3 {
+          font-size: 2rem;
+        }
+      }
+
+      &_sub {
+        text-align: center;
+        margin-top: 3%;
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      &_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 5%;
+      }
+
+      &_content {
+        margin-top: 3%;
+        width: 100%;
+        border: solid 1px $shadow-grayrab;
+        box-shadow: $shadow-grayrab 2px 5px ;
+      }
+
+      &_item {
+      background: $main;
+      padding-left: 5%;
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2.5;
+        color: $m-white;
+      }
+      }
+
+      &_group {
+        padding: 2% 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+        li {
+          width: 25%;
+          line-height: 2;
+          font-size: 1.2rem;
+          
+
+          &::before {
+            content: "・";
+            color: darkgrey;
+            font-size: 2rem;
+            font-weight: lighter;
+            top: 5%;
+            padding-top: 1%;
+            transform: translateY(10%);
+            position: relative;
+          } 
+        }
+      }
+
+      &_itemG {
+        background: $shadow-grayrab;
+        padding-left: 5%;
+
+        p {
+          font-size: 1.5rem;
+          line-height: 2.5;
+          color: $m-white;
+        }
+      }
+
+      &_point {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        padding: 2% 5%;
+        }
+
+        &_groupS {
+
+          li {
+          line-height: 2;
+          font-size: 1.2rem;
+
+          &::before {
+            content: "・";
+            color: darkgrey;
+            font-size: 2rem;
+            font-weight: lighter;
+            top: 5%;
+            padding-top: 1%;
+            transform: translateY(10%);
+            position: relative;
+          }
+
+          }
+
+        }
+
+        &_url {
+          line-height: 4.1;
+          
+
+        li:hover a {
+            color: $main;
+          }
+        }
+    }
 }
