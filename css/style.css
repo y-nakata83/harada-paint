@@ -1351,7 +1351,7 @@ html {
   margin-top: 7vh;
 }
 .about_topBg {
-  background: url(../../img/about-top.png);
+  background: url(../../img/about-top1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1364,7 +1364,7 @@ html {
 }
 .about_topTtlEn {
   color: #0F77BB;
-  text-decoration: underline solid #333;
+  text-decoration: underline solid #0F77BB;
   text-underline-offset: 0.2em;
 }
 .about_topTtlJa {
@@ -1504,21 +1504,19 @@ div.fixed:nth-child(even) {
   width: 90%;
   margin: 0 auto;
 }
-.serviceA_title {
-  margin: 0 auto;
-  width: 12%;
+.serviceA_titleTtl {
   text-align: center;
+  font-size: 3rem;
+  margin: 5% 0;
 }
-.serviceA_title h2 {
-  font-size: 2rem;
+.serviceA_titleTtlEn {
   color: #0F77BB;
-  border-bottom: solid 3px #0F77BB;
-  line-height: 1.3;
+  text-decoration: underline solid #0F77BB;
+  text-underline-offset: 0.2em;
 }
-.serviceA_title p {
-  font-size: 1.2rem;
-  line-height: 2;
-  font-weight: bold;
+.serviceA_titleTtlJa {
+  font-size: 0.5em;
+  line-height: 3;
 }
 .serviceA_boxWrap {
   display: flex;
