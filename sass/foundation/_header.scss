@@ -118,20 +118,19 @@
       position: fixed;
       z-index: 3;
       top: 0;
-      left: 0;
+      left: -120%;
       color: $m-black;
-      background: $m-white;
+      background: $m-black;
       text-align: center;
       width: 100%;
       height: 100vh;
       opacity: 0;
       visibility: hidden;
-      transform: translate(-100%);
       transition: all .6s ease;
       &.active {
         opacity: 1;
-        transform: translate(0);
         visibility: visible;
+        left: 0;
       }
       &Item {
         width: 50%;
