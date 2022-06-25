@@ -1363,6 +1363,7 @@ html {
 
 .about_top {
   margin-top: 7vh;
+  height: 93vh;
 }
 .about_topBg {
   background: url(../../img/about-top1.png);
@@ -1389,6 +1390,21 @@ html {
 .history {
   position: relative;
   z-index: 1;
+}
+.history_group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.history_item {
+  width: 50%;
+  padding: 5%;
+}
+.history_img1 {
+  background: url(../img/harada-hisanobu.png) no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 300px;
 }
 
 div.fixed {
@@ -1492,7 +1508,6 @@ div.fixed:nth-child(even) {
 }
 
 .serviceA {
-  width: 100%;
   height: 50vh;
   margin-top: 3%;
 }
