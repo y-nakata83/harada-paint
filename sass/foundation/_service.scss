@@ -1,7 +1,6 @@
 @use "../global" as *;
 
 .serviceA {
-  width: 100%;
   height: 50vh;
   margin-top: 3%;
   &_iner {
@@ -14,6 +13,7 @@
     background: url(../img/service-top1.png)no-repeat;
     width: 100%;
     height: 100%;
+
 
     &::before {
         content: url(../img/service-top2.png);

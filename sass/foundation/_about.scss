@@ -3,6 +3,7 @@
 .about{
   &_top{
     margin-top: 7vh;
+    height: 93vh;
     &Bg{
       background: url(../../img/about-top1.png);
       @include bg;
@@ -16,6 +17,25 @@
 .history{
   position: relative;
   z-index: 1;
+
+  &_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &_item {
+    width: 50%;
+    padding: 5%;
+  }
+
+  &_img1 {
+    background: url(../img/harada-hisanobu.png)no-repeat;
+    // background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 300px;
+  }
 }
 
 div.fixed{
