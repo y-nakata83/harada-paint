@@ -18,7 +18,7 @@ html {
 }
 .wrapper{
   opacity: 0;
-  animation: opa .8s ease-in-out forwards;
+  animation: opa 1s ease-in-out forwards;
 }
 @keyframes opa{
   from{
