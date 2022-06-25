@@ -1403,7 +1403,7 @@ div.fixed:nth-child(even) {
 .president_iner {
   width: 90%;
   margin: 0 auto;
-  background-color: #e1e1e1;
+  background-color: rgb(225, 225, 225);
   padding: 5%;
 }
 .president_title {
@@ -1466,7 +1466,7 @@ div.fixed:nth-child(even) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
   line-height: 4;
   font-weight: bold;
 }
@@ -1496,7 +1496,7 @@ div.fixed:nth-child(even) {
 .serviceA_img::before {
   content: url(../img/service-top2.png);
   position: absolute;
-  left: 40%;
+  right: 0;
 }
 .serviceA_box {
   margin-top: 5%;
@@ -1531,9 +1531,9 @@ div.fixed:nth-child(even) {
   flex-direction: row;
   width: 100%;
   height: 35em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
-  box-shadow: #a4a4a4 5px 5px;
+  box-shadow: #666 5px 5px 10px;
 }
 .serviceA_box01_img {
   width: 100%;
@@ -1607,9 +1607,9 @@ div.fixed:nth-child(even) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
-  box-shadow: #a4a4a4 5px 5px;
+  box-shadow: #666 5px 5px 10px;
 }
 .serviceA_box02_icon {
   width: 25%;
@@ -1656,9 +1656,9 @@ div.fixed:nth-child(even) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
-  box-shadow: #a4a4a4 5px 5px;
+  box-shadow: #666 5px 5px 10px;
 }
 .serviceA_box03_icon {
   width: 25%;
@@ -1705,9 +1705,9 @@ div.fixed:nth-child(even) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
-  box-shadow: #a4a4a4 5px 5px;
+  box-shadow: #666 5px 5px 10px;
 }
 .serviceA_box04_icon {
   width: 25%;
@@ -1777,12 +1777,14 @@ div.fixed:nth-child(even) {
 .serviceA_listS_content {
   margin-top: 3%;
   width: 100%;
-  border: solid 1px #a4a4a4;
-  box-shadow: #a4a4a4 2px 5px;
+  border: solid 1px rgb(164, 164, 164);
+  box-shadow: #666 5px 5px 10px;
+  border-radius: 10px;
 }
 .serviceA_listS_item {
   background: #0F77BB;
   padding-left: 5%;
+  border-radius: 10px 10px 0 0;
 }
 .serviceA_listS_item p {
   font-size: 1.5rem;
@@ -1812,8 +1814,9 @@ div.fixed:nth-child(even) {
   position: relative;
 }
 .serviceA_listS_itemG {
-  background: #a4a4a4;
+  background: rgb(164, 164, 164);
   padding-left: 5%;
+  border-radius: 10px 10px 0 0;
 }
 .serviceA_listS_itemG p {
   font-size: 1.5rem;
@@ -1892,7 +1895,7 @@ div.fixed:nth-child(even) {
 .a-recruit_containBox table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
   line-height: 4;
   font-weight: bold;
 }
@@ -1933,7 +1936,7 @@ div.fixed:nth-child(even) {
 }
 .a-recruit_imgTxt {
   position: relative;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
 }
 .a-recruit_imgTxtarea {
   position: absolute;
@@ -2061,7 +2064,7 @@ div.fixed:nth-child(even) {
   margin-top: 1%;
 }
 .a-contact_call {
-  background: #ebebeb;
+  background: rgb(235, 235, 235);
   width: 100%;
   height: 100%;
 }
@@ -2147,5 +2150,3 @@ div.fixed:nth-child(even) {
   font-size: 2.8rem;
   font-weight: bold;
 }
-
-/*# sourceMappingURL=style.css.map */
