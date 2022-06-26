@@ -19,23 +19,72 @@
   z-index: 1;
 
   &_group {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   &_item {
     width: 50%;
     padding: 5%;
+    border-right: solid 1px $shadow-grayrab;
   }
 
   &_img1 {
     background: url(../img/harada-hisanobu.png)no-repeat;
-    // background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 300px;
+    width: 100%;
+    height: 200px;
   }
+
+  &_imgName {
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+  }
+
+  &_text1 {
+    text-align: left;
+    margin-top: 20%;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+    &_text2 {
+      text-align: left;
+  
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text3 {
+      text-align: left;
+      margin-top: 20%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_img2 {
+      background: url(../img/about-car.png)no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 150px;
+      margin-top: 40%;
+    }
 }
 
 div.fixed{
@@ -47,7 +96,7 @@ div.fixed{
   /*Header高さ分で止まるようにする*/
   /*デモ画面の高さを持たすための上下余白*/
   &:nth-child(odd){
-    background: #666;
+    background: $m-white;
   }
   &:nth-child(even){
     background: url(../../img/history1.png);
@@ -76,8 +125,12 @@ div.fixed{
   }
 
   &_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 5%;
   }
 
