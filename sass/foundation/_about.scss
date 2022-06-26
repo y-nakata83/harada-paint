@@ -5,15 +5,13 @@
     margin-top: 7vh;
     height: 93vh;
     &Bg{
-      background: url(../../img/about-top1.png);
+      background: url(../img/about-top4.png);
       @include bg;
       height: 65vh;
     }
     @include ttl;
   }
 }
-
-
 .history{
   position: relative;
   z-index: 1;
