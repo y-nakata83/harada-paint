@@ -841,6 +841,7 @@ html {
   font-weight: 400;
   font-style: italic;
   letter-spacing: 0.1em;
+  line-height: 1.2;
   font-family: "Roboto", sans-serif;
 }
 .top_copyBg {
@@ -905,11 +906,19 @@ html {
 @keyframes chainge-bg {
   0% {
     opacity: 1;
+    background: url(../img/topimg1.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
   }
-  7% {
+  50% {
     opacity: 0;
+    background: url(../img/topimg1.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
   }
-  65% {
+  50.1% {
     opacity: 0;
     background: url(../img/top-bg2a.png);
     background-position: center;
