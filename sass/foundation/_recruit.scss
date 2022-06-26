@@ -4,7 +4,7 @@
     &Inner {
       position: relative;
       width: 100%;
-      height: 70vh;
+      height: 65vh;
       img {
         width: 100%;
         height: 100%;
@@ -17,24 +17,8 @@
       width: 100%;
       height: 100%;
     }
-    &Ttl {
-      text-align: center;
-      font-weight: bold;
-      height: 20vh;
-      margin-top: 10vh;
-      h2 {
-        display: inline-block;
-        font-size: 2rem;
-        color: $main;
-        line-height: 1.3;
-        border-bottom: solid 1px $main;
-      }
-      p {
-        font-size: 1.2rem;
-        line-height: 2;
-      }
-    }
-    &Box {
+    @include ttl;
+    &Inf {
       position: relative;
       width: 80%;
       margin: 10% auto 0;
