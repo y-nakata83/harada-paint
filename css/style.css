@@ -395,7 +395,7 @@ select {
 }
 @media screen and (max-width: 1024px) {
   .header_inner {
-    width: 65%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -733,6 +733,14 @@ select {
 @media screen and (max-width: 1024px) {
   .sp {
     display: none;
+  }
+}
+.sp_br {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .sp_br {
+    display: block;
   }
 }
 
@@ -1477,6 +1485,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
 }
 .history_img1 {
   background: url(../img/harada-hisanobu.png) no-repeat;
@@ -1526,11 +1535,10 @@ html {
   font-size: 1.2rem;
 }
 .history_img3 {
-  background: url(../img/about-company.png) no-repeat;
-  background-size: cover;
-  width: 50%;
-  height: 400px;
-  margin-top: 30%;
+  margin-top: 10%;
+}
+.history_img3 img {
+  width: 60%;
 }
 .history_img4 {
   background: url(../img/about-shop.png) no-repeat;
@@ -1552,40 +1560,15 @@ html {
 .history_text6 p {
   font-size: 1.2rem;
 }
-.history_text7 {
+.history_text {
   line-height: 5;
 }
-.history_text7 p {
-  font-size: 1.2rem;
+@media screen and (max-width: 1024px) {
+  .history_text {
+    line-height: 3;
+  }
 }
-.history_text8 {
-  line-height: 5;
-}
-.history_text8 p {
-  font-size: 1.2rem;
-}
-.history_text9 {
-  line-height: 5;
-}
-.history_text9 p {
-  font-size: 1.2rem;
-}
-.history_text10 {
-  line-height: 5;
-}
-.history_text10 p {
-  font-size: 1.2rem;
-}
-.history_text11 {
-  line-height: 5;
-}
-.history_text11 p {
-  font-size: 1.2rem;
-}
-.history_text12 {
-  line-height: 5;
-}
-.history_text12 p {
+.history_text p {
   font-size: 1.2rem;
 }
 
@@ -1620,8 +1603,8 @@ div.fixed:nth-child(4) {
 .president_iner {
   width: 90%;
   margin: 0 auto;
-  background-color: #e1e1e1;
   padding: 5%;
+  box-shadow: #666 0px 5px 10px, #0F77BB -25px 25px, #666 -30px 30px 10px;
 }
 .president_title {
   text-align: center;

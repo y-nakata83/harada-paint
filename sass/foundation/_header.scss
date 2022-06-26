@@ -16,7 +16,7 @@
     height: 100%;
     @include flex(space-between);
     @include mq(pc){
-      width: 65%;
+      width: 70%;
     }
     @include mq(tab){
       width: 100%;

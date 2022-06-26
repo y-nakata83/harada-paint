@@ -103,4 +103,10 @@
   @include mq(pc){
     display: none;
   }
+  &_br{
+    display: none;
+    @include mq(pc){
+      display: block;
+    }
+  }
 }
