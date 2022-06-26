@@ -1995,6 +1995,11 @@ div.fixed:nth-child(even) {
   width: 100%;
   height: 65vh;
 }
+@media screen and (max-width: 480px) {
+  .a-recruit_mainInner {
+    height: 50vh;
+  }
+}
 .a-recruit_mainInner img {
   width: 100%;
   height: 100%;
@@ -2044,9 +2049,23 @@ div.fixed:nth-child(even) {
   line-height: 4;
   font-weight: bold;
 }
+@media screen and (max-width: 480px) {
+  .a-recruit_containInf table tr td:nth-of-type(1) {
+    width: 100%;
+    display: block;
+  }
+}
 .a-recruit_containInf table tr td:nth-of-type(2) {
   padding: 2% 3%;
   line-height: 1.5;
+}
+@media screen and (max-width: 480px) {
+  .a-recruit_containInf table tr td:nth-of-type(2) {
+    width: 100%;
+    display: block;
+    padding: 0% 6%;
+    line-height: 3;
+  }
 }
 .a-recruit_workInner {
   position: relative;
@@ -2067,12 +2086,16 @@ div.fixed:nth-child(even) {
 .a-recruit_imgs {
   position: relative;
   display: grid;
-  width: 1000px;
-  height: 600px;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
   margin: 10% auto;
   gap: 2%;
+}
+@media screen and (max-width: 480px) {
+  .a-recruit_imgs {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 .a-recruit_imgsInner {
   position: relative;
