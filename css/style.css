@@ -1418,16 +1418,16 @@ html {
   height: 93vh;
 }
 .about_topBg {
-  background: url(../../img/about-top1.png);
+  background: url(../img/about-top1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;
 }
 .about_topTtl {
-  text-align: center;
-  font-size: 3rem;
-  margin: 5% 0;
+  width: 100%;
+  height: 30vh;
+  position: relative;
 }
 .about_topTtlEn {
   color: #0F77BB;
@@ -1437,6 +1437,14 @@ html {
 .about_topTtlJa {
   font-size: 0.5em;
   line-height: 3;
+}
+.about_topBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
 }
 
 .history {
@@ -1631,9 +1639,9 @@ div.fixed:nth-child(even) {
   margin: 0 auto;
 }
 .serviceA_titleTtl {
-  text-align: center;
-  font-size: 3rem;
-  margin: 5% 0;
+  width: 100%;
+  height: 30vh;
+  position: relative;
 }
 .serviceA_titleTtlEn {
   color: #0F77BB;
@@ -1643,6 +1651,14 @@ div.fixed:nth-child(even) {
 .serviceA_titleTtlJa {
   font-size: 0.5em;
   line-height: 3;
+}
+.serviceA_titleBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
 }
 .serviceA_boxWrap {
   display: flex;
