@@ -15,7 +15,6 @@
 .history{
   position: relative;
   z-index: 1;
-
   &_group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -24,170 +23,104 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    &2 {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
   }
-
-  &_group2 {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-
   &_item {
     width: 50%;
     padding: 5%;
     border-right: solid 1px $shadow-grayrab;
-  }
-
-  &_item2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-  }
-
-  &_img1 {
-    background: url(../img/harada-hisanobu.png)no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 200px;
-  }
-
-  &_imgName {
-    text-align: center;
-
-    p {
-      font-size: 1.2rem;
-      line-height: 2;
+    &2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      @include mq(pc){
+        width: 80%;
+      }
     }
   }
-
-  &_text1 {
-    text-align: left;
-    margin-top: 20%;
-
-    p {
-      font-size: 1.2rem;
-    }
-  }
-
-    &_text2 {
-      text-align: left;
-  
-      p {
-        font-size: 1.2rem;
-      }
-    }
-
-    &_text3 {
-      text-align: left;
-      margin-top: 20%;
-
-      p {
-        font-size: 1.2rem;
-      }
-    }
-
-    &_img2 {
-      background: url(../img/about-car.png)no-repeat;
-      background-size: contain;
-      width: 100%;
-      height: 150px;
-      margin-top: 40%;
-    }
-
-    &_text4 {
-      text-align: left;
-      margin-top: 10%;
-
-      p {
-        font-size: 1.2rem;
-      }
-    }
-
-    &_img3 {
-      margin-top: 10%;
-      img{
-        width: 60%;
-      }
-    }
-
-    &_img4 {
-      background: url(../img/about-shop.png)no-repeat;
-      background-size: cover;
-      width: 80%;
-      height: 350px;
-    }
-
-    &_text5 {
-      text-align: left;
-      margin-top: 15%;
-
-      p {
-        font-size: 1.2rem;
-      }
-    }
-
-    &_text6 {
-      text-align: left;
-      margin-top: 15%;
-
-      p {
-        font-size: 1.2rem;
-      }
-    }
-
-    &_text{
-      line-height: 5;
+  &_text{
+    line-height: 5;
       @include mq(pc){
         line-height: 3;
       }
       p {
         font-size: 1.2rem;
       }
+    &1 {
+      margin-top: 20%;
+      p {
+        font-size: 1.2rem;
+      }
     }
-
-    // &_text8 {
-    //   line-height: 5;
-
-    //   p {
-    //     font-size: 1.2rem;
-    //   }
-    // }
-
-    // &_text9 {
-    //   line-height: 5;
-
-    //   p {
-    //     font-size: 1.2rem;
-    //   }
-    // }
-
-    // &_text10 {
-    //   line-height: 5;
-
-    //   p {
-    //     font-size: 1.2rem;
-    //   }
-    // }
-
-    // &_text11 {
-    //   line-height: 5;
-
-    //   p {
-    //     font-size: 1.2rem;
-    //   }
-    // }
-
-    // &_text12 {
-    //   line-height: 5;
-
-    //   p {
-    //     font-size: 1.2rem;
-    //   }
-    // }
+    &2 {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    &3 {
+      margin-top: 20%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    &4 {
+      margin-top: 10%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    &5 {
+      margin-top: 15%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    &6 {
+      margin-top: 15%;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &_img{
+    &1 {
+      background: url(../img/harada-hisanobu.png)no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 200px;
+    }
+    &2 {
+      background: url(../img/about-car.png)no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 150px;
+      margin-top: 40%;
+    }
+    &3 {
+      margin-top: 10%;
+      img{
+        width: 60%;
+      }
+    }
+    &4 {
+      background: url(../img/about-shop.png)no-repeat;
+      @include bg;
+      width: 80%;
+      height: 350px;
+    }
+    &Name {
+      text-align: center;
+      p {
+        font-size: 1.2rem;
+        line-height: 2;
+      }
+    }
+  }
 }
 
 div.fixed{
@@ -277,10 +210,17 @@ div.fixed{
   }
 
   &_imgA {
-    background: url(../img/harada-tadaaki.png)no-repeat;
-    @include bg (contain);
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 80%;
+      @include mq(pc){
+        width: 100%;
+      }
+    }
   }
 }
 
