@@ -5,6 +5,9 @@
       position: relative;
       width: 100%;
       height: 65vh;
+      @include mq(sp) {
+        height: 50vh;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -34,10 +37,20 @@
         background-color: $sub;
         line-height: 4;
         font-weight: bold;
+        @include mq(sp) {
+          width: 100%;
+          display: block;
+        }
       }
       table tr td:nth-of-type(2) {
         padding: 2% 3%;
         line-height: 1.5;
+        @include mq(sp) {
+          width: 100%;
+          display: block;
+          padding: 0% 6%;
+          line-height: 3;
+        }
       }
     }
   }
@@ -63,12 +76,14 @@
     &s {
       position: relative;
       display: grid;
-      width: 1000px;
-      height: 600px;
+      width: 100%;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto auto;
       margin: 10% auto;
       gap: 2%;
+      @include mq(sp) {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
       &Inner {
         position: relative;
         width: 100%;
