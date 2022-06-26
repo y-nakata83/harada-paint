@@ -1462,15 +1462,21 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.history_group2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 .history_item {
   width: 50%;
   padding: 5%;
   border-right: solid 1px #a4a4a4;
 }
 .history_item2 {
-  position: relative;
-  width: 100%;
-  padding: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .history_img1 {
   background: url(../img/harada-hisanobu.png) no-repeat;
@@ -1547,43 +1553,37 @@ html {
   font-size: 1.2rem;
 }
 .history_text7 {
-  text-align: center;
-  margin-top: 5%;
+  line-height: 5;
 }
 .history_text7 p {
   font-size: 1.2rem;
 }
 .history_text8 {
-  text-align: center;
-  margin-top: 5%;
+  line-height: 5;
 }
 .history_text8 p {
   font-size: 1.2rem;
 }
 .history_text9 {
-  text-align: center;
-  margin-top: 5%;
+  line-height: 5;
 }
 .history_text9 p {
   font-size: 1.2rem;
 }
 .history_text10 {
-  text-align: center;
-  margin-top: 5%;
+  line-height: 5;
 }
 .history_text10 p {
   font-size: 1.2rem;
 }
 .history_text11 {
-  text-align: center;
-  margin-top: 5%;
+  line-height: 5;
 }
 .history_text11 p {
   font-size: 1.2rem;
 }
 .history_text12 {
-  text-align: center;
-  margin-top: 5%;
+  line-height: 5;
 }
 .history_text12 p {
   font-size: 1.2rem;
@@ -1601,8 +1601,14 @@ div.fixed {
 div.fixed:nth-child(odd) {
   background: #fff;
 }
-div.fixed:nth-child(even) {
-  background: url(../../img/history1.png);
+div.fixed:nth-child(2) {
+  background: url(../img/about_kami2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.fixed:nth-child(4) {
+  background: url(../img/about_kami3.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1661,7 +1667,9 @@ div.fixed:nth-child(even) {
 }
 .president_imgA {
   background: url(../img/harada-tadaaki.png) no-repeat;
+  background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
