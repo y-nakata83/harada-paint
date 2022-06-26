@@ -28,6 +28,12 @@
         flex-wrap: wrap;
   }
 
+  &_group2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
   &_item {
     width: 50%;
     padding: 5%;
@@ -35,9 +41,10 @@
   }
 
   &_item2 {
-    position: relative;
-    width: 100%;
-    padding: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 
   &_img1 {
@@ -133,17 +140,14 @@
     }
 
     &_text7 {
-      text-align: center;
-      margin-top: 5%;
-
+      line-height: 5;
       p {
         font-size: 1.2rem;
       }
     }
 
     &_text8 {
-      text-align: center;
-      margin-top: 5%;
+      line-height: 5;
 
       p {
         font-size: 1.2rem;
@@ -151,8 +155,7 @@
     }
 
     &_text9 {
-      text-align: center;
-      margin-top: 5%;
+      line-height: 5;
 
       p {
         font-size: 1.2rem;
@@ -160,8 +163,7 @@
     }
 
     &_text10 {
-      text-align: center;
-      margin-top: 5%;
+      line-height: 5;
 
       p {
         font-size: 1.2rem;
@@ -169,8 +171,7 @@
     }
 
     &_text11 {
-      text-align: center;
-      margin-top: 5%;
+      line-height: 5;
 
       p {
         font-size: 1.2rem;
@@ -178,8 +179,7 @@
     }
 
     &_text12 {
-      text-align: center;
-      margin-top: 5%;
+      line-height: 5;
 
       p {
         font-size: 1.2rem;
@@ -198,8 +198,12 @@ div.fixed{
   &:nth-child(odd){
     background: $m-white;
   }
-  &:nth-child(even){
-    background: url(../../img/history1.png);
+  &:nth-child(2){
+    background: url(../img/about_kami2.png);
+    @include bg;
+  }
+  &:nth-child(4) {
+    background: url(../img/about_kami3.png);
     @include bg;
   }
 }
@@ -271,7 +275,7 @@ div.fixed{
 
   &_imgA {
     background: url(../img/harada-tadaaki.png)no-repeat;
-    background-size: contain;
+    @include bg (contain);
     width: 100%;
     height: 100%;
   }
