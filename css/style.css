@@ -851,7 +851,7 @@ html {
   left: 55%;
   z-index: -1;
   transform: translate(-50%, -50%);
-  background: url(../../img/top-bg2b.png);
+  background: url(../img/top-bg2b.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -911,14 +911,14 @@ html {
   }
   65% {
     opacity: 0;
-    background: url(../../img/top-bg2a.png);
+    background: url(../img/top-bg2a.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   100% {
     opacity: 1;
-    background: url(../../img/top-bg2a.png);
+    background: url(../img/top-bg2a.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
