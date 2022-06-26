@@ -2,7 +2,9 @@
 
 .serviceA {
   height: 50vh;
-  margin-top: 3%;
+  margin-top: 7vh;
+  position: relative;
+  overflow: hidden;
   &_iner {
     position: relative;
     width: 100%;
@@ -11,12 +13,15 @@
 
   &_img {
     background: url(../img/service-top1.png)no-repeat;
+    @include bg;
     width: 100%;
     height: 100%;
 
 
     &::before {
-        content: url(../img/service-top2.png);
+        content: "";
+        background: url(../img/service-top2.png);
+        @include bg;
         position: absolute;
         right: 0;
       }
