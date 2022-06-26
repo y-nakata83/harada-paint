@@ -31,13 +31,23 @@ html {
 .top{
   width: 100%;
   height: 100vh;
+  position: relative;
   overflow: hidden;
+  margin-bottom: 10%;
   &_inner{
-    position: relative;
+    position: absolute;
+    top: 0;
+    left : 0;
+    bottom: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     background: url(../img/topimg1.png);
     @include bg(60%);
+    animation: chainge-bg 2s 3.5s forwards ease;
+    @include mq(pc){
+      background-size: 80%;
+    }
     @include mq(tab){
       background-size: contain;
     }
@@ -57,6 +67,7 @@ html {
     left: 50%;
     transform: translate(-50%,-5%);
     text-align: center;
+    animation: copy-center 1s 4s forwards ease;
     @include mq(pc){
       bottom: 3%;
     }
@@ -76,6 +87,19 @@ html {
       font-style: italic;
       letter-spacing: .1em;
       @include en;
+    }
+    &Bg{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 46%;
+    left: 55%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+    background: url(../../img/top-bg2b.png);
+    @include bg(contain);
+    opacity: 0;
+    animation: copy-Bg 1s 4s forwards ease;
     }
   }
 }
@@ -121,6 +145,48 @@ html {
   to {
     transform: translateX(0);
     /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+@keyframes chainge-bg {
+  0%{
+    opacity: 1;
+  }
+  7%{
+    opacity: 0;
+  }
+  65%{
+    opacity: 0;
+    background: url(../../img/top-bg2a.png);
+    @include bg;
+  }
+  100%{
+    opacity: 1;
+    background: url(../../img/top-bg2a.png);
+    @include bg;
+  }
+}
+@keyframes copy-center {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    bottom: 0;
+    top: 60%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+  }
+}
+@keyframes copy-Bg {
+  from{
+    opacity: 0;
+
+  }
+  to{
     opacity: 1;
   }
 }
@@ -374,8 +440,9 @@ html {
   margin-bottom: 10%;
   &_inner{
     @include flex(space-between);
+    max-width: 1024px;
     background-color: $main;
-    width: 55%;
+    width: 65%;
     justify-content: space-around;
     margin-left: 10%;
     @include mq(pc){
@@ -391,11 +458,13 @@ html {
   }
   &_left{
     width: 25%;
+    text-align: center;
     @include mq(pc){
       width: 35%;
     }
   }
   &_ttl{
+    display: inline-block;
     text-align: center;
     font-weight: bold;
     margin-bottom: 25%;
@@ -411,16 +480,6 @@ html {
       text-align: initial;
       font-size: 1.2rem;
       line-height: 3;
-      margin-left: 10%;
-      @include mq(pc){
-        margin-left: 15%;
-      }
-      @include mq(tab) {
-        margin-left: 18%;
-      }
-      @include mq(sp) {
-        margin-left: 8%;
-      }
     }
   }
   &_right{
@@ -437,15 +496,11 @@ html {
     @include mq(sp){
       height: 200px;
     }
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
   &_button{
-    left: 50%;
-    transform: translate(-50%, 0);
+    text-align: start;
+    left: 30%;
+    transform: translate(-30%, 0);
   }
 }
 
@@ -453,8 +508,9 @@ html {
   margin-bottom: 10%;
   &_inner {
     @include flex(space-between);
+    max-width: 1024px;
     background-color: $main;
-    width: 55%;
+    width: 65%;
     justify-content: space-around;
     margin-left: auto;
     margin-right: 10%;
@@ -471,11 +527,13 @@ html {
   }
   &_left {
     width: 25%;
+    text-align: center;
     @include mq(pc) {
       width: 35%;
     }
   }
   &_ttl {
+    display: inline-block;
     text-align: center;
     font-weight: bold;
     margin-bottom: 25%;
@@ -491,16 +549,6 @@ html {
       text-align: initial;
       font-size: 1.2rem;
       line-height: 3;
-      margin-left: 10%;
-      @include mq(pc){
-        margin-left: 15%;
-      }
-      @include mq(tab){
-        margin-left: 18%;
-      }
-      @include mq(sp) {
-        margin-left: 8%;
-      }
     }
   }
   &_right {
@@ -519,7 +567,8 @@ html {
     }
   }
   &_button {
-    left: 50%;
-    transform: translate(-50%, 0);
+    text-align: start;
+    left: 30%;
+    transform: translateX(-30%);
   }
 }
