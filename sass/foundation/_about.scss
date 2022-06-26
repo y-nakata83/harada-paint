@@ -34,6 +34,12 @@
     border-right: solid 1px $shadow-grayrab;
   }
 
+  &_item2 {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+  }
+
   &_img1 {
     background: url(../img/harada-hisanobu.png)no-repeat;
     background-position: center;
@@ -82,6 +88,102 @@
       width: 100%;
       height: 150px;
       margin-top: 40%;
+    }
+
+    &_text4 {
+      text-align: left;
+      margin-top: 10%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_img3 {
+      background: url(../img/about-company.png)no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 400px;
+      margin-top: 30%;
+    }
+
+    &_img4 {
+      background: url(../img/about-shop.png)no-repeat;
+      background-size: cover;
+      width: 80%;
+      height: 350px;
+    }
+
+    &_text5 {
+      text-align: left;
+      margin-top: 15%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text6 {
+      text-align: left;
+      margin-top: 15%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text7 {
+      text-align: center;
+      margin-top: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text8 {
+      text-align: center;
+      margin-top: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text9 {
+      text-align: center;
+      margin-top: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text10 {
+      text-align: center;
+      margin-top: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text11 {
+      text-align: center;
+      margin-top: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &_text12 {
+      text-align: center;
+      margin-top: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
     }
 }
 
@@ -133,7 +235,7 @@ div.fixed{
   }
 
   &_itemT {
-    width: 60%;
+    width: 100%;
   }
 
   &_lead {
@@ -160,6 +262,18 @@ div.fixed{
   &_nameA {
     text-align: end;
     margin-top: 2%;
+  }
+
+  &_itemA {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  &_imgA {
+    background: url(../img/harada-tadaaki.png)no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
   }
 }
 

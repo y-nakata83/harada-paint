@@ -1465,7 +1465,12 @@ html {
 .history_item {
   width: 50%;
   padding: 5%;
-  border-right: solid 1px #a4a4a4;
+  border-right: solid 1px rgb(164, 164, 164);
+}
+.history_item2 {
+  position: relative;
+  width: 100%;
+  padding: 5%;
 }
 .history_img1 {
   background: url(../img/harada-hisanobu.png) no-repeat;
@@ -1507,6 +1512,82 @@ html {
   height: 150px;
   margin-top: 40%;
 }
+.history_text4 {
+  text-align: left;
+  margin-top: 10%;
+}
+.history_text4 p {
+  font-size: 1.2rem;
+}
+.history_img3 {
+  background: url(../img/about-company.png) no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+  margin-top: 30%;
+}
+.history_img4 {
+  background: url(../img/about-shop.png) no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 350px;
+}
+.history_text5 {
+  text-align: left;
+  margin-top: 15%;
+}
+.history_text5 p {
+  font-size: 1.2rem;
+}
+.history_text6 {
+  text-align: left;
+  margin-top: 15%;
+}
+.history_text6 p {
+  font-size: 1.2rem;
+}
+.history_text7 {
+  text-align: center;
+  margin-top: 5%;
+}
+.history_text7 p {
+  font-size: 1.2rem;
+}
+.history_text8 {
+  text-align: center;
+  margin-top: 5%;
+}
+.history_text8 p {
+  font-size: 1.2rem;
+}
+.history_text9 {
+  text-align: center;
+  margin-top: 5%;
+}
+.history_text9 p {
+  font-size: 1.2rem;
+}
+.history_text10 {
+  text-align: center;
+  margin-top: 5%;
+}
+.history_text10 p {
+  font-size: 1.2rem;
+}
+.history_text11 {
+  text-align: center;
+  margin-top: 5%;
+}
+.history_text11 p {
+  font-size: 1.2rem;
+}
+.history_text12 {
+  text-align: center;
+  margin-top: 5%;
+}
+.history_text12 p {
+  font-size: 1.2rem;
+}
 
 div.fixed {
   position: -webkit-sticky;
@@ -1533,7 +1614,7 @@ div.fixed:nth-child(even) {
 .president_iner {
   width: 90%;
   margin: 0 auto;
-  background-color: #e1e1e1;
+  background-color: rgb(225, 225, 225);
   padding: 5%;
 }
 .president_title {
@@ -1552,7 +1633,7 @@ div.fixed:nth-child(even) {
   margin-top: 5%;
 }
 .president_itemT {
-  width: 60%;
+  width: 100%;
 }
 .president_lead {
   text-align: center;
@@ -1573,6 +1654,16 @@ div.fixed:nth-child(even) {
 .president_nameA {
   text-align: end;
   margin-top: 2%;
+}
+.president_itemA {
+  width: 100%;
+  margin-left: 10%;
+}
+.president_imgA {
+  background: url(../img/harada-tadaaki.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .cinfo {
@@ -1600,7 +1691,7 @@ div.fixed:nth-child(even) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
   line-height: 4;
   font-weight: bold;
 }
@@ -1670,7 +1761,7 @@ div.fixed:nth-child(even) {
   flex-direction: row;
   width: 100%;
   height: 35em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: #666 5px 5px 10px;
 }
@@ -1746,7 +1837,7 @@ div.fixed:nth-child(even) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: #666 5px 5px 10px;
 }
@@ -1795,7 +1886,7 @@ div.fixed:nth-child(even) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: #666 5px 5px 10px;
 }
@@ -1844,7 +1935,7 @@ div.fixed:nth-child(even) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   box-shadow: #666 5px 5px 10px;
 }
@@ -1916,7 +2007,7 @@ div.fixed:nth-child(even) {
 .serviceA_listS_content {
   margin-top: 3%;
   width: 100%;
-  border: solid 1px #a4a4a4;
+  border: solid 1px rgb(164, 164, 164);
   box-shadow: #666 5px 5px 10px;
   border-radius: 10px;
 }
@@ -1953,7 +2044,7 @@ div.fixed:nth-child(even) {
   position: relative;
 }
 .serviceA_listS_itemG {
-  background: #a4a4a4;
+  background: rgb(164, 164, 164);
   padding-left: 5%;
   border-radius: 10px 10px 0 0;
 }
@@ -2040,7 +2131,7 @@ div.fixed:nth-child(even) {
 .a-recruit_containInf table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
   line-height: 4;
   font-weight: bold;
 }
@@ -2081,7 +2172,7 @@ div.fixed:nth-child(even) {
 }
 .a-recruit_imgTxt {
   position: relative;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
 }
 .a-recruit_imgTxtarea {
   position: absolute;
@@ -2215,7 +2306,7 @@ div.fixed:nth-child(even) {
   margin-top: 1%;
 }
 .a-contact_call {
-  background: #ebebeb;
+  background: rgb(235, 235, 235);
   width: 100%;
   height: 100%;
 }
@@ -2301,5 +2392,3 @@ div.fixed:nth-child(even) {
   font-size: 2.8rem;
   font-weight: bold;
 }
-
-/*# sourceMappingURL=style.css.map */
