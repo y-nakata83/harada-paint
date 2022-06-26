@@ -5,7 +5,7 @@
       position: relative;
       display: flex;
       width: 100%;
-      height: 100%;
+      height: 70vh;
     }
     &Box {
       padding-right: 1%;
@@ -27,7 +27,8 @@
     &Ttl {
       text-align: center;
       font-weight: bold;
-      margin-top: 10%;
+      height: 20vh;
+      margin-top: 10vh;
       h2 {
         display: inline-block;
         font-size: 2rem;
