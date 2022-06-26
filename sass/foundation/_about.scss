@@ -45,6 +45,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 80%;
   }
 
   &_img1 {
@@ -107,11 +108,10 @@
     }
 
     &_img3 {
-      background: url(../img/about-company.png)no-repeat;
-      background-size: cover;
-      width: 50%;
-      height: 400px;
-      margin-top: 30%;
+      margin-top: 10%;
+      img{
+        width: 60%;
+      }
     }
 
     &_img4 {
@@ -139,52 +139,55 @@
       }
     }
 
-    &_text7 {
+    &_text{
       line-height: 5;
+      @include mq(pc){
+        line-height: 3;
+      }
       p {
         font-size: 1.2rem;
       }
     }
 
-    &_text8 {
-      line-height: 5;
+    // &_text8 {
+    //   line-height: 5;
 
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    //   p {
+    //     font-size: 1.2rem;
+    //   }
+    // }
 
-    &_text9 {
-      line-height: 5;
+    // &_text9 {
+    //   line-height: 5;
 
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    //   p {
+    //     font-size: 1.2rem;
+    //   }
+    // }
 
-    &_text10 {
-      line-height: 5;
+    // &_text10 {
+    //   line-height: 5;
 
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    //   p {
+    //     font-size: 1.2rem;
+    //   }
+    // }
 
-    &_text11 {
-      line-height: 5;
+    // &_text11 {
+    //   line-height: 5;
 
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    //   p {
+    //     font-size: 1.2rem;
+    //   }
+    // }
 
-    &_text12 {
-      line-height: 5;
+    // &_text12 {
+    //   line-height: 5;
 
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    //   p {
+    //     font-size: 1.2rem;
+    //   }
+    // }
 }
 
 div.fixed{
@@ -216,8 +219,8 @@ div.fixed{
   &_iner {
     width: 90%;
     margin: 0 auto;
-    background-color: rgb(225, 225, 225);
     padding: 5%;
+    @include top-shadow;
   } 
 
   &_title {
