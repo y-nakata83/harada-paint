@@ -2177,10 +2177,10 @@ div.fixed:nth-child(4) {
 .a-recruit_imgs {
   position: relative;
   display: grid;
-  width: 100%;
+  width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 10% auto;
-  gap: 2%;
+  gap: 7%;
 }
 @media screen and (max-width: 480px) {
   .a-recruit_imgs {
@@ -2195,6 +2195,7 @@ div.fixed:nth-child(4) {
 }
 .a-recruit_imgTxt {
   position: relative;
+  width: 100%;
   background-color: rgba(15, 119, 187, 0.3019607843);
 }
 .a-recruit_imgTxtarea {
@@ -2212,19 +2213,39 @@ div.fixed:nth-child(4) {
 
 .a-contact_mainInner {
   position: relative;
-  display: flex;
+  display: grid;
   width: 100%;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1%;
   height: 65vh;
 }
-.a-contact_mainBox {
-  padding-right: 1%;
+.a-contact_mainBox1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.a-contact_mainBox1 img {
+  width: 100%;
+  height: 100%;
+}
+.a-contact_mainBox2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.a-contact_mainBox2 img {
+  width: 100%;
+  height: 100%;
+}
+.a-contact_mainBox3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.a-contact_mainBox3 img {
+  width: 100%;
+  height: 100%;
 }
 .a-contact_mainBox:nth-child(3) {
   padding-right: 0%;
-}
-.a-contact_mainBox img {
-  width: 100%;
-  height: 100%;
 }
 .a-contact_containInner {
   position: relative;
