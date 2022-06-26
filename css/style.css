@@ -1467,8 +1467,6 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 .history_group2 {
   position: relative;
@@ -1485,80 +1483,11 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
 }
-.history_img1 {
-  background: url(../img/harada-hisanobu.png) no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 200px;
-}
-.history_imgName {
-  text-align: center;
-}
-.history_imgName p {
-  font-size: 1.2rem;
-  line-height: 2;
-}
-.history_text1 {
-  text-align: left;
-  margin-top: 20%;
-}
-.history_text1 p {
-  font-size: 1.2rem;
-}
-.history_text2 {
-  text-align: left;
-}
-.history_text2 p {
-  font-size: 1.2rem;
-}
-.history_text3 {
-  text-align: left;
-  margin-top: 20%;
-}
-.history_text3 p {
-  font-size: 1.2rem;
-}
-.history_img2 {
-  background: url(../img/about-car.png) no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 150px;
-  margin-top: 40%;
-}
-.history_text4 {
-  text-align: left;
-  margin-top: 10%;
-}
-.history_text4 p {
-  font-size: 1.2rem;
-}
-.history_img3 {
-  margin-top: 10%;
-}
-.history_img3 img {
-  width: 60%;
-}
-.history_img4 {
-  background: url(../img/about-shop.png) no-repeat;
-  background-size: cover;
-  width: 80%;
-  height: 350px;
-}
-.history_text5 {
-  text-align: left;
-  margin-top: 15%;
-}
-.history_text5 p {
-  font-size: 1.2rem;
-}
-.history_text6 {
-  text-align: left;
-  margin-top: 15%;
-}
-.history_text6 p {
-  font-size: 1.2rem;
+@media screen and (max-width: 1024px) {
+  .history_item2 {
+    width: 80%;
+  }
 }
 .history_text {
   line-height: 5;
@@ -1570,6 +1499,73 @@ html {
 }
 .history_text p {
   font-size: 1.2rem;
+}
+.history_text1 {
+  margin-top: 20%;
+}
+.history_text1 p {
+  font-size: 1.2rem;
+}
+.history_text2 p {
+  font-size: 1.2rem;
+}
+.history_text3 {
+  margin-top: 20%;
+}
+.history_text3 p {
+  font-size: 1.2rem;
+}
+.history_text4 {
+  margin-top: 10%;
+}
+.history_text4 p {
+  font-size: 1.2rem;
+}
+.history_text5 {
+  margin-top: 15%;
+}
+.history_text5 p {
+  font-size: 1.2rem;
+}
+.history_text6 {
+  margin-top: 15%;
+}
+.history_text6 p {
+  font-size: 1.2rem;
+}
+.history_img1 {
+  background: url(../img/harada-hisanobu.png) no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+.history_img2 {
+  background: url(../img/about-car.png) no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 150px;
+  margin-top: 40%;
+}
+.history_img3 {
+  margin-top: 10%;
+}
+.history_img3 img {
+  width: 60%;
+}
+.history_img4 {
+  background: url(../img/about-shop.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 350px;
+}
+.history_imgName {
+  text-align: center;
+}
+.history_imgName p {
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
 div.fixed {
@@ -1649,12 +1645,19 @@ div.fixed:nth-child(4) {
   margin-left: 10%;
 }
 .president_imgA {
-  background: url(../img/harada-tadaaki.png) no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.president_imgA img {
+  width: 80%;
+}
+@media screen and (max-width: 1024px) {
+  .president_imgA img {
+    width: 100%;
+  }
 }
 
 .cinfo {
