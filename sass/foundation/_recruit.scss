@@ -42,6 +42,7 @@
         font-weight: bold;
         @include mq(sp) {
           width: 100%;
+          font-size: 1.3rem;
           display: block;
         }
       }
@@ -53,6 +54,7 @@
           display: block;
           padding: 0% 6%;
           line-height: 3;
+          font-size: 1.3rem;
         }
       }
     }
@@ -102,6 +104,7 @@
       }
       @include mq(tab) {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: .5%;
       }
       &Inner {
@@ -118,29 +121,36 @@
         width: 80%;
         margin: 0 auto;
       }
-      @include mq(tab) {
-        height: 45vh;
+      &Box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       &area {
         position: absolute;
-        width: 50%;
+        width: 70%;
         height: 100%;
-        padding: 30% 0;
+        padding: 25% 0;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         @include mq(pc) {
-          width: 55%;
           padding: 25% 0;
         }
         @include mq(tab) {
-          padding: 24% 0;
+          padding: 18% 0;
         }
         p {
           font-size: 1rem;
-          line-height: 2;
+          line-height: 2.5;
           @include mq(tab) {
-            font-size: 1.2rem;
+            font-size: 1.6rem;
+          }
+          @include mq(sp) {
+            font-size: 1.6rem;
           }
         }
       }
