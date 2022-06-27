@@ -63,7 +63,7 @@ $(function () {
 // top-about専用
 $(function () {
   $(window).scroll(function () {
-    $('.js-slideUp').each(function () {
+    $('.js-slideUpTop').each(function () {
       let scroll = $(window).scrollTop();
       let triTop = $(this).offset().top + 100;
       let winHeight = $(window).height();
