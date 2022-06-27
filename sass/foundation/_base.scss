@@ -312,7 +312,7 @@ html {
     background-color: $m-white;
     left: 10%;
     width: 40%;
-    padding: 6% 3% 10%;
+    padding: 5% 3%;
     @include top-shadow;
     @include mq(pc){
       width: 50%;
