@@ -1708,7 +1708,7 @@ div.fixed:nth-child(4) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: rgba(15, 119, 187, 0.3019607843);
+  background-color: #0F77BB4D;
   line-height: 4;
   font-weight: bold;
 }
@@ -1797,7 +1797,7 @@ div.fixed:nth-child(4) {
   flex-direction: row;
   width: 100%;
   height: 35em;
-  border: solid 2px rgb(164, 164, 164);
+  border: solid 2px #a4a4a4;
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -1914,7 +1914,7 @@ div.fixed:nth-child(4) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px rgb(164, 164, 164);
+  border: solid 2px #a4a4a4;
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -1985,7 +1985,7 @@ div.fixed:nth-child(4) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px rgb(164, 164, 164);
+  border: solid 2px #a4a4a4;
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -2056,7 +2056,7 @@ div.fixed:nth-child(4) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px rgb(164, 164, 164);
+  border: solid 2px #a4a4a4;
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -2152,7 +2152,7 @@ div.fixed:nth-child(4) {
 .serviceA_listS_content {
   margin-top: 3%;
   width: 100%;
-  border: solid 1px rgb(164, 164, 164);
+  border: solid 1px #a4a4a4;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
   border-radius: 10px;
@@ -2200,7 +2200,7 @@ div.fixed:nth-child(4) {
   position: relative;
 }
 .serviceA_listS_itemG {
-  background: rgb(164, 164, 164);
+  background: #a4a4a4;
   padding-left: 5%;
   border-radius: 10px 10px 0 0;
 }
@@ -2306,7 +2306,7 @@ div.fixed:nth-child(4) {
 .a-recruit_containInf table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: rgba(15, 119, 187, 0.3019607843);
+  background-color: #0F77BB4D;
   line-height: 4;
   font-weight: bold;
 }
@@ -2390,7 +2390,7 @@ div.fixed:nth-child(4) {
 .a-recruit_imgTxt {
   position: relative;
   width: 100%;
-  background-color: rgba(15, 119, 187, 0.3019607843);
+  background-color: #0F77BB4D;
 }
 @media screen and (max-width: 1024px) {
   .a-recruit_imgTxt {
@@ -2576,7 +2576,7 @@ div.fixed:nth-child(4) {
   margin-top: 1%;
 }
 .a-contact_call {
-  background: rgb(235, 235, 235);
+  background: #ebebeb;
   width: 100%;
   height: 100%;
 }
@@ -2662,3 +2662,5 @@ div.fixed:nth-child(4) {
   font-size: 2.8rem;
   font-weight: bold;
 }
+
+/*# sourceMappingURL=style.css.map */
