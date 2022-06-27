@@ -9,6 +9,9 @@
       @include bg;
       background-position-x: 50%;
       height: 65vh;
+      @include mq(pc){
+        background-position-y: 60%;
+      }
     }
     @include ttl;
   }
@@ -118,19 +121,31 @@
       @include position-a(10%,0);
       img{
         width: 40%;
+        @include mq(tab){
+          width: 80%;
+        }
       }
     }
     &2 {
       @include position-a(65%,5%);
       width: 90%;
+      @include mq(tab){
+        overflow: hidden;
+      }
       img{
         width: 100%;
+        @include mq(tab){
+          width: 170%;
+        }
       }
     }
     &3 {
       @include position-a(30%,50%);
       transform: translateX(-50%);
       width: 50%;
+      @include mq(tab){
+        width: 80%;
+      }
       img{
         width: 100%;
       }
@@ -139,6 +154,9 @@
       @include position-a(5%,50%);
       transform: translateX(-50%);
       width: 55%;
+      @include mq(tab){
+        width: 80%;
+      }
       img{
         width: 100%;
       }
@@ -162,6 +180,10 @@ div.fixed{
   /*Header高さ分で止まるようにする*/
   padding-bottom: 10%;
   /*デモ画面の高さを持たすための上下余白*/
+  @include mq(tab){
+    position:relative!important;
+    top:0;
+  }
   &:nth-child(odd){
     background: $m-white;
   }

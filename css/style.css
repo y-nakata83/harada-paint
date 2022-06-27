@@ -1433,6 +1433,11 @@ html {
   background-position-x: 50%;
   height: 65vh;
 }
+@media screen and (max-width: 1024px) {
+  .about_topBg {
+    background-position-y: 60%;
+  }
+}
 .about_topTtl {
   width: 100%;
   height: 30vh;
@@ -1597,14 +1602,29 @@ html {
 .history_img1 img {
   width: 40%;
 }
+@media screen and (max-width: 768px) {
+  .history_img1 img {
+    width: 80%;
+  }
+}
 .history_img2 {
   position: absolute;
   top: 65%;
   left: 5%;
   width: 90%;
 }
+@media screen and (max-width: 768px) {
+  .history_img2 {
+    overflow: hidden;
+  }
+}
 .history_img2 img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .history_img2 img {
+    width: 170%;
+  }
 }
 .history_img3 {
   position: absolute;
@@ -1612,6 +1632,11 @@ html {
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .history_img3 {
+    width: 80%;
+  }
 }
 .history_img3 img {
   width: 100%;
@@ -1622,6 +1647,11 @@ html {
   left: 50%;
   transform: translateX(-50%);
   width: 55%;
+}
+@media screen and (max-width: 768px) {
+  .history_img4 {
+    width: 80%;
+  }
 }
 .history_img4 img {
   width: 100%;
@@ -1643,6 +1673,12 @@ div.fixed {
   /*Header高さ分で止まるようにする*/
   padding-bottom: 10%;
   /*デモ画面の高さを持たすための上下余白*/
+}
+@media screen and (max-width: 768px) {
+  div.fixed {
+    position: relative !important;
+    top: 0;
+  }
 }
 div.fixed:nth-child(odd) {
   background: #fff;
