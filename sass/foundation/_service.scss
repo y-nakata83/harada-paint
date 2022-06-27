@@ -1,45 +1,32 @@
 @use "../global" as *;
 
 .serviceA {
-  height: 50vh;
+  // height: 50vh;
+  // margin-top: 7vh;
   margin-top: 7vh;
-  position: relative;
-  overflow: hidden;
-  &_iner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-  &_img {
-    background: url(../img/service-top1.png)no-repeat;
-    @include bg;
-    width: 100%;
-    height: 100%;
-
-
-    &::before {
-        content: "";
-        background: url(../img/service-top2.png);
-        @include bg;
-        position: absolute;
-        right: 0;
+  height: 93vh;
+  &_top{
+    &Bg{
+      background: url(../img/service-top3.png);
+      @include bg;
+      height: 65vh;
+      @include mq(pc){
+        background-position-x: 40%;
       }
+      @include mq(tab){
+        background: url(../img/service-top4.png);
+        @include bg;
+      }
+    }
+    @include ttl;
   }
-
   &_box {
     margin-top: 5%;
   }
-    &_boxIner {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-  &_title {
-    @include ttl;
-    
+  &_boxIner {
+    width: 90%;
+    margin: 0 auto;
   }
-
   &_boxWrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -67,8 +54,7 @@
             box-shadow: $shadow-gray 5px 5px 10px;
 
     @include mq(tab) {
-      display: inline-grid;
-      height: 85em;
+      margin-top: 5%;
     }
 
     &_img {
@@ -78,8 +64,26 @@
       background-size: cover;
 
       @include mq(tab) {
-          height: 55em;
+          display: none;
         }
+    }
+
+    &_img2 {
+      display: none;
+      width: 100%;
+      height: 100%;
+
+      @include mq(tab) {
+        display: block;
+        text-align: center;
+        img {
+          width: 100%;
+          border: solid 2px $shadow-grayrab;
+          border-radius: 10px;
+          box-shadow: $shadow-gray 5px 5px 10px;
+        }
+
+      }
     }
 
     &_item {
@@ -97,27 +101,34 @@
     }
 
     &_icon {
-      width: 25%;
-      height: 90px;
-      background: url(../img/paint-icon.png)no-repeat;
-      background-size: contain;
-      text-align: end;
-
-        @include mq(sp) {
-            height: 5em;
-          }
-      
-
-      &::before {
-        content: "";
-        background: url(../img/brush.png)no-repeat;
-        background-size: contain;
-        display: inline-block;
-        width: 100%;
-        height: 50px;
-
-      }
+      display: flex;
     }
+
+    &_icon1 {
+      display: contents;
+
+      img {
+
+          @include mq(tab) {
+              width: 50%;
+            }
+          @include mq(sp) {
+            width: 50%;
+          }
+        }
+    }
+
+    &_icon2 {
+      padding-top: 10%;
+      display: contents;
+
+      img {
+        @include mq(sp) {
+            width: 30%;
+          }
+      }
+
+    } 
 
     &_title {
       width: 40%;
@@ -138,6 +149,12 @@
         -webkit-transform: translateX(-165px);
             -ms-transform: translateX(-165px);
                 transform: translateX(-165px);
+
+                  @include mq(tab) {
+                      top: 20%;
+                      right: 100%;
+                      transform: translateX(-70%);
+                    }
       }
 
       p {
@@ -193,7 +210,7 @@
             align-items: center;
     padding: 2%;
     width: 30%;
-    height: 20em;
+    height: 21em;
     border: solid 2px $shadow-grayrab;
     border-radius: 10px;
     -webkit-box-shadow: $shadow-gray 5px 5px 10px;
@@ -208,15 +225,16 @@
             
   
       &_icon {
+        display: contents;
         width: 20%;
         height: 5em;
-        background: url(../img/shop-icon.png)no-repeat;
-        background-size: 100%;
-        text-align: end;
 
-        @include mq(tab) {
-            background-size: 50%;
-          }
+        img {
+          @include mq(tab) {
+              width: 15%;
+            }
+        }
+
       }
     
       &_title {
@@ -246,6 +264,13 @@
           -webkit-transform: translateX(-110px);
               -ms-transform: translateX(-110px);
                   transform: translateX(-110px);
+
+                    @include mq(pc) {
+                        top: 20%;
+                        right: 80%;
+                        transform: translateX(-70%);
+                        font-size: 2.5rem;
+                      }
 
                   @include mq(tab) {
                         top: 20%;
@@ -286,7 +311,7 @@
               align-items: center;
       padding: 2%;
       width: 30%;
-      height: 20em;
+      height: 21em;
       border: solid 2px $shadow-grayrab;
       border-radius: 10px;
       -webkit-box-shadow: $shadow-gray 5px 5px 10px;
@@ -300,21 +325,20 @@
                   }
 
       &_icon {
-        width: 27%;
-        height: 5em;
-        background: url(../img/car-icon.png)no-repeat;
-        background-size: 100%;
-        text-align: end;
-
-        @include mq(tab) {
-            background-size: 45%;
+      display: contents;
+      width: 25%;
+      height: 5em;
+      
+        img {
+          @include mq(tab) {
+            width: 18%;
           }
+        }
       }
 
       &_title {
         width: 60%;
         border-radius: 10px;
-        margin-top: 5%;
         background-color: $main;
         text-align: center;
         position: relative;
@@ -338,6 +362,13 @@
           -webkit-transform: translateX(-110px);
               -ms-transform: translateX(-110px);
                   transform: translateX(-110px);
+
+                    @include mq(pc) {
+                        top: 20%;
+                        right: 80%;
+                        transform: translateX(-70%);
+                        font-size: 2.5rem;
+                      }
 
                       @include mq(tab) {
                           top: 20%;
@@ -377,7 +408,7 @@
               align-items: center;
       padding: 2%;
       width: 30%;
-      height: 20em;
+      height: 21em;
       border: solid 2px $shadow-grayrab;
       border-radius: 10px;
       -webkit-box-shadow: $shadow-gray 5px 5px 10px;
@@ -391,22 +422,20 @@
                 }
 
       &_icon {
-        width: 24%;
-        height: 5em;
-        background: url(../img/box-icon.png)no-repeat;
-        background-size: 100%;
-        text-align: end;
-
+      display: contents;
+      width: 25%;
+      height: 5em;
+      
+        img {
           @include mq(tab) {
-              background-size: contain;
-              height: 75px;
-            }
+            width: 18%;
+          }
+        }
       }
 
       &_title {
         width: 60%;
         border-radius: 10px;
-        margin-top: 5%;
         background-color: $main;
         text-align: center;
         position: relative;
@@ -429,6 +458,13 @@
           -webkit-transform: translateX(-110px);
               -ms-transform: translateX(-110px);
                   transform: translateX(-110px);
+
+                    @include mq(pc) {
+                        top: 20%;
+                        right: 80%;
+                        transform: translateX(-70%);
+                        font-size: 2.5rem;
+                      }
 
                     @include mq(tab) {
                         top: 20%;
@@ -539,7 +575,7 @@
           line-height: 2;
           font-size: 1.2rem;
 
-            @include mq(tab) {
+            @include mq(pc) {
                 width: auto;
               }
           
@@ -582,7 +618,7 @@
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        width: 80%;
+        width: 100%;
         padding: 2% 5%;
         }
 

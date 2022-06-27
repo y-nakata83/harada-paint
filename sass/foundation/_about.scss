@@ -9,6 +9,9 @@
       @include bg;
       background-position-x: 50%;
       height: 65vh;
+      @include mq(pc){
+        background-position-y: 60%;
+      }
     }
     @include ttl;
   }
@@ -33,8 +36,11 @@
   &_item {
     width: 50%;
     height: 93vh;
-    border-right: solid 1px $main;
+    border-right: solid 2px $main;
     position: relative;
+    &:nth-of-type(2){
+      border: none;
+    }
     &2 {
       position: absolute;
       top: 50%;
@@ -49,6 +55,9 @@
     line-height: 5;
       @include mq(pc){
         line-height: 3;
+      }
+      @include mq(sp){
+        margin-bottom: 10%;
       }
       p {
         font-size: 1rem;
@@ -90,7 +99,7 @@
       }
     }
     &5 {
-      @include position-a(50%,5%);
+      @include position-a(70%,5%);
       p {
         font-size: 1rem;
         @include mq(pc){
@@ -99,9 +108,9 @@
       }
     }
     &6 {
-      @include position-a(60%,5%);
+      @include position-a(80%,5%);
       @include mq(pc){
-        @include position-a(65%,5%)
+        @include position-a(85%,5%)
       }
       p {
         font-size: 1rem;
@@ -118,19 +127,31 @@
       @include position-a(10%,0);
       img{
         width: 40%;
+        @include mq(tab){
+          width: 80%;
+        }
       }
     }
     &2 {
       @include position-a(65%,5%);
       width: 90%;
+      @include mq(tab){
+        overflow: hidden;
+      }
       img{
         width: 100%;
+        @include mq(tab){
+          width: 170%;
+        }
       }
     }
     &3 {
-      @include position-a(30%,50%);
+      @include position-a(25%,50%);
       transform: translateX(-50%);
       width: 50%;
+      @include mq(tab){
+        width: 80%;
+      }
       img{
         width: 100%;
       }
@@ -139,6 +160,9 @@
       @include position-a(5%,50%);
       transform: translateX(-50%);
       width: 55%;
+      @include mq(tab){
+        width: 80%;
+      }
       img{
         width: 100%;
       }
@@ -157,11 +181,16 @@ div.fixed{
   position: -webkit-sticky;
   /*Safari*/
   position: sticky;
+  overflow: hidden;
   top:7vh;
   height: 100vh;
   /*Header高さ分で止まるようにする*/
   padding-bottom: 10%;
   /*デモ画面の高さを持たすための上下余白*/
+  @include mq(tab){
+    position:relative!important;
+    top:0;
+  }
   &:nth-child(odd){
     background: $m-white;
   }
@@ -179,7 +208,6 @@ div.fixed{
 
 .president{
   margin-top: 10%;
-
   &_iner {
     width: 90%;
     margin: 0 auto;
@@ -284,7 +312,7 @@ div.fixed{
 ////////cinfo/////////////
 
 .cinfo {
-  margin-top: 10%;
+  margin-top: 30%;
 
   &_iner {
     width: 80%;
