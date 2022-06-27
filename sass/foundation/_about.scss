@@ -178,6 +178,7 @@ div.fixed{
   position: -webkit-sticky;
   /*Safari*/
   position: sticky;
+  overflow: hidden;
   top:7vh;
   height: 100vh;
   /*Header高さ分で止まるようにする*/
