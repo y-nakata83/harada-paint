@@ -448,9 +448,10 @@ select {
   position: fixed;
   z-index: 5;
   right: 13px;
-  top: 20px;
+  top: 12px;
   width: 42px;
   height: 42px;
+  background-color: #0F77BB;
   cursor: pointer;
   text-align: center;
   transition: 0.5s all;
@@ -464,14 +465,14 @@ select {
   transform: rotate(90deg);
 }
 .header_hamburger.active span:nth-child(1) {
-  top: 16px;
+  top: 19px;
   left: 6px;
-  background: #333;
+  background: #fff;
   transform: rotate(-45deg);
 }
 .header_hamburger.active span:nth-child(2) {
-  top: 16px;
-  background: #333;
+  top: 19px;
+  background: #fff;
   transform: rotate(45deg);
 }
 .header_hamburger.active span:nth-child(3) {
@@ -483,7 +484,7 @@ select {
   width: 27px;
   height: 2px;
   left: 6px;
-  background: #333;
+  background: #fff;
 }
 @media screen and (max-width: 1024px) {
   .header_hamburger span {
@@ -491,13 +492,13 @@ select {
   }
 }
 .header_hamburger span:nth-child(1) {
-  top: 0px;
-}
-.header_hamburger span:nth-child(2) {
   top: 10px;
 }
-.header_hamburger span:nth-child(3) {
+.header_hamburger span:nth-child(2) {
   top: 20px;
+}
+.header_hamburger span:nth-child(3) {
+  top: 30px;
 }
 .header_nav {
   width: 100%;
@@ -1433,6 +1434,11 @@ html {
   background-position-x: 50%;
   height: 65vh;
 }
+@media screen and (max-width: 1024px) {
+  .about_topBg {
+    background-position-y: 60%;
+  }
+}
 .about_topTtl {
   width: 100%;
   height: 30vh;
@@ -1448,11 +1454,11 @@ html {
   line-height: 3;
 }
 .about_topBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 
@@ -1476,8 +1482,9 @@ html {
 }
 .history_item {
   width: 50%;
-  padding: 5%;
+  height: 93vh;
   border-right: solid 1px #0F77BB;
+  position: relative;
 }
 .history_item2 {
   position: absolute;
@@ -1498,54 +1505,162 @@ html {
     line-height: 3;
   }
 }
+@media screen and (max-width: 480px) {
+  .history_text {
+    margin-bottom: 10%;
+  }
+}
 .history_text p {
   font-size: 1rem;
 }
-.history_text1, .history_text3 {
-  margin-top: 20%;
+.history_text1 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
 }
-.history_text1 p, .history_text3 p {
+.history_text1 p {
   font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .history_text1 p {
+    line-height: 2;
+  }
+}
+.history_text2 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
 }
 .history_text2 p {
   font-size: 1rem;
 }
+@media screen and (max-width: 1024px) {
+  .history_text2 p {
+    line-height: 2;
+  }
+}
+.history_text3 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.history_text3 p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .history_text3 p {
+    line-height: 2;
+  }
+}
 .history_text4 {
-  margin-top: 10%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
 }
 .history_text4 p {
   font-size: 1rem;
 }
-.history_text5, .history_text6 {
-  margin-top: 15%;
+@media screen and (max-width: 1024px) {
+  .history_text4 p {
+    line-height: 2;
+  }
 }
-.history_text5 p, .history_text6 p {
+.history_text5 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+.history_text5 p {
   font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .history_text5 p {
+    line-height: 2;
+  }
+}
+.history_text6 {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+@media screen and (max-width: 1024px) {
+  .history_text6 {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+  }
+}
+.history_text6 p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .history_text6 p {
+    line-height: 2;
+  }
 }
 .history_img1 {
   text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  left: 0;
 }
 .history_img1 img {
   width: 40%;
 }
+@media screen and (max-width: 768px) {
+  .history_img1 img {
+    width: 80%;
+  }
+}
 .history_img2 {
-  margin-top: 20%;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  width: 90%;
+}
+@media screen and (max-width: 768px) {
+  .history_img2 {
+    overflow: hidden;
+  }
 }
 .history_img2 img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .history_img2 img {
+    width: 170%;
+  }
+}
 .history_img3 {
-  margin-top: 10%;
-  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .history_img3 {
+    width: 80%;
+  }
 }
 .history_img3 img {
-  width: 60%;
+  width: 100%;
 }
 .history_img4 {
-  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+}
+@media screen and (max-width: 768px) {
+  .history_img4 {
+    width: 80%;
+  }
 }
 .history_img4 img {
-  width: 80%;
+  width: 100%;
 }
 .history_imgName {
   text-align: center;
@@ -1559,11 +1674,18 @@ div.fixed {
   position: -webkit-sticky;
   /*Safari*/
   position: sticky;
+  overflow: hidden;
   top: 7vh;
   height: 100vh;
   /*Header高さ分で止まるようにする*/
   padding-bottom: 10%;
   /*デモ画面の高さを持たすための上下余白*/
+}
+@media screen and (max-width: 768px) {
+  div.fixed {
+    position: relative !important;
+    top: 0;
+  }
 }
 div.fixed:nth-child(odd) {
   background: #fff;
@@ -1671,11 +1793,11 @@ div.fixed:nth-child(4) {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .president_imgA img {
   width: 80%;
+  object-fit: cover;
 }
 @media screen and (max-width: 1024px) {
   .president_imgA img {
@@ -1684,7 +1806,7 @@ div.fixed:nth-child(4) {
 }
 
 .cinfo {
-  margin-top: 10%;
+  margin-top: 30%;
 }
 .cinfo_iner {
   width: 80%;
@@ -1770,11 +1892,11 @@ div.fixed:nth-child(4) {
   line-height: 3;
 }
 .serviceA_titleBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 .serviceA_boxWrap {
@@ -2386,11 +2508,11 @@ div.fixed:nth-child(4) {
   line-height: 3;
 }
 .a-recruit_containBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 .a-recruit_containInf {
@@ -2617,11 +2739,11 @@ div.fixed:nth-child(4) {
   line-height: 3;
 }
 .a-contact_containBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 .a-contact_containMapInner {

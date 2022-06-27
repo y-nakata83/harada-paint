@@ -57,9 +57,10 @@
     position: fixed;
     z-index: 5;
     right: 13px;
-    top: 20px;
+    top: 12px;
     width: 42px;
     height: 42px;
+    background-color: $main;
     cursor: pointer;
     text-align: center;
     transition: 0.5s all;
@@ -70,15 +71,15 @@
       transform: rotate(90deg);
       span {
         &:nth-child(1) {
-          top: 16px;
+          top: 19px;
           left: 6px;
-          background: $m-black;
+          background: $m-white;
           transform: rotate(-45deg);
         }
 
         &:nth-child(2) {
-          top: 16px;
-          background: $m-black;
+          top: 19px;
+          background: $m-white;
           transform: rotate(45deg);
         }
 
@@ -94,18 +95,18 @@
       width: 27px;
       height: 2px;
       left: 6px;
-      background: $m-black;
+      background: $m-white;
       @include mq(pc){
         display: block;
       }
       &:nth-child(1) {
-        top: 0px;
-      }
-      &:nth-child(2) {
         top: 10px;
       }
-      &:nth-child(3) {
+      &:nth-child(2) {
         top: 20px;
+      }
+      &:nth-child(3) {
+        top: 30px;
       }
     }
   }
