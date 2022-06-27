@@ -96,7 +96,7 @@
       }
     }
     &5 {
-      @include position-a(50%,5%);
+      @include position-a(70%,5%);
       p {
         font-size: 1rem;
         @include mq(pc){
@@ -105,9 +105,9 @@
       }
     }
     &6 {
-      @include position-a(60%,5%);
+      @include position-a(80%,5%);
       @include mq(pc){
-        @include position-a(65%,5%)
+        @include position-a(85%,5%)
       }
       p {
         font-size: 1rem;
@@ -143,7 +143,7 @@
       }
     }
     &3 {
-      @include position-a(30%,50%);
+      @include position-a(25%,50%);
       transform: translateX(-50%);
       width: 50%;
       @include mq(tab){

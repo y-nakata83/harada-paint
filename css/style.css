@@ -1567,7 +1567,7 @@ html {
 }
 .history_text5 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 5%;
 }
 .history_text5 p {
@@ -1580,13 +1580,13 @@ html {
 }
 .history_text6 {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 5%;
 }
 @media screen and (max-width: 1024px) {
   .history_text6 {
     position: absolute;
-    top: 65%;
+    top: 85%;
     left: 5%;
   }
 }
@@ -1634,7 +1634,7 @@ html {
 }
 .history_img3 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
