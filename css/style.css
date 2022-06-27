@@ -2313,6 +2313,7 @@ div.fixed:nth-child(4) {
 @media screen and (max-width: 480px) {
   .a-recruit_containInf table tr td:nth-of-type(1) {
     width: 100%;
+    font-size: 1.3rem;
     display: block;
   }
 }
@@ -2326,6 +2327,7 @@ div.fixed:nth-child(4) {
     display: block;
     padding: 0% 6%;
     line-height: 3;
+    font-size: 1.3rem;
   }
 }
 .a-recruit_workInner {
@@ -2376,6 +2378,7 @@ div.fixed:nth-child(4) {
 @media screen and (max-width: 768px) {
   .a-recruit_imgs {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0.5%;
   }
 }
@@ -2395,38 +2398,45 @@ div.fixed:nth-child(4) {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 768px) {
-  .a-recruit_imgTxt {
-    height: 45vh;
-  }
+.a-recruit_imgTxtBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .a-recruit_imgTxtarea {
   position: absolute;
-  width: 50%;
+  width: 70%;
   height: 100%;
-  padding: 30% 0;
+  padding: 25% 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 1024px) {
   .a-recruit_imgTxtarea {
-    width: 55%;
     padding: 25% 0;
   }
 }
 @media screen and (max-width: 768px) {
   .a-recruit_imgTxtarea {
-    padding: 24% 0;
+    padding: 18% 0;
   }
 }
 .a-recruit_imgTxtarea p {
   font-size: 1rem;
-  line-height: 2;
+  line-height: 2.5;
 }
 @media screen and (max-width: 768px) {
   .a-recruit_imgTxtarea p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .a-recruit_imgTxtarea p {
+    font-size: 1.6rem;
   }
 }
 
