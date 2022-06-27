@@ -1476,7 +1476,7 @@ html {
 }
 .history_item {
   width: 50%;
-  height: 100vh;
+  height: 93vh;
   border-right: solid 1px #0F77BB;
   position: relative;
 }
@@ -1572,6 +1572,13 @@ html {
   top: 60%;
   left: 5%;
 }
+@media screen and (max-width: 1024px) {
+  .history_text6 {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+  }
+}
 .history_text6 p {
   font-size: 1rem;
 }
@@ -1592,7 +1599,7 @@ html {
 }
 .history_img2 {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 5%;
   width: 90%;
 }
@@ -1614,7 +1621,7 @@ html {
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 65%;
+  width: 55%;
 }
 .history_img4 img {
   width: 100%;
@@ -1743,11 +1750,11 @@ div.fixed:nth-child(4) {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .president_imgA img {
   width: 80%;
+  object-fit: cover;
 }
 @media screen and (max-width: 1024px) {
   .president_imgA img {
