@@ -80,7 +80,17 @@
       grid-template-columns: 1fr 1fr 1fr;
       margin: 10% auto;
       gap: 7%;
+      @include mq(pc) {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+      }
+      @include mq(tab) {
+        width: 100%;
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
       @include mq(sp) {
+        width: 100%;
         grid-template-columns: 1fr;
         text-align: center;
       }
