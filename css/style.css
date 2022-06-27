@@ -2134,6 +2134,7 @@ div.fixed:nth-child(4) {
     top: 20%;
     right: 100%;
     transform: translateX(-70%);
+    font-size: 3rem;
   }
 }
 .serviceA_box02_title p {
@@ -2226,6 +2227,7 @@ div.fixed:nth-child(4) {
     top: 20%;
     right: 100%;
     transform: translateX(-70%);
+    font-size: 3rem;
   }
 }
 .serviceA_box03_title p {
@@ -2318,6 +2320,7 @@ div.fixed:nth-child(4) {
     top: 20%;
     right: 100%;
     transform: translateX(-70%);
+    font-size: 3rem;
   }
 }
 .serviceA_box04_title p {
@@ -2450,6 +2453,30 @@ div.fixed:nth-child(4) {
   width: 100%;
   padding: 2% 5%;
 }
+@media screen and (max-width: 768px) {
+  .serviceA_listS_point {
+    display: none;
+  }
+}
+.serviceA_listS_pointTab {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_listS_pointTab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2% 5%;
+  }
+}
 .serviceA_listS_groupS li {
   line-height: 2;
   font-size: 1.2rem;
@@ -2465,6 +2492,30 @@ div.fixed:nth-child(4) {
   -ms-transform: translateY(10%);
   transform: translateY(10%);
   position: relative;
+}
+.serviceA_listS_groupTab {
+  width: 100%;
+}
+.serviceA_listS_groupTab li {
+  width: 100%;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+.serviceA_listS_groupTab li::before {
+  content: "・";
+  color: darkgrey;
+  font-size: 2rem;
+  font-weight: lighter;
+  top: 5%;
+  padding-top: 1%;
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
+  position: relative;
+}
+.serviceA_listS_groupTab a {
+  padding-left: 5%;
+  text-decoration: underline;
 }
 .serviceA_listS_url {
   line-height: 4.1;
