@@ -32,7 +32,7 @@
   }
   &_item {
     width: 50%;
-    height: 100vh;
+    height: 93vh;
     border-right: solid 1px $main;
     position: relative;
     &2 {
@@ -100,6 +100,9 @@
     }
     &6 {
       @include position-a(60%,5%);
+      @include mq(pc){
+        @include position-a(65%,5%)
+      }
       p {
         font-size: 1rem;
         @include mq(pc){
@@ -118,7 +121,7 @@
       }
     }
     &2 {
-      @include position-a(70%,5%);
+      @include position-a(65%,5%);
       width: 90%;
       img{
         width: 100%;
@@ -135,7 +138,7 @@
     &4 {
       @include position-a(5%,50%);
       transform: translateX(-50%);
-      width: 65%;
+      width: 55%;
       img{
         width: 100%;
       }
@@ -265,10 +268,10 @@ div.fixed{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     img{
       width: 80%;
+      object-fit: cover;
       @include mq(pc){
         width: 100%;
       }
