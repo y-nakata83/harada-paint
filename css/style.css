@@ -1430,6 +1430,7 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 50%;
   height: 65vh;
 }
 .about_topTtl {
@@ -1476,7 +1477,7 @@ html {
 .history_item {
   width: 50%;
   padding: 5%;
-  border-right: solid 1px #a4a4a4;
+  border-right: solid 1px #0F77BB;
 }
 .history_item2 {
   position: absolute;
@@ -1498,67 +1499,53 @@ html {
   }
 }
 .history_text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-.history_text1 {
+.history_text1, .history_text3 {
   margin-top: 20%;
 }
-.history_text1 p {
-  font-size: 1.2rem;
+.history_text1 p, .history_text3 p {
+  font-size: 1rem;
 }
 .history_text2 p {
-  font-size: 1.2rem;
-}
-.history_text3 {
-  margin-top: 20%;
-}
-.history_text3 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .history_text4 {
   margin-top: 10%;
 }
 .history_text4 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-.history_text5 {
+.history_text5, .history_text6 {
   margin-top: 15%;
 }
-.history_text5 p {
-  font-size: 1.2rem;
-}
-.history_text6 {
-  margin-top: 15%;
-}
-.history_text6 p {
-  font-size: 1.2rem;
+.history_text5 p, .history_text6 p {
+  font-size: 1rem;
 }
 .history_img1 {
-  background: url(../img/harada-hisanobu.png) no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 200px;
+  text-align: center;
+}
+.history_img1 img {
+  width: 40%;
 }
 .history_img2 {
-  background: url(../img/about-car.png) no-repeat;
-  background-size: contain;
+  margin-top: 20%;
+}
+.history_img2 img {
   width: 100%;
-  height: 150px;
-  margin-top: 40%;
 }
 .history_img3 {
   margin-top: 10%;
+  text-align: center;
 }
 .history_img3 img {
   width: 60%;
 }
 .history_img4 {
-  background: url(../img/about-shop.png) no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  text-align: center;
+}
+.history_img4 img {
   width: 80%;
-  height: 350px;
 }
 .history_imgName {
   text-align: center;
@@ -1575,6 +1562,7 @@ div.fixed {
   top: 7vh;
   height: 100vh;
   /*Header高さ分で止まるようにする*/
+  padding-bottom: 10%;
   /*デモ画面の高さを持たすための上下余白*/
 }
 div.fixed:nth-child(odd) {
@@ -1609,6 +1597,7 @@ div.fixed:nth-child(4) {
   font-size: 2rem;
 }
 .president_box {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1617,8 +1606,24 @@ div.fixed:nth-child(4) {
   justify-content: space-between;
   margin-top: 5%;
 }
+@media screen and (max-width: 768px) {
+  .president_box {
+    flex-direction: column-reverse;
+  }
+}
 .president_itemT {
-  width: 100%;
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .president_itemT {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .president_itemT {
+    width: 90%;
+    margin: 5% auto 0;
+  }
 }
 .president_lead {
   text-align: center;
@@ -1628,21 +1633,39 @@ div.fixed:nth-child(4) {
 }
 .president_text {
   margin-top: 5%;
+  text-align: justify;
 }
 .president_text p {
   line-height: 1.5;
 }
 .president_nameC {
   text-align: end;
-  margin-top: 5%;
+  margin-top: 10%;
+}
+.president_nameC p {
+  font-size: 1.2rem;
 }
 .president_nameA {
   text-align: end;
   margin-top: 2%;
 }
+.president_nameA p {
+  font-size: 1.3rem;
+}
 .president_itemA {
-  width: 100%;
+  width: 40%;
   margin-left: 10%;
+}
+@media screen and (max-width: 1024px) {
+  .president_itemA {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .president_itemA {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .president_imgA {
   width: 100%;
