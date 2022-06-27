@@ -2708,21 +2708,21 @@ div.fixed:nth-child(4) {
   line-height: 1.5;
   margin-top: 3%;
 }
+.a-contact_containMapInner iframe {
+  width: 100%;
+}
 @media screen and (max-width: 1024px) {
   .a-contact_containMapInner iframe {
-    width: 650px;
     height: 500px;
   }
 }
 @media screen and (max-width: 768px) {
   .a-contact_containMapInner iframe {
-    width: 400px;
     height: 400px;
   }
 }
 @media screen and (max-width: 480px) {
   .a-contact_containMapInner iframe {
-    width: 300px;
     height: 300px;
   }
 }
