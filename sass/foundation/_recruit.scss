@@ -25,6 +25,9 @@
       position: relative;
       width: 80%;
       margin: 10% auto 0;
+      @include mq(pc) {
+        margin: 0% auto;
+      }
       table {
         width: 100%;
         tr {
@@ -61,38 +64,45 @@
       height: 100%;
     }
     &Ttl {
-      text-align: center;
       margin-top: 10%;
+      text-align: center;
       p{
         font-size: 1.7rem;
       }
     }
   }
   &_img {
+    img {
+      @include mq(tab) {
+        width: 80%;
+      }
+    }
     p {
-      margin-top: 4%;
+      margin-top: 5%;
       text-align: center;
+      @include mq(tab) {
+        font-size: 1.7rem;
+        margin-top: 4%;
+        text-align: center;
+      }
     }
     &s {
       position: relative;
       display: grid;
       width: 80%;
+      text-align: center;
       grid-template-columns: 1fr 1fr 1fr;
       margin: 10% auto;
       gap: 7%;
       @include mq(pc) {
         grid-template-columns: 1fr 1fr;
         text-align: center;
+        width: 100%;
+        gap: 3%;
       }
       @include mq(tab) {
-        width: 100%;
         grid-template-columns: 1fr;
-        text-align: center;
-      }
-      @include mq(sp) {
-        width: 100%;
-        grid-template-columns: 1fr;
-        text-align: center;
+        gap: .5%;
       }
       &Inner {
         position: relative;
@@ -104,16 +114,34 @@
       position: relative;
       width: 100%;
       background-color: $sub;
+      @include mq(pc) {
+        width: 80%;
+        margin: 0 auto;
+      }
+      @include mq(tab) {
+        height: 45vh;
+      }
       &area {
         position: absolute;
         width: 50%;
         height: 100%;
         padding: 30% 0;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
+        @include mq(pc) {
+          width: 55%;
+          padding: 25% 0;
+        }
+        @include mq(tab) {
+          padding: 24% 0;
+        }
         p {
           font-size: 1rem;
           line-height: 2;
+          @include mq(tab) {
+            font-size: 1.2rem;
+          }
         }
       }
     }
