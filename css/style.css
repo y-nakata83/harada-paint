@@ -1448,11 +1448,11 @@ html {
   line-height: 3;
 }
 .about_topBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 
@@ -1476,8 +1476,9 @@ html {
 }
 .history_item {
   width: 50%;
-  padding: 5%;
+  height: 100vh;
   border-right: solid 1px #0F77BB;
+  position: relative;
 }
 .history_item2 {
   position: absolute;
@@ -1501,35 +1502,71 @@ html {
 .history_text p {
   font-size: 1rem;
 }
-.history_text1, .history_text3 {
-  margin-top: 20%;
+.history_text1 {
+  position: absolute;
+  top: 70%;
+  left: 5%;
 }
-.history_text1 p, .history_text3 p {
+.history_text1 p {
   font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .history_text1 p {
+    line-height: 2;
+  }
+}
+.history_text2 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
 }
 .history_text2 p {
   font-size: 1rem;
 }
-.history_text4 {
+@media screen and (max-width: 1024px) {
+  .history_text2 p {
+    line-height: 2;
+  }
+}
+.history_text3 {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+.history_text3 p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .history_text3 p {
+    line-height: 2;
+  }
+}
+.history_text4, .history_text5, .history_text6 {
   margin-top: 10%;
 }
-.history_text4 p {
+.history_text4 p, .history_text5 p, .history_text6 p {
   font-size: 1rem;
 }
-.history_text5, .history_text6 {
-  margin-top: 15%;
-}
-.history_text5 p, .history_text6 p {
-  font-size: 1rem;
+@media screen and (max-width: 1024px) {
+  .history_text4 p, .history_text5 p, .history_text6 p {
+    line-height: 2;
+  }
 }
 .history_img1 {
   text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  left: 0;
 }
 .history_img1 img {
   width: 40%;
 }
 .history_img2 {
-  margin-top: 20%;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 90%;
 }
 .history_img2 img {
   width: 100%;
@@ -1770,11 +1807,11 @@ div.fixed:nth-child(4) {
   line-height: 3;
 }
 .serviceA_titleBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 .serviceA_boxWrap {
@@ -2280,11 +2317,11 @@ div.fixed:nth-child(4) {
   line-height: 3;
 }
 .a-recruit_containBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 .a-recruit_containInf {
@@ -2493,11 +2530,11 @@ div.fixed:nth-child(4) {
   line-height: 3;
 }
 .a-contact_containBox {
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
   text-align: center;
 }
 .a-contact_containMapInner {
