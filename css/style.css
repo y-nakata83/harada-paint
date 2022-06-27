@@ -448,9 +448,10 @@ select {
   position: fixed;
   z-index: 5;
   right: 13px;
-  top: 20px;
+  top: 12px;
   width: 42px;
   height: 42px;
+  background-color: #0F77BB;
   cursor: pointer;
   text-align: center;
   transition: 0.5s all;
@@ -464,14 +465,14 @@ select {
   transform: rotate(90deg);
 }
 .header_hamburger.active span:nth-child(1) {
-  top: 16px;
+  top: 19px;
   left: 6px;
-  background: #333;
+  background: #fff;
   transform: rotate(-45deg);
 }
 .header_hamburger.active span:nth-child(2) {
-  top: 16px;
-  background: #333;
+  top: 19px;
+  background: #fff;
   transform: rotate(45deg);
 }
 .header_hamburger.active span:nth-child(3) {
@@ -483,7 +484,7 @@ select {
   width: 27px;
   height: 2px;
   left: 6px;
-  background: #333;
+  background: #fff;
 }
 @media screen and (max-width: 1024px) {
   .header_hamburger span {
@@ -491,13 +492,13 @@ select {
   }
 }
 .header_hamburger span:nth-child(1) {
-  top: 0px;
-}
-.header_hamburger span:nth-child(2) {
   top: 10px;
 }
-.header_hamburger span:nth-child(3) {
+.header_hamburger span:nth-child(2) {
   top: 20px;
+}
+.header_hamburger span:nth-child(3) {
+  top: 30px;
 }
 .header_nav {
   width: 100%;
@@ -1804,7 +1805,7 @@ div.fixed:nth-child(4) {
 }
 
 .cinfo {
-  margin-top: 20%;
+  margin-top: 30%;
 }
 .cinfo_iner {
   width: 80%;
