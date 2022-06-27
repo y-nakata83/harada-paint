@@ -2532,12 +2532,18 @@ div.fixed:nth-child(4) {
 .a-recruit_imgTxt {
   position: relative;
   width: 100%;
+  height: 34vh;
   background-color: rgba(15, 119, 187, 0.3019607843);
 }
 @media screen and (max-width: 1024px) {
   .a-recruit_imgTxt {
     width: 80%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .a-recruit_imgTxt {
+    height: 50vh;
   }
 }
 .a-recruit_imgTxtBox {
@@ -2552,20 +2558,10 @@ div.fixed:nth-child(4) {
   position: absolute;
   width: 70%;
   height: 100%;
-  padding: 25% 0;
+  padding: 20% 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media screen and (max-width: 1024px) {
-  .a-recruit_imgTxtarea {
-    padding: 25% 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .a-recruit_imgTxtarea {
-    padding: 18% 0;
-  }
 }
 .a-recruit_imgTxtarea p {
   font-size: 1rem;
