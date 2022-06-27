@@ -1099,7 +1099,7 @@ html {
   background-color: #fff;
   left: 10%;
   width: 40%;
-  padding: 6% 3% 10%;
+  padding: 5% 3%;
   box-shadow: #666 0px 5px 10px, #0F77BB -25px 25px, #666 -30px 30px 10px;
 }
 @media screen and (max-width: 1024px) {
@@ -2668,12 +2668,18 @@ div.fixed:nth-child(4) {
 .a-recruit_imgTxt {
   position: relative;
   width: 100%;
+  height: 34vh;
   background-color: rgba(15, 119, 187, 0.3019607843);
 }
 @media screen and (max-width: 1024px) {
   .a-recruit_imgTxt {
     width: 80%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .a-recruit_imgTxt {
+    height: 50vh;
   }
 }
 .a-recruit_imgTxtBox {
@@ -2688,20 +2694,10 @@ div.fixed:nth-child(4) {
   position: absolute;
   width: 70%;
   height: 100%;
-  padding: 25% 0;
+  padding: 20% 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media screen and (max-width: 1024px) {
-  .a-recruit_imgTxtarea {
-    padding: 25% 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .a-recruit_imgTxtarea {
-    padding: 18% 0;
-  }
 }
 .a-recruit_imgTxtarea p {
   font-size: 1rem;
@@ -2844,21 +2840,21 @@ div.fixed:nth-child(4) {
   line-height: 1.5;
   margin-top: 3%;
 }
+.a-contact_containMapInner iframe {
+  width: 100%;
+}
 @media screen and (max-width: 1024px) {
   .a-contact_containMapInner iframe {
-    width: 650px;
     height: 500px;
   }
 }
 @media screen and (max-width: 768px) {
   .a-contact_containMapInner iframe {
-    width: 400px;
     height: 400px;
   }
 }
 @media screen and (max-width: 480px) {
   .a-contact_containMapInner iframe {
-    width: 300px;
     height: 300px;
   }
 }
