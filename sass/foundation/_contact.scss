@@ -5,46 +5,73 @@
       position: relative;
       display: grid;
       width: 100%;
-      grid-auto-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       gap: 1%;
       height: 70vh;
+      @include mq(tab) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 32vh 33vh;
+        margin-top: 7vh;
+        height: 65vh;
+      }
     }
     &Box {
       &1 {
         grid-column: 1;
         grid-row: 1;
-        @include mq(sp) {
+        @include mq(tab) {
           grid-column: 1;
           grid-row: 2;
+          background: url(../img/contact-top1.png);
+          background-repeat: no-repeat;
+          background-position-y: 70%;
+          background-size: cover;
         }
         img {
           width: 100%;
           height: 100%;
+          @include mq(tab) {
+            display: none;
+          }
         }
       }
       &2 {
         grid-column: 2;
         grid-row: 1;
-        @include mq(sp) {
+        @include mq(tab) {
           grid-column: 1/3;
           grid-row: 1;
+          background: url(../img/contact-top2.png);
+          background-repeat: no-repeat;
+          background-position-y: 100%;
+          background-size: cover;
         }
         img {
           width: 100%;
           height: 100%;
+          @include mq(tab) {
+            display: none;
+          }
         }
       }
       &3 {
         grid-column: 3;
         grid-row: 1;
-        @include mq(sp) {
+        @include mq(tab) {
           grid-column: 2;
           grid-row: 2;
+          background: url(../img/contact-top3.png);        
+          background-repeat: no-repeat;
+          background-position-y: 70%;
+          background-size: cover;
         }
         img {
           width: 100%;
           height: 100%;
+          @include mq(tab) {
+            display: none;
+          }
         }
       }
     }
@@ -175,6 +202,9 @@
       height: 100%;
       padding: 5% 0;
       margin: 10% auto 0;
+      @include mq(tab) {
+        flex-direction: column;
+      }
     }
     &Box {
       &L {
@@ -184,6 +214,10 @@
         margin: 1%;
         text-align: center;
         background: $m-white;
+        @include mq(tab) {
+          width: 100%;
+          padding: 25% 0%;
+        }
         span {
           font-size: 2rem;
           border-bottom: solid 1px $main;
@@ -191,7 +225,7 @@
             font-size: 1.7rem;
           }
           @include mq(tab) {
-            font-size: 1.4rem;
+            font-size: 2rem;
           }
         }
         p {
@@ -199,6 +233,9 @@
           line-height: 2;
           @include mq(pc) {
             font-size: .7rem;
+          }
+          @include mq(tab) {
+            font-size: 1.1rem;
           }
         }
       }
@@ -210,10 +247,16 @@
         padding: 3%;
         text-align: center;
         background: $m-white;
+        @include mq(tab) {
+          width: 100%;
+        }
         p {
           font-size: .9rem;
           @include mq(pc) {
             font-size: .7rem;
+          }
+          @include mq(tab) {
+            font-size: 1.1rem;
           }
         }
       }
@@ -234,6 +277,9 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @include mq(tab) {
+      justify-content: center;
+    }
     &Img {
       width: 21%;
       height: 100%;
@@ -249,7 +295,7 @@
         font-size: 1.65rem;
       }
       @include mq(tab) {
-        font-size: 1.29rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -258,6 +304,9 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @include mq(tab) {
+      justify-content: center;
+    }
     &Img {
       width: 21%;
       height: 100%;
@@ -273,7 +322,7 @@
         font-size: 1.65rem;
       }
       @include mq(tab) {
-        font-size: 1.29rem;
+        font-size: 2.5rem;
       }
     }
   }
