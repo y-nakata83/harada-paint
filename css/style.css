@@ -1099,7 +1099,7 @@ html {
   background-color: #fff;
   left: 10%;
   width: 40%;
-  padding: 6% 3% 10%;
+  padding: 5% 3%;
   box-shadow: #666 0px 5px 10px, #0F77BB -25px 25px, #666 -30px 30px 10px;
 }
 @media screen and (max-width: 1024px) {
