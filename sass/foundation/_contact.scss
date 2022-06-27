@@ -97,16 +97,14 @@
           margin-top: 3%;
         }
         iframe {
+          width: 100%;
           @include mq(pc) {
-            width: 650px;
             height: 500px;
           }
           @include mq(tab) {
-            width: 400px;
             height: 400px;
           }
           @include mq(sp) {
-            width: 300px;
             height: 300px;
           }
         }
