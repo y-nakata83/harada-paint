@@ -72,7 +72,7 @@
       }
     }
     &3 {
-      @include position-a(60%,5%);
+      @include position-a(30%,5%);
       p {
         font-size: 1rem;
         @include mq(pc){
@@ -80,8 +80,26 @@
       }
       }
     }
-    &4,&5,&6 {
-      margin-top: 10%;
+    &4{
+      @include position-a(10%,5%);
+      p {
+        font-size: 1rem;
+        @include mq(pc){
+        line-height: 2;
+      }
+      }
+    }
+    &5 {
+      @include position-a(50%,5%);
+      p {
+        font-size: 1rem;
+        @include mq(pc){
+        line-height: 2;
+      }
+      }
+    }
+    &6 {
+      @include position-a(60%,5%);
       p {
         font-size: 1rem;
         @include mq(pc){
@@ -100,23 +118,26 @@
       }
     }
     &2 {
-      @include position-a(30%,5%);
+      @include position-a(70%,5%);
       width: 90%;
       img{
         width: 100%;
       }
     }
     &3 {
-      margin-top: 10%;
-      text-align: center;
+      @include position-a(30%,50%);
+      transform: translateX(-50%);
+      width: 50%;
       img{
-        width: 60%;
+        width: 100%;
       }
     }
     &4 {
-      text-align: center;
+      @include position-a(5%,50%);
+      transform: translateX(-50%);
+      width: 65%;
       img{
-        width: 80%;
+        width: 100%;
       }
     }
     &Name {
