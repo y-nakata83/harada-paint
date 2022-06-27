@@ -1708,7 +1708,7 @@ div.fixed:nth-child(4) {
 .cinfo_wrap table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
   line-height: 4;
   font-weight: bold;
 }
@@ -1797,7 +1797,7 @@ div.fixed:nth-child(4) {
   flex-direction: row;
   width: 100%;
   height: 35em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -1839,9 +1839,16 @@ div.fixed:nth-child(4) {
   background-size: contain;
   text-align: end;
 }
+@media screen and (max-width: 480px) {
+  .serviceA_box01_icon {
+    height: 5em;
+  }
+}
 .serviceA_box01_icon::before {
-  content: url(../img/brush.png);
+  content: "";
+  background: url(../img/brush.png) no-repeat;
   background-size: contain;
+  display: inline-block;
   width: 100%;
   height: 50px;
 }
@@ -1914,7 +1921,7 @@ div.fixed:nth-child(4) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -1922,6 +1929,8 @@ div.fixed:nth-child(4) {
 @media screen and (max-width: 768px) {
   .serviceA_box02 {
     width: 100%;
+    padding: 5%;
+    height: 25em;
   }
 }
 .serviceA_box02_icon {
@@ -1933,7 +1942,7 @@ div.fixed:nth-child(4) {
 }
 @media screen and (max-width: 768px) {
   .serviceA_box02_icon {
-    background-size: contain;
+    background-size: 50%;
   }
 }
 .serviceA_box02_title {
@@ -1947,6 +1956,12 @@ div.fixed:nth-child(4) {
   -ms-transform: translateX(20%);
   transform: translateX(20%);
 }
+@media screen and (max-width: 768px) {
+  .serviceA_box02_title {
+    width: 40%;
+    transform: translateX(0%);
+  }
+}
 .serviceA_box02_title::after {
   content: "02";
   font-size: 3rem;
@@ -1958,6 +1973,13 @@ div.fixed:nth-child(4) {
   -webkit-transform: translateX(-110px);
   -ms-transform: translateX(-110px);
   transform: translateX(-110px);
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box02_title::after {
+    top: 20%;
+    right: 100%;
+    transform: translateX(-70%);
+  }
 }
 .serviceA_box02_title p {
   font-size: 1.5rem;
@@ -1985,7 +2007,7 @@ div.fixed:nth-child(4) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -1993,6 +2015,9 @@ div.fixed:nth-child(4) {
 @media screen and (max-width: 768px) {
   .serviceA_box03 {
     width: 100%;
+    padding: 5%;
+    height: 25em;
+    margin-top: 5%;
   }
 }
 .serviceA_box03_icon {
@@ -2018,6 +2043,12 @@ div.fixed:nth-child(4) {
   -ms-transform: translateX(20%);
   transform: translateX(20%);
 }
+@media screen and (max-width: 768px) {
+  .serviceA_box03_title {
+    width: 40%;
+    transform: translateX(0%);
+  }
+}
 .serviceA_box03_title::after {
   content: "03";
   font-size: 3rem;
@@ -2029,6 +2060,13 @@ div.fixed:nth-child(4) {
   -webkit-transform: translateX(-110px);
   -ms-transform: translateX(-110px);
   transform: translateX(-110px);
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box03_title::after {
+    top: 20%;
+    right: 100%;
+    transform: translateX(-70%);
+  }
 }
 .serviceA_box03_title p {
   font-size: 1.5rem;
@@ -2056,7 +2094,7 @@ div.fixed:nth-child(4) {
   padding: 2%;
   width: 30%;
   height: 20em;
-  border: solid 2px #a4a4a4;
+  border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
@@ -2064,6 +2102,9 @@ div.fixed:nth-child(4) {
 @media screen and (max-width: 768px) {
   .serviceA_box04 {
     width: 100%;
+    padding: 5%;
+    height: 25em;
+    margin-top: 5%;
   }
 }
 .serviceA_box04_icon {
@@ -2076,7 +2117,6 @@ div.fixed:nth-child(4) {
 @media screen and (max-width: 768px) {
   .serviceA_box04_icon {
     background-size: contain;
-    width: 12%;
     height: 75px;
   }
 }
@@ -2091,6 +2131,12 @@ div.fixed:nth-child(4) {
   -ms-transform: translateX(20%);
   transform: translateX(20%);
 }
+@media screen and (max-width: 768px) {
+  .serviceA_box04_title {
+    width: 40%;
+    transform: translateX(0%);
+  }
+}
 .serviceA_box04_title::after {
   content: "04";
   font-size: 3rem;
@@ -2102,6 +2148,13 @@ div.fixed:nth-child(4) {
   -webkit-transform: translateX(-110px);
   -ms-transform: translateX(-110px);
   transform: translateX(-110px);
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box04_title::after {
+    top: 20%;
+    right: 100%;
+    transform: translateX(-70%);
+  }
 }
 .serviceA_box04_title p {
   font-size: 1.5rem;
@@ -2152,7 +2205,7 @@ div.fixed:nth-child(4) {
 .serviceA_listS_content {
   margin-top: 3%;
   width: 100%;
-  border: solid 1px #a4a4a4;
+  border: solid 1px rgb(164, 164, 164);
   -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
   border-radius: 10px;
@@ -2182,10 +2235,20 @@ div.fixed:nth-child(4) {
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
+@media screen and (max-width: 768px) {
+  .serviceA_listS_group {
+    flex-direction: column;
+  }
+}
 .serviceA_listS_group li {
   width: 25%;
   line-height: 2;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_listS_group li {
+    width: auto;
+  }
 }
 .serviceA_listS_group li::before {
   content: "・";
@@ -2200,7 +2263,7 @@ div.fixed:nth-child(4) {
   position: relative;
 }
 .serviceA_listS_itemG {
-  background: #a4a4a4;
+  background: rgb(164, 164, 164);
   padding-left: 5%;
   border-radius: 10px 10px 0 0;
 }
@@ -2306,7 +2369,7 @@ div.fixed:nth-child(4) {
 .a-recruit_containInf table tr td:nth-of-type(1) {
   width: 20%;
   text-align: center;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
   line-height: 4;
   font-weight: bold;
 }
@@ -2390,7 +2453,7 @@ div.fixed:nth-child(4) {
 .a-recruit_imgTxt {
   position: relative;
   width: 100%;
-  background-color: #0F77BB4D;
+  background-color: rgba(15, 119, 187, 0.3019607843);
 }
 @media screen and (max-width: 1024px) {
   .a-recruit_imgTxt {
@@ -2632,7 +2695,7 @@ div.fixed:nth-child(4) {
   margin-top: 1%;
 }
 .a-contact_call {
-  background: #ebebeb;
+  background: rgb(235, 235, 235);
   width: 100%;
   height: 100%;
 }
@@ -2748,7 +2811,6 @@ div.fixed:nth-child(4) {
   font-size: 2.8rem;
   font-weight: bold;
 }
-
 @media screen and (max-width: 1024px) {
   .a-contact_fax p {
     font-size: 1.65rem;
