@@ -1778,18 +1778,35 @@ div.fixed:nth-child(4) {
   text-align: center;
 }
 .serviceA_boxWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 10%;
 }
 .serviceA_box01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
   height: 35em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
+  -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box01 {
+    display: inline-grid;
+    height: 85em;
+  }
 }
 .serviceA_box01_img {
   width: 100%;
@@ -1797,10 +1814,22 @@ div.fixed:nth-child(4) {
   background: url(../img/service-item1.png) no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 768px) {
+  .serviceA_box01_img {
+    height: 55em;
+  }
+}
 .serviceA_box01_item {
   padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .serviceA_box01_icon {
@@ -1832,6 +1861,8 @@ div.fixed:nth-child(4) {
   position: absolute;
   top: 20%;
   right: 120px;
+  -webkit-transform: translateX(-165px);
+  -ms-transform: translateX(-165px);
   transform: translateX(-165px);
 }
 .serviceA_box01_title p {
@@ -1850,29 +1881,60 @@ div.fixed:nth-child(4) {
   border-bottom: solid 2px #0F77BB;
 }
 .serviceA_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 5%;
 }
+@media screen and (max-width: 768px) {
+  .serviceA_group {
+    flex-direction: column;
+  }
+}
 .serviceA_box02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 2%;
   width: 30%;
   height: 20em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
+  -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
 }
+@media screen and (max-width: 768px) {
+  .serviceA_box02 {
+    width: 100%;
+  }
+}
 .serviceA_box02_icon {
-  width: 25%;
-  height: 90px;
+  width: 20%;
+  height: 5em;
   background: url(../img/shop-icon.png) no-repeat;
-  background-size: contain;
+  background-size: 100%;
   text-align: end;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box02_icon {
+    background-size: contain;
+  }
 }
 .serviceA_box02_title {
   width: 60%;
@@ -1881,6 +1943,8 @@ div.fixed:nth-child(4) {
   background-color: #0F77BB;
   text-align: center;
   position: relative;
+  -webkit-transform: translateX(20%);
+  -ms-transform: translateX(20%);
   transform: translateX(20%);
 }
 .serviceA_box02_title::after {
@@ -1891,6 +1955,8 @@ div.fixed:nth-child(4) {
   position: absolute;
   top: 20%;
   right: 120px;
+  -webkit-transform: translateX(-110px);
+  -ms-transform: translateX(-110px);
   transform: translateX(-110px);
 }
 .serviceA_box02_title p {
@@ -1906,22 +1972,40 @@ div.fixed:nth-child(4) {
   line-height: 1.5;
 }
 .serviceA_box03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 2%;
   width: 30%;
   height: 20em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
+  -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
 }
+@media screen and (max-width: 768px) {
+  .serviceA_box03 {
+    width: 100%;
+  }
+}
 .serviceA_box03_icon {
-  width: 25%;
-  height: 90px;
+  width: 27%;
+  height: 5em;
   background: url(../img/car-icon.png) no-repeat;
-  background-size: contain;
+  background-size: 100%;
   text-align: end;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box03_icon {
+    background-size: 45%;
+  }
 }
 .serviceA_box03_title {
   width: 60%;
@@ -1930,6 +2014,8 @@ div.fixed:nth-child(4) {
   background-color: #0F77BB;
   text-align: center;
   position: relative;
+  -webkit-transform: translateX(20%);
+  -ms-transform: translateX(20%);
   transform: translateX(20%);
 }
 .serviceA_box03_title::after {
@@ -1940,6 +2026,8 @@ div.fixed:nth-child(4) {
   position: absolute;
   top: 20%;
   right: 120px;
+  -webkit-transform: translateX(-110px);
+  -ms-transform: translateX(-110px);
   transform: translateX(-110px);
 }
 .serviceA_box03_title p {
@@ -1955,22 +2043,42 @@ div.fixed:nth-child(4) {
   line-height: 1.5;
 }
 .serviceA_box04 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 2%;
   width: 30%;
   height: 20em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
+  -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
 }
+@media screen and (max-width: 768px) {
+  .serviceA_box04 {
+    width: 100%;
+  }
+}
 .serviceA_box04_icon {
-  width: 25%;
-  height: 90px;
+  width: 24%;
+  height: 5em;
   background: url(../img/box-icon.png) no-repeat;
-  background-size: contain;
+  background-size: 100%;
   text-align: end;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box04_icon {
+    background-size: contain;
+    width: 12%;
+    height: 75px;
+  }
 }
 .serviceA_box04_title {
   width: 60%;
@@ -1979,6 +2087,8 @@ div.fixed:nth-child(4) {
   background-color: #0F77BB;
   text-align: center;
   position: relative;
+  -webkit-transform: translateX(20%);
+  -ms-transform: translateX(20%);
   transform: translateX(20%);
 }
 .serviceA_box04_title::after {
@@ -1989,6 +2099,8 @@ div.fixed:nth-child(4) {
   position: absolute;
   top: 20%;
   right: 120px;
+  -webkit-transform: translateX(-110px);
+  -ms-transform: translateX(-110px);
   transform: translateX(-110px);
 }
 .serviceA_box04_title p {
@@ -2024,8 +2136,15 @@ div.fixed:nth-child(4) {
   font-size: 1.2rem;
 }
 .serviceA_listS_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   margin-top: 5%;
@@ -2034,6 +2153,7 @@ div.fixed:nth-child(4) {
   margin-top: 3%;
   width: 100%;
   border: solid 1px rgb(164, 164, 164);
+  -webkit-box-shadow: #666 5px 5px 10px;
   box-shadow: #666 5px 5px 10px;
   border-radius: 10px;
 }
@@ -2049,9 +2169,17 @@ div.fixed:nth-child(4) {
 }
 .serviceA_listS_group {
   padding: 2% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 .serviceA_listS_group li {
@@ -2066,6 +2194,8 @@ div.fixed:nth-child(4) {
   font-weight: lighter;
   top: 5%;
   padding-top: 1%;
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
   transform: translateY(10%);
   position: relative;
 }
@@ -2080,8 +2210,15 @@ div.fixed:nth-child(4) {
   color: #fff;
 }
 .serviceA_listS_point {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 80%;
   padding: 2% 5%;
@@ -2097,6 +2234,8 @@ div.fixed:nth-child(4) {
   font-weight: lighter;
   top: 5%;
   padding-top: 1%;
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
   transform: translateY(10%);
   position: relative;
 }
