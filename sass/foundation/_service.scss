@@ -1,8 +1,6 @@
 @use "../global" as *;
 
 .serviceA {
-  // height: 50vh;
-  // margin-top: 7vh;
   margin-top: 7vh;
   height: 93vh;
   &_top{
@@ -276,6 +274,7 @@
                         top: 20%;
                         right: 100%;
                         transform: translateX(-70%);
+                        font-size: 3rem;
                     }
                 
         }
@@ -374,6 +373,7 @@
                           top: 20%;
                           right: 100%;
                           transform: translateX(-70%);
+                          font-size: 3rem;
                         }
         }
 
@@ -470,6 +470,7 @@
                         top: 20%;
                         right: 100%;
                         transform: translateX(-70%);
+                        font-size: 3rem;
                       }
         }
 
@@ -620,6 +621,30 @@
                 justify-content: space-between;
         width: 100%;
         padding: 2% 5%;
+
+        @include mq(tab) {
+            display: none;
+          }
+        }
+
+        &_pointTab {
+          display: none;
+
+            @include mq(tab) {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                  flex-direction: row;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between;
+                  width: 100%;
+                  padding: 2% 5%;
+
+              }
         }
 
         &_groupS {
@@ -644,6 +669,33 @@
           }
 
         }
+
+                    &_groupTab {
+                        width: 100%;
+          
+                      li {
+                        width: 100%;
+                        line-height: 2;
+                        font-size: 1.2rem;
+          
+                        &::before {
+                          content: "・";
+                          color: darkgrey;
+                          font-size: 2rem;
+                          font-weight: lighter;
+                          top: 5%;
+                          padding-top: 1%;
+                          -webkit-transform: translateY(10%);
+                          -ms-transform: translateY(10%);
+                          transform: translateY(10%);
+                          position: relative;
+                        }
+                      }
+                      a {
+                        padding-left: 5%;
+                        text-decoration: underline;
+                      }
+                    }
 
         &_url {
           line-height: 4.1;
