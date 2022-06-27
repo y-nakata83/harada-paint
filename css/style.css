@@ -1504,6 +1504,11 @@ html {
     line-height: 3;
   }
 }
+@media screen and (max-width: 480px) {
+  .history_text {
+    margin-bottom: 10%;
+  }
+}
 .history_text p {
   font-size: 1rem;
 }
@@ -1799,7 +1804,7 @@ div.fixed:nth-child(4) {
 }
 
 .cinfo {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 .cinfo_iner {
   width: 80%;

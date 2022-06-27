@@ -53,6 +53,9 @@
       @include mq(pc){
         line-height: 3;
       }
+      @include mq(sp){
+        margin-bottom: 10%;
+      }
       p {
         font-size: 1rem;
       }
@@ -201,7 +204,6 @@ div.fixed{
 
 .president{
   margin-top: 10%;
-
   &_iner {
     width: 90%;
     margin: 0 auto;
@@ -306,7 +308,7 @@ div.fixed{
 ////////cinfo/////////////
 
 .cinfo {
-  margin-top: 10%;
+  margin-top: 20%;
 
   &_iner {
     width: 80%;
