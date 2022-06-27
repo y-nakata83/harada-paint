@@ -448,9 +448,10 @@ select {
   position: fixed;
   z-index: 5;
   right: 13px;
-  top: 20px;
+  top: 12px;
   width: 42px;
   height: 42px;
+  background-color: #0F77BB;
   cursor: pointer;
   text-align: center;
   transition: 0.5s all;
@@ -464,14 +465,14 @@ select {
   transform: rotate(90deg);
 }
 .header_hamburger.active span:nth-child(1) {
-  top: 16px;
+  top: 19px;
   left: 6px;
-  background: #333;
+  background: #fff;
   transform: rotate(-45deg);
 }
 .header_hamburger.active span:nth-child(2) {
-  top: 16px;
-  background: #333;
+  top: 19px;
+  background: #fff;
   transform: rotate(45deg);
 }
 .header_hamburger.active span:nth-child(3) {
@@ -483,7 +484,7 @@ select {
   width: 27px;
   height: 2px;
   left: 6px;
-  background: #333;
+  background: #fff;
 }
 @media screen and (max-width: 1024px) {
   .header_hamburger span {
@@ -491,13 +492,13 @@ select {
   }
 }
 .header_hamburger span:nth-child(1) {
-  top: 0px;
-}
-.header_hamburger span:nth-child(2) {
   top: 10px;
 }
-.header_hamburger span:nth-child(3) {
+.header_hamburger span:nth-child(2) {
   top: 20px;
+}
+.header_hamburger span:nth-child(3) {
+  top: 30px;
 }
 .header_nav {
   width: 100%;
@@ -1433,6 +1434,11 @@ html {
   background-position-x: 50%;
   height: 65vh;
 }
+@media screen and (max-width: 1024px) {
+  .about_topBg {
+    background-position-y: 60%;
+  }
+}
 .about_topTtl {
   width: 100%;
   height: 30vh;
@@ -1477,8 +1483,11 @@ html {
 .history_item {
   width: 50%;
   height: 93vh;
-  border-right: solid 1px #0F77BB;
+  border-right: solid 2px #0F77BB;
   position: relative;
+}
+.history_item:nth-of-type(2) {
+  border: none;
 }
 .history_item2 {
   position: absolute;
@@ -1497,6 +1506,11 @@ html {
 @media screen and (max-width: 1024px) {
   .history_text {
     line-height: 3;
+  }
+}
+@media screen and (max-width: 480px) {
+  .history_text {
+    margin-bottom: 10%;
   }
 }
 .history_text p {
@@ -1556,7 +1570,7 @@ html {
 }
 .history_text5 {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 5%;
 }
 .history_text5 p {
@@ -1569,13 +1583,13 @@ html {
 }
 .history_text6 {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 5%;
 }
 @media screen and (max-width: 1024px) {
   .history_text6 {
     position: absolute;
-    top: 65%;
+    top: 85%;
     left: 5%;
   }
 }
@@ -1597,21 +1611,41 @@ html {
 .history_img1 img {
   width: 40%;
 }
+@media screen and (max-width: 768px) {
+  .history_img1 img {
+    width: 80%;
+  }
+}
 .history_img2 {
   position: absolute;
   top: 65%;
   left: 5%;
   width: 90%;
 }
+@media screen and (max-width: 768px) {
+  .history_img2 {
+    overflow: hidden;
+  }
+}
 .history_img2 img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .history_img2 img {
+    width: 170%;
+  }
+}
 .history_img3 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .history_img3 {
+    width: 80%;
+  }
 }
 .history_img3 img {
   width: 100%;
@@ -1622,6 +1656,11 @@ html {
   left: 50%;
   transform: translateX(-50%);
   width: 55%;
+}
+@media screen and (max-width: 768px) {
+  .history_img4 {
+    width: 80%;
+  }
 }
 .history_img4 img {
   width: 100%;
@@ -1638,11 +1677,18 @@ div.fixed {
   position: -webkit-sticky;
   /*Safari*/
   position: sticky;
+  overflow: hidden;
   top: 7vh;
   height: 100vh;
   /*Header高さ分で止まるようにする*/
   padding-bottom: 10%;
   /*デモ画面の高さを持たすための上下余白*/
+}
+@media screen and (max-width: 768px) {
+  div.fixed {
+    position: relative !important;
+    top: 0;
+  }
 }
 div.fixed:nth-child(odd) {
   background: #fff;
@@ -1763,7 +1809,7 @@ div.fixed:nth-child(4) {
 }
 
 .cinfo {
-  margin-top: 10%;
+  margin-top: 30%;
 }
 .cinfo_iner {
   width: 80%;
@@ -1883,8 +1929,7 @@ div.fixed:nth-child(4) {
 }
 @media screen and (max-width: 768px) {
   .serviceA_box01 {
-    display: inline-grid;
-    height: 85em;
+    margin-top: 5%;
   }
 }
 .serviceA_box01_img {
@@ -1895,7 +1940,24 @@ div.fixed:nth-child(4) {
 }
 @media screen and (max-width: 768px) {
   .serviceA_box01_img {
-    height: 55em;
+    display: none;
+  }
+}
+.serviceA_box01_img2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box01_img2 {
+    display: block;
+    text-align: center;
+  }
+  .serviceA_box01_img2 img {
+    width: 100%;
+    border: solid 2px rgb(164, 164, 164);
+    border-radius: 10px;
+    box-shadow: #666 5px 5px 10px;
   }
 }
 .serviceA_box01_item {
@@ -1912,24 +1974,29 @@ div.fixed:nth-child(4) {
   align-items: center;
 }
 .serviceA_box01_icon {
-  width: 25%;
-  height: 90px;
-  background: url(../img/paint-icon.png) no-repeat;
-  background-size: contain;
-  text-align: end;
+  display: flex;
 }
-@media screen and (max-width: 480px) {
-  .serviceA_box01_icon {
-    height: 5em;
+.serviceA_box01_icon1 {
+  display: contents;
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box01_icon1 img {
+    width: 50%;
   }
 }
-.serviceA_box01_icon::before {
-  content: "";
-  background: url(../img/brush.png) no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 100%;
-  height: 50px;
+@media screen and (max-width: 480px) {
+  .serviceA_box01_icon1 img {
+    width: 50%;
+  }
+}
+.serviceA_box01_icon2 {
+  padding-top: 10%;
+  display: contents;
+}
+@media screen and (max-width: 480px) {
+  .serviceA_box01_icon2 img {
+    width: 30%;
+  }
 }
 .serviceA_box01_title {
   width: 40%;
@@ -1950,6 +2017,13 @@ div.fixed:nth-child(4) {
   -webkit-transform: translateX(-165px);
   -ms-transform: translateX(-165px);
   transform: translateX(-165px);
+}
+@media screen and (max-width: 768px) {
+  .serviceA_box01_title::after {
+    top: 20%;
+    right: 100%;
+    transform: translateX(-70%);
+  }
 }
 .serviceA_box01_title p {
   font-size: 1.5rem;
@@ -1999,7 +2073,7 @@ div.fixed:nth-child(4) {
   align-items: center;
   padding: 2%;
   width: 30%;
-  height: 20em;
+  height: 21em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
@@ -2013,15 +2087,13 @@ div.fixed:nth-child(4) {
   }
 }
 .serviceA_box02_icon {
+  display: contents;
   width: 20%;
   height: 5em;
-  background: url(../img/shop-icon.png) no-repeat;
-  background-size: 100%;
-  text-align: end;
 }
 @media screen and (max-width: 768px) {
-  .serviceA_box02_icon {
-    background-size: 50%;
+  .serviceA_box02_icon img {
+    width: 15%;
   }
 }
 .serviceA_box02_title {
@@ -2052,6 +2124,14 @@ div.fixed:nth-child(4) {
   -webkit-transform: translateX(-110px);
   -ms-transform: translateX(-110px);
   transform: translateX(-110px);
+}
+@media screen and (max-width: 1024px) {
+  .serviceA_box02_title::after {
+    top: 20%;
+    right: 80%;
+    transform: translateX(-70%);
+    font-size: 2.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .serviceA_box02_title::after {
@@ -2085,7 +2165,7 @@ div.fixed:nth-child(4) {
   align-items: center;
   padding: 2%;
   width: 30%;
-  height: 20em;
+  height: 21em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
@@ -2100,21 +2180,18 @@ div.fixed:nth-child(4) {
   }
 }
 .serviceA_box03_icon {
-  width: 27%;
+  display: contents;
+  width: 25%;
   height: 5em;
-  background: url(../img/car-icon.png) no-repeat;
-  background-size: 100%;
-  text-align: end;
 }
 @media screen and (max-width: 768px) {
-  .serviceA_box03_icon {
-    background-size: 45%;
+  .serviceA_box03_icon img {
+    width: 18%;
   }
 }
 .serviceA_box03_title {
   width: 60%;
   border-radius: 10px;
-  margin-top: 5%;
   background-color: #0F77BB;
   text-align: center;
   position: relative;
@@ -2139,6 +2216,14 @@ div.fixed:nth-child(4) {
   -webkit-transform: translateX(-110px);
   -ms-transform: translateX(-110px);
   transform: translateX(-110px);
+}
+@media screen and (max-width: 1024px) {
+  .serviceA_box03_title::after {
+    top: 20%;
+    right: 80%;
+    transform: translateX(-70%);
+    font-size: 2.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .serviceA_box03_title::after {
@@ -2172,7 +2257,7 @@ div.fixed:nth-child(4) {
   align-items: center;
   padding: 2%;
   width: 30%;
-  height: 20em;
+  height: 21em;
   border: solid 2px rgb(164, 164, 164);
   border-radius: 10px;
   -webkit-box-shadow: #666 5px 5px 10px;
@@ -2187,22 +2272,18 @@ div.fixed:nth-child(4) {
   }
 }
 .serviceA_box04_icon {
-  width: 24%;
+  display: contents;
+  width: 25%;
   height: 5em;
-  background: url(../img/box-icon.png) no-repeat;
-  background-size: 100%;
-  text-align: end;
 }
 @media screen and (max-width: 768px) {
-  .serviceA_box04_icon {
-    background-size: contain;
-    height: 75px;
+  .serviceA_box04_icon img {
+    width: 18%;
   }
 }
 .serviceA_box04_title {
   width: 60%;
   border-radius: 10px;
-  margin-top: 5%;
   background-color: #0F77BB;
   text-align: center;
   position: relative;
@@ -2227,6 +2308,14 @@ div.fixed:nth-child(4) {
   -webkit-transform: translateX(-110px);
   -ms-transform: translateX(-110px);
   transform: translateX(-110px);
+}
+@media screen and (max-width: 1024px) {
+  .serviceA_box04_title::after {
+    top: 20%;
+    right: 80%;
+    transform: translateX(-70%);
+    font-size: 2.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .serviceA_box04_title::after {
@@ -2324,7 +2413,7 @@ div.fixed:nth-child(4) {
   line-height: 2;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .serviceA_listS_group li {
     width: auto;
   }
@@ -2362,7 +2451,7 @@ div.fixed:nth-child(4) {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   padding: 2% 5%;
 }
 .serviceA_listS_groupS li {
