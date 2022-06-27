@@ -36,8 +36,11 @@
   &_item {
     width: 50%;
     height: 93vh;
-    border-right: solid 1px $main;
+    border-right: solid 2px $main;
     position: relative;
+    &:nth-of-type(2){
+      border: none;
+    }
     &2 {
       position: absolute;
       top: 50%;
