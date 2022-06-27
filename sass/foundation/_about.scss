@@ -7,6 +7,7 @@
     &Bg{
       background: url(../img/about-top4.png);
       @include bg;
+      background-position-x: 50%;
       height: 65vh;
     }
     @include ttl;
@@ -32,7 +33,7 @@
   &_item {
     width: 50%;
     padding: 5%;
-    border-right: solid 1px $shadow-grayrab;
+    border-right: solid 1px $main;
     &2 {
       position: absolute;
       top: 50%;
@@ -49,69 +50,69 @@
         line-height: 3;
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
-    &1 {
+    &1,&3 {
       margin-top: 20%;
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
     &2 {
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
-    &3 {
-      margin-top: 20%;
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    // &3 {
+    //   margin-top: 20%;
+    //   p {
+    //     font-size: 1rem;
+    //   }
+    // }
     &4 {
       margin-top: 10%;
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
-    &5 {
+    &5,&6 {
       margin-top: 15%;
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
-    &6 {
-      margin-top: 15%;
-      p {
-        font-size: 1.2rem;
-      }
-    }
+    // &6 {
+    //   margin-top: 15%;
+    //   p {
+    //     font-size: 1rem;
+    //   }
+    // }
   }
   &_img{
     &1 {
-      background: url(../img/harada-hisanobu.png)no-repeat;
-      background-position: center;
-      width: 100%;
-      height: 200px;
+      text-align: center;
+      img{
+        width: 40%;
+      }
     }
     &2 {
-      background: url(../img/about-car.png)no-repeat;
-      background-size: contain;
-      width: 100%;
-      height: 150px;
-      margin-top: 40%;
+      margin-top: 20%;
+      img{
+        width: 100%;
+      }
     }
     &3 {
       margin-top: 10%;
+      text-align: center;
       img{
         width: 60%;
       }
     }
     &4 {
-      background: url(../img/about-shop.png)no-repeat;
-      @include bg;
-      width: 80%;
-      height: 350px;
+      text-align: center;
+      img{
+        width: 80%;
+      }
     }
     &Name {
       text-align: center;
@@ -130,6 +131,7 @@ div.fixed{
   top:7vh;
   height: 100vh;
   /*Header高さ分で止まるようにする*/
+  padding-bottom: 10%;
   /*デモ画面の高さを持たすための上下余白*/
   &:nth-child(odd){
     background: $m-white;
@@ -165,6 +167,7 @@ div.fixed{
   }
 
   &_box {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,10 +175,20 @@ div.fixed{
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 5%;
+    @include mq(tab){
+      flex-direction: column-reverse;
+    }
   }
 
   &_itemT {
-    width: 100%;
+    width: 60%;
+    @include mq(pc){
+      width: 70%;
+    }
+    @include mq(tab){
+      width: 90%;
+      margin: 5% auto 0;
+    }
   }
 
   &_lead {
@@ -188,7 +201,7 @@ div.fixed{
 
   &_text {
     margin-top: 5%;
-
+    text-align: justify;
     p {
       line-height: 1.5;
     }
@@ -196,17 +209,30 @@ div.fixed{
   
   &_nameC {
     text-align: end;
-    margin-top: 5%;
+    margin-top: 10%;
+    p{
+      font-size: 1.2rem;
+    }
   }
 
   &_nameA {
     text-align: end;
     margin-top: 2%;
+    p{
+      font-size: 1.3rem;
+    }
   }
 
   &_itemA {
-    width: 100%;
+    width: 40%;
     margin-left: 10%;
+    @include mq(pc){
+      width: 30%;
+    }
+    @include mq(tab){
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   &_imgA {
