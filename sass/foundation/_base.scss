@@ -101,6 +101,19 @@ html {
     @include bg(contain);
     opacity: 0;
     animation: copy-Bg 1s 4s forwards ease;
+    @include mq(pc){
+      width: 110%;
+      height: 70%;
+    }
+    @include mq(tab){
+      width: 125%;
+      height: 60%;
+      top: 44%;
+    }
+    @include mq(sp){
+      width: 180%;
+      top: 43%;
+    }
     }
   }
 }
