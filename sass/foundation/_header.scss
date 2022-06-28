@@ -63,24 +63,32 @@
     background-color: $main;
     cursor: pointer;
     text-align: center;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
     @include mq(pc) {
       display: block;
     }
     &.active {
-      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
       span {
         &:nth-child(1) {
           top: 19px;
           left: 6px;
           background: $m-white;
-          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
         }
 
         &:nth-child(2) {
           top: 19px;
           background: $m-white;
-          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
         }
 
         &:nth-child(3) {
@@ -127,6 +135,8 @@
       height: 100vh;
       opacity: 0;
       visibility: hidden;
+      -webkit-transition: all .6s ease;
+      -o-transition: all .6s ease;
       transition: all .6s ease;
       &.active {
         opacity: 1;
@@ -152,10 +162,19 @@
         }
         &s {
           height: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
         }
       }
     }
@@ -184,7 +203,9 @@
     @include mq(pc){
       width: 100%;
       background-color: unset;
-      justify-content: unset;
+      -webkit-box-pack: unset;
+          -ms-flex-pack: unset;
+              justify-content: unset;
       margin-left: 5%;
     }
     @include mq(tab){

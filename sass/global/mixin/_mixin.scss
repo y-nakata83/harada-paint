@@ -1,9 +1,15 @@
 @use "../setting" as *;
 
 @mixin flex($no-center:center) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: $no-center;
-  align-items: center;
+  -webkit-box-pack: $no-center;
+      -ms-flex-pack: $no-center;
+          justify-content: $no-center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @mixin ttl{
@@ -13,7 +19,8 @@
     position: relative;
     &En {
       color: $main;
-      text-decoration: underline solid $main;
+      -webkit-text-decoration: underline solid $main;
+              text-decoration: underline solid $main;
       text-underline-offset: .2em;
     }
     &Ja {
@@ -26,7 +33,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     text-align: center;
   }
 }
@@ -38,7 +47,10 @@
 }
 
 @mixin top-shadow {
-  box-shadow: #666 0px 5px 10px,
+  -webkit-box-shadow: #666 0px 5px 10px,
+  $main -25px 25px,
+  #666 -30px 30px 10px;
+          box-shadow: #666 0px 5px 10px,
   $main -25px 25px,
   #666 -30px 30px 10px;
 }

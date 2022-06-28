@@ -45,7 +45,9 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
       @include mq(pc){
         width: 80%;
       }
@@ -147,7 +149,9 @@
     }
     &3 {
       @include position-a(25%,50%);
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
       width: 50%;
       @include mq(tab){
         width: 80%;
@@ -158,7 +162,9 @@
     }
     &4 {
       @include position-a(5%,50%);
-      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
       width: 55%;
       @include mq(tab){
         width: 80%;
@@ -233,7 +239,10 @@ div.fixed{
             justify-content: space-between;
     margin-top: 5%;
     @include mq(tab){
-      flex-direction: column-reverse;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
     }
   }
 
@@ -295,11 +304,16 @@ div.fixed{
   &_imgA {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     img{
       width: 80%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       @include mq(pc){
         width: 100%;
       }
