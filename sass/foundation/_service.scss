@@ -143,10 +143,16 @@
         color: $main;
         position: absolute;
         top: 20%;
-        right: 120px;
-        -webkit-transform: translateX(-165px);
-            -ms-transform: translateX(-165px);
-                transform: translateX(-165px);
+        right: 90%;
+        -webkit-transform: translateX(-90%);
+            -ms-transform: translateX(-90%);
+                transform: translateX(-90%);
+
+                  @include mq(pc) {
+                      top: 20%;
+                      right: 80%;
+                      transform: translateX(-80%);
+                    }
 
                   @include mq(tab) {
                       top: 20%;
@@ -156,7 +162,7 @@
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 3;
         color: $m-white;
       }
@@ -208,7 +214,7 @@
             align-items: center;
     padding: 2%;
     width: 30%;
-    height: 21em;
+    height: 22em;
     border: solid 2px $shadow-grayrab;
     border-radius: 10px;
     -webkit-box-shadow: $shadow-gray 5px 5px 10px;
@@ -253,22 +259,22 @@
     
         &::after {
           content: "02";
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: bolder;
           color: $main;
           position: absolute;
           top: 20%;
-          right: 120px;
-          -webkit-transform: translateX(-110px);
-              -ms-transform: translateX(-110px);
-                  transform: translateX(-110px);
-
-                    @include mq(pc) {
-                        top: 20%;
-                        right: 80%;
-                        transform: translateX(-70%);
-                        font-size: 2.5rem;
-                      }
+          right: 80%;
+          -webkit-transform: translateX(-80%);
+          -ms-transform: translateX(-80%);
+          transform: translateX(-80%);
+            
+              @include mq(pc) {
+                top: 20%;
+                right: 80%;
+                transform: translateX(-65%);
+                font-size: 2.4rem;
+              }
 
                   @include mq(tab) {
                         top: 20%;
@@ -310,7 +316,7 @@
               align-items: center;
       padding: 2%;
       width: 30%;
-      height: 21em;
+      height: 22em;
       border: solid 2px $shadow-grayrab;
       border-radius: 10px;
       -webkit-box-shadow: $shadow-gray 5px 5px 10px;
@@ -352,22 +358,22 @@
 
         &::after {
           content: "03";
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: bolder;
           color: $main;
           position: absolute;
           top: 20%;
-          right: 120px;
-          -webkit-transform: translateX(-110px);
-              -ms-transform: translateX(-110px);
-                  transform: translateX(-110px);
-
-                    @include mq(pc) {
-                        top: 20%;
-                        right: 80%;
-                        transform: translateX(-70%);
-                        font-size: 2.5rem;
-                      }
+          right: 80%;
+          -webkit-transform: translateX(-80%);
+          -ms-transform: translateX(-80%);
+          transform: translateX(-80%);
+            
+              @include mq(pc) {
+                top: 20%;
+                right: 80%;
+                transform: translateX(-65%);
+                font-size: 2.4rem;
+              }
 
                       @include mq(tab) {
                           top: 20%;
@@ -408,7 +414,7 @@
               align-items: center;
       padding: 2%;
       width: 30%;
-      height: 21em;
+      height: 22em;
       border: solid 2px $shadow-grayrab;
       border-radius: 10px;
       -webkit-box-shadow: $shadow-gray 5px 5px 10px;
@@ -449,21 +455,21 @@
                         }
         &::after {
           content: "04";
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: bolder;
           color: $main;
           position: absolute;
           top: 20%;
-          right: 120px;
-          -webkit-transform: translateX(-110px);
-              -ms-transform: translateX(-110px);
-                  transform: translateX(-110px);
+          right: 80%;
+          -webkit-transform: translateX(-80%);
+              -ms-transform: translateX(-80%);
+                  transform: translateX(-80%);
 
                     @include mq(pc) {
                         top: 20%;
                         right: 80%;
-                        transform: translateX(-70%);
-                        font-size: 2.5rem;
+                        transform: translateX(-65%);
+                        font-size: 2.4rem;
                       }
 
                     @include mq(tab) {
@@ -572,7 +578,7 @@
                   }
         
         li {
-          width: 25%;
+          width: 33%;
           line-height: 2;
           font-size: 1.2rem;
 
