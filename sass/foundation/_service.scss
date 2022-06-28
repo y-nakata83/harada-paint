@@ -276,10 +276,10 @@
           color: $main;
           position: absolute;
           top: 20%;
-          right: 80%;
-          -webkit-transform: translateX(-80%);
-          -ms-transform: translateX(-80%);
-          transform: translateX(-80%);
+          right: 90%;
+          -webkit-transform: translateX(-70%);
+          -ms-transform: translateX(-70%);
+          transform: translateX(-70%);
             
               @include mq(pc) {
                 top: 20%;
@@ -381,10 +381,10 @@
           color: $main;
           position: absolute;
           top: 20%;
-          right: 80%;
-          -webkit-transform: translateX(-80%);
-          -ms-transform: translateX(-80%);
-          transform: translateX(-80%);
+          right: 90%;
+          -webkit-transform: translateX(-70%);
+          -ms-transform: translateX(-70%);
+          transform: translateX(-70%);
             
               @include mq(pc) {
                 top: 20%;
@@ -484,10 +484,10 @@
           color: $main;
           position: absolute;
           top: 20%;
-          right: 80%;
-          -webkit-transform: translateX(-80%);
-              -ms-transform: translateX(-80%);
-                  transform: translateX(-80%);
+          right: 90%;
+          -webkit-transform: translateX(-70%);
+              -ms-transform: translateX(-70%);
+                  transform: translateX(-70%);
 
                     @include mq(pc) {
                         top: 20%;
