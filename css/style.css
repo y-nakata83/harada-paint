@@ -868,6 +868,25 @@ html {
   opacity: 0;
   animation: copy-Bg 1s 4s forwards ease;
 }
+@media screen and (max-width: 1024px) {
+  .top_copyBg {
+    width: 110%;
+    height: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top_copyBg {
+    width: 125%;
+    height: 60%;
+    top: 44%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top_copyBg {
+    width: 180%;
+    top: 43%;
+  }
+}
 
 @keyframes fv-move {
   from {
