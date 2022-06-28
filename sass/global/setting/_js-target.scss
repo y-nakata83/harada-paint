@@ -50,6 +50,19 @@
   -webkit-animation-name: scrollin-top;
   animation-name: scrollin-top;
 }
+@-webkit-keyframes scrollin-top {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translate(-50%,200px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translate(-50%,20%);
+  }
+}
 @keyframes scrollin-top {
   from {
     opacity: 0;

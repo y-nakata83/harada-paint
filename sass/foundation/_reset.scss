@@ -80,7 +80,8 @@ video {
 
 body {
   line-height: 1;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 article,

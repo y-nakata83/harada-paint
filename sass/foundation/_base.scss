@@ -1,7 +1,8 @@
 @use "../global/"as *;
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: $m-black;
 }
 html {
@@ -18,7 +19,16 @@ html {
 }
 .wrapper{
   opacity: 0;
-  animation: opa .8s ease-in-out forwards;
+  -webkit-animation: opa .8s ease-in-out forwards;
+          animation: opa .8s ease-in-out forwards;
+}
+@-webkit-keyframes opa{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 @keyframes opa{
   from{
@@ -44,7 +54,8 @@ html {
     width: 100%;
     background: url(../img/topimg1.png);
     @include bg(60%);
-    animation: chainge-bg 2s 3.5s forwards ease;
+    -webkit-animation: chainge-bg 2s 3.5s forwards ease;
+            animation: chainge-bg 2s 3.5s forwards ease;
     @include mq(pc){
       background-size: 80%;
     }
@@ -57,7 +68,8 @@ html {
       width: 100%;
       height: 100%;
       background-color: $m-white;
-      animation: fv-move 2s forwards ease-in-out;
+      -webkit-animation: fv-move 2s forwards ease-in-out;
+              animation: fv-move 2s forwards ease-in-out;
     }
   }
   &_copy{
@@ -65,9 +77,12 @@ html {
     width: 100%;
     bottom: 5%;
     left: 50%;
-    transform: translate(-50%,-5%);
+    -webkit-transform: translate(-50%,-5%);
+        -ms-transform: translate(-50%,-5%);
+            transform: translate(-50%,-5%);
     text-align: center;
-    animation: copy-center 1s 4s forwards ease;
+    -webkit-animation: copy-center 1s 4s forwards ease;
+            animation: copy-center 1s 4s forwards ease;
     @include mq(pc){
       bottom: 3%;
     }
@@ -96,11 +111,14 @@ html {
     top: 46%;
     left: 55%;
     z-index: -1;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     background: url(../img/top-bg2b.png);
     @include bg(contain);
     opacity: 0;
-    animation: copy-Bg 1s 4s forwards ease;
+    -webkit-animation: copy-Bg 1s 4s forwards ease;
+            animation: copy-Bg 1s 4s forwards ease;
     @include mq(pc){
       width: 110%;
       height: 70%;
@@ -117,12 +135,24 @@ html {
     }
   }
 }
-@keyframes fv-move {
+@-webkit-keyframes fv-move {
   from{
-    transform: 0;
+    -webkit-transform: 0;
+            transform: 0;
   }
   to{
-    transform: translateX(100vw);
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+@keyframes fv-move {
+  from{
+    -webkit-transform: 0;
+            transform: 0;
+  }
+  to{
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
   }
 }
 .slide-in {
@@ -142,24 +172,68 @@ html {
 }
 
 .slideAnimeLeftRight {
-  animation-name: slideTextX100;
-  animation-duration: 0.8s;
-  animation-delay: 1.8s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: slideTextX100;
+          animation-name: slideTextX100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes slideTextX100 {
+@-webkit-keyframes slideTextX100 {
   from {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     /*要素を左の枠外に移動*/
     opacity: 0;
   }
 
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     /*要素を元の位置に移動*/
     opacity: 1;
+  }
+}
+
+@keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+@-webkit-keyframes chainge-bg {
+  0%{
+    opacity: 1;
+    background: url(../img/topimg1.png);
+    @include bg(60%);
+  }
+  50%{
+    opacity: 0;
+    background: url(../img/topimg1.png);
+    @include bg(60%);
+  }
+  50.1%{
+    opacity: 0;
+    background: url(../img/top-bg2a.png);
+    @include bg;
+  }
+  100%{
+    opacity: 1;
+    background: url(../img/top-bg2a.png);
+    @include bg;
   }
 }
 @keyframes chainge-bg {
@@ -184,6 +258,26 @@ html {
     @include bg;
   }
 }
+@-webkit-keyframes copy-center {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    bottom: 0;
+    top: 60%;
+    left: 50%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+}
 @keyframes copy-center {
   from{
     opacity: 0;
@@ -193,10 +287,27 @@ html {
     bottom: 0;
     top: 60%;
     left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translate(-50%,-50%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+  }
+}
+@-webkit-keyframes copy-Bg {
+  from{
+    opacity: 0;
+
+  }
+  to{
+    opacity: 1;
   }
 }
 @keyframes copy-Bg {
@@ -210,23 +321,46 @@ html {
 }
 
 .slideAnimeRightLeft {
-  animation-name: slideTextX-100;
-  animation-duration: 0.8s;
-  animation-delay: 1.8s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: slideTextX-100;
+          animation-name: slideTextX-100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   opacity: 0;
 }
 
 
-@keyframes slideTextX-100 {
+@-webkit-keyframes slideTextX-100 {
   from {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     /*要素を右の枠外に移動*/
     opacity: 0;
   }
 
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     /*要素を元の位置に移動*/
     opacity: 1;
   }
@@ -256,7 +390,9 @@ html {
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     text-align: center;
     h2{
       color: $m-white;
@@ -276,7 +412,9 @@ html {
     position: absolute;
     bottom: -200px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     background-color: $m-white;
     width: 50%;
     padding: 5%;
@@ -294,7 +432,8 @@ html {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    text-decoration: underline 1px solid $m-black;
+    -webkit-text-decoration: underline 1px solid $m-black;
+            text-decoration: underline 1px solid $m-black;
     text-underline-offset: .2em;
     margin-bottom: 5%;
     &Ex{
@@ -303,7 +442,9 @@ html {
   }
   &_button{
     left: 80%;
-    transform: translate(-80%, 0);
+    -webkit-transform: translate(-80%, 0);
+        -ms-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
   }
 }
 
@@ -316,7 +457,10 @@ html {
     @include flex(end);
     position: relative;
     @include mq(tab) {
-      flex-direction: column-reverse;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
     }
   }
   &_box{
@@ -374,7 +518,9 @@ html {
   }
   &_button {
     left: 80%;
-    transform: translate(-80%, 0);
+    -webkit-transform: translate(-80%, 0);
+        -ms-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
   }
 }
 
@@ -387,7 +533,10 @@ html {
     @include flex(start);
     position: relative;
     @include mq(tab) {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
   }
   &_box {
@@ -397,7 +546,10 @@ html {
     width: 30%;
     padding: 5% 2%;
     text-align: center;
-    box-shadow: $shadow-gray 0px 5px 10px,
+    -webkit-box-shadow: $shadow-gray 0px 5px 10px,
+    $main 25px 25px,
+    $shadow-gray 30px 30px 10px;
+            box-shadow: $shadow-gray 0px 5px 10px,
     $main 25px 25px,
     $shadow-gray 30px 30px 10px;
     @include mq(pc){
@@ -450,7 +602,9 @@ html {
   }
   &_button {
     left: 80%;
-    transform: translate(-80%, 0);
+    -webkit-transform: translate(-80%, 0);
+        -ms-transform: translate(-80%, 0);
+            transform: translate(-80%, 0);
   }
 }
 
@@ -461,7 +615,8 @@ html {
     max-width: 1024px;
     background-color: $main;
     width: 65%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-left: 10%;
     @include mq(pc){
       width: 70%;
@@ -518,7 +673,9 @@ html {
   &_button{
     text-align: start;
     left: 30%;
-    transform: translate(-30%, 0);
+    -webkit-transform: translate(-30%, 0);
+        -ms-transform: translate(-30%, 0);
+            transform: translate(-30%, 0);
   }
 }
 
@@ -529,7 +686,8 @@ html {
     max-width: 1024px;
     background-color: $main;
     width: 65%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-left: auto;
     margin-right: 10%;
     @include mq(pc) {
@@ -587,6 +745,8 @@ html {
   &_button {
     text-align: start;
     left: 30%;
-    transform: translateX(-30%);
+    -webkit-transform: translateX(-30%);
+        -ms-transform: translateX(-30%);
+            transform: translateX(-30%);
   }
 }

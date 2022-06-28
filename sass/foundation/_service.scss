@@ -78,7 +78,8 @@
           width: 100%;
           border: solid 2px $shadow-grayrab;
           border-radius: 10px;
-          box-shadow: $shadow-gray 5px 5px 10px;
+          -webkit-box-shadow: $shadow-gray 5px 5px 10px;
+                  box-shadow: $shadow-gray 5px 5px 10px;
         }
 
       }
@@ -99,6 +100,8 @@
     }
 
     &_icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
 
@@ -151,13 +154,17 @@
                   @include mq(pc) {
                       top: 20%;
                       right: 80%;
-                      transform: translateX(-80%);
+                      -webkit-transform: translateX(-80%);
+                          -ms-transform: translateX(-80%);
+                              transform: translateX(-80%);
                     }
 
                   @include mq(tab) {
                       top: 20%;
                       right: 100%;
-                      transform: translateX(-70%);
+                      -webkit-transform: translateX(-70%);
+                          -ms-transform: translateX(-70%);
+                              transform: translateX(-70%);
                     }
       }
 
@@ -197,7 +204,10 @@
     margin-top: 5%;
 
     @include mq(tab) {
-        flex-direction: column
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column
       }
   }
 
@@ -254,7 +264,9 @@
 
                 @include mq(tab) {
                     width: 40%;
-                    transform: translateX(0%)
+                    -webkit-transform: translateX(0%);
+                        -ms-transform: translateX(0%);
+                            transform: translateX(0%)
                   }
     
         &::after {
@@ -272,14 +284,18 @@
               @include mq(pc) {
                 top: 20%;
                 right: 80%;
-                transform: translateX(-65%);
+                -webkit-transform: translateX(-65%);
+                    -ms-transform: translateX(-65%);
+                        transform: translateX(-65%);
                 font-size: 2.4rem;
               }
 
                   @include mq(tab) {
                         top: 20%;
                         right: 100%;
-                        transform: translateX(-70%);
+                        -webkit-transform: translateX(-70%);
+                            -ms-transform: translateX(-70%);
+                                transform: translateX(-70%);
                         font-size: 3rem;
                     }
                 
@@ -353,7 +369,9 @@
 
                     @include mq(tab) {
                         width: 40%;
-                        transform: translateX(0%)
+                        -webkit-transform: translateX(0%);
+                            -ms-transform: translateX(0%);
+                                transform: translateX(0%)
                       }
 
         &::after {
@@ -371,14 +389,18 @@
               @include mq(pc) {
                 top: 20%;
                 right: 80%;
-                transform: translateX(-65%);
+                -webkit-transform: translateX(-65%);
+                    -ms-transform: translateX(-65%);
+                        transform: translateX(-65%);
                 font-size: 2.4rem;
               }
 
                       @include mq(tab) {
                           top: 20%;
                           right: 100%;
-                          transform: translateX(-70%);
+                          -webkit-transform: translateX(-70%);
+                              -ms-transform: translateX(-70%);
+                                  transform: translateX(-70%);
                           font-size: 3rem;
                         }
         }
@@ -451,7 +473,9 @@
 
                       @include mq(tab) {
                           width: 40%;
-                          transform: translateX(0%)
+                          -webkit-transform: translateX(0%);
+                              -ms-transform: translateX(0%);
+                                  transform: translateX(0%)
                         }
         &::after {
           content: "04";
@@ -468,14 +492,18 @@
                     @include mq(pc) {
                         top: 20%;
                         right: 80%;
-                        transform: translateX(-65%);
+                        -webkit-transform: translateX(-65%);
+                            -ms-transform: translateX(-65%);
+                                transform: translateX(-65%);
                         font-size: 2.4rem;
                       }
 
                     @include mq(tab) {
                         top: 20%;
                         right: 100%;
-                        transform: translateX(-70%);
+                        -webkit-transform: translateX(-70%);
+                            -ms-transform: translateX(-70%);
+                                transform: translateX(-70%);
                         font-size: 3rem;
                       }
         }
@@ -574,7 +602,10 @@
                 justify-content: flex-start;
 
                 @include mq(tab) {
-                    flex-direction: column
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column
                   }
         
         li {

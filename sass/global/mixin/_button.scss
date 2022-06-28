@@ -23,7 +23,9 @@
     right: 0;
     border-top: solid 3px s.$m-black;
     border-right: solid 3px s.$m-black;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     @include mq(sp){
       top: 4px;
       width: 12px;
