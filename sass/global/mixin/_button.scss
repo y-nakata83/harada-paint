@@ -6,6 +6,9 @@
   position: relative;
   width: 150px;
   padding: 0 2%;
+  &:hover{
+      opacity: .6;
+    }
   @include mq(tab) {
     width: 125px;
     padding: 0;

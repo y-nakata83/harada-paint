@@ -328,6 +328,9 @@ select {
   width: 150px;
   padding: 0 2%;
 }
+.button:hover {
+  opacity: 0.6;
+}
 @media screen and (max-width: 768px) {
   .button {
     width: 125px;
@@ -3152,11 +3155,6 @@ div.fixed:nth-child(4) {
     display: none;
   }
 }
-.a-contact_containInner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
 .a-contact_containTtl {
   width: 100%;
   height: 30vh;
@@ -3181,6 +3179,11 @@ div.fixed:nth-child(4) {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.a-contact_containInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .a-contact_containMapInner {
   position: relative;
